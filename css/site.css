@@ -70,7 +70,78 @@ div#divider {
     height: 0.3em;
 }
 
-div#sidebar { 
+ul#navmenu {
+    float: left;
+    width: 11em;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+    border: solid rgb(208, 208, 208);
+    border-width: 1px 1px 1px 1px;
+}
+
+ul#navmenu li {
+    list-style: none;
+}
+
+ul#navmenu li a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+
+ul#navmenu a:hover, ul#navmenu a:active {
+    color: rgb(15, 80, 155);
+    text-decoration: underline;
+}
+
+ul#navmenu a.active {
+    color: rgb(254, 204, 0);
+}
+
+ul#navmenu li div {
+    margin-top: 0em; 
+    margin-bottom: 0.4em;
+    margin-left: 0em;
+    padding-left: 1em;
+
+    border: solid rgb(208, 208, 208);
+    border-width: 0px 1px 0px 0px;
+
+    font-size: 8;
+    font-weight: bold;
+    background: rgb(235, 235, 235);
+}
+
+ul.submenu {
+    padding-left: 1em;
+    padding-bottom: .5em;
+}
+
+ul.submenu li {
+    list-style: none;
+}
+
+ul.submenu ul {
+    padding-left: 1em;
+    list-style: none;
+    padding-bottom: .5em;
+}
+
+div#sidebar a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+
+div#sidebar a:hover, div#sidebar a:active {
+    color: rgb(15, 80, 155);
+    text-decoration: underline;
+}
+
+div#sidebar a.active {
+    color: rgb(254, 204, 0);
+}
+
+div#sidebar {
     float: left;
     width: 11em;
 
@@ -78,8 +149,8 @@ div#sidebar {
     border-width: 1px 1px 1px 1px;
 }
 
-div#sidebar h4 { 
-    margin-top: 0em; 
+div#sidebar h4 {
+    margin-top: 0em;
     margin-bottom: 0.4em;
     margin-left: 0em;
 
@@ -109,7 +180,7 @@ div#sidebar a:hover, div#sidebar a:active {
     text-decoration: underline;
 }
 
-div#sidebar a.active { 
+div#sidebar a.active {
     color: rgb(254, 204, 0);
 }
 
