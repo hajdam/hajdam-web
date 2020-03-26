@@ -1,6 +1,6 @@
 <div id="content">
-<p>Add <a href="?add-comment">new comment</a>.</p>
-<p>Comments from visitors of this website:</p>
+<p>Přidat <a href="?add-comment">nový komentář</a>.</p>
+<p>Komentáře návštěvníků této stránky:</p>
 <?php
 
 function getline($fl) {

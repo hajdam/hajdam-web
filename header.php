@@ -13,6 +13,7 @@ if ($query == 'about') {
 } ?><!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Language" content="<?php echo $lang; ?>" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="SHORTCUT ICON" href="hajdam.ico" />
 <link href="<?php echo $parentPrefix; ?>css/site.css" rel="stylesheet">
@@ -23,7 +24,7 @@ if ($query == 'about') {
 <div id="name"><h1><a href="<?php echo $parentPrefix; ?>"><img src="<?php echo $parentPrefix; ?>images/hajdam-logo.png" alt="[HajdaM]" title="Icon" width="50" height="50" style="vertical-align: text-top; margin-top: -7px;"/>&nbsp;<?php echo ($lang == 'cs') ? 'HajdaM - Osobní webová stránka' : 'HajdaM - Personal Homepage' ?></a></h1></div>
 <div id="divider"></div>
 
-<ul id="navmenu">
+<ul id="navmenu"><?php if ($lang != 'cs') { ?>
   <li><div>General</div>
     <ul class="submenu">
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPrefix; ?>">News</a></li>
@@ -44,6 +45,28 @@ if ($query == 'about') {
   <li><div>Social</div>
     <ul class="submenu">
       <li><a href="<?php echo $rootPrefix; ?>?comments<?php echo $langPrefix; ?>">Comments</a></li>
+<?php } else { ?>
+  <li><div>Obecné</div>
+    <ul class="submenu">
+      <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPrefix; ?>">Novinky</a></li>
+      <li><a href="<?php echo $rootPrefix; ?>?about<?php echo $langPrefix; ?>">O mě</a><?php echo $submenu_about; ?></li>
+      <li><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPrefix; ?>">Blog</a></li>
+      <li><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPrefix; ?>">Galerie</a></li>
+      <li><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPrefix; ?>">Ke stažení</a></li>
+    </ul>
+  </li>
+  <li><div>Projekty</div>
+    <ul class="submenu">
+      <li><a href="<?php echo $parentPrefix; ?>projects?software<?php echo $langPrefix; ?>">Software</a><?php echo $submenu_software; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>projects?sites<?php echo $langPrefix; ?>">Webové stránky</a><?php echo $submenu_sites; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>projects?media<?php echo $langPrefix; ?>">Media</a><?php echo $submenu_media; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>projects?concepts<?php echo $langPrefix; ?>">Koncepty</a><?php echo $submenu_concepts; ?></li>
+    </ul>
+  </li>
+  <li><div>Sociální</div>
+    <ul class="submenu">
+      <li><a href="<?php echo $rootPrefix; ?>?comments<?php echo $langPrefix; ?>">Comments</a></li>
+<?php } ?>      <li><a class="urlextern" href="https://github.com/hajdam">GitHub</a></li>
       <li><a class="urlextern" href="https://linkedin.com/in/miroslav-hajda-44539024">Linked-in</a></li>
     </ul>
   </li>
