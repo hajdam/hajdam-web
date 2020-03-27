@@ -1,10 +1,17 @@
 <div id="content">
 <p>Created websites:</p>
-<p><strong>ExBin Project</strong> - Project to bring evolution in binary data handling<br/><a href="https://exbin.org" class="urlextern">exbin.org</a></p>
 
-<p><strong>Sharp MZ Wiki</strong> - Community wiki page and files catalog for 8-bit computer Sharp MZ-800<br/><a href="https://sharpmz.zdechov.net/" class="urlextern">sharpmz.zdechov.net</a></p>
+<p><a href="?site_homepage<?php echo $langPostfix; ?>"><strong>Homepage</strong></a> - This website</p>
 
-<p><strong>I.P.E.R. Website</strong> - Image gallery for some jokes about elves<br/><a href="http://iper.wz.cz/" class="urlextern">iper.wz.cz/</a></p>
+<p><a href="?site_sharpmz<?php echo $langPostfix; ?>"><strong>Sharp MZ Wiki</strong></a> - Community wiki page and files catalog for 8-bit computer Sharp MZ-800
+  <a class="urlextern" href="https://sharpmz.zdechov.net/">sharpmz.zdechov.net</a>
+</p>
+
+<p><a href="?site_iper<?php echo $langPostfix; ?>"><strong>I.P.E.R. Website</strong></a> - Image gallery for some jokes about elves
+  <a href="http://iper.wz.cz/" class="urlextern">iper.wz.cz/</a>
+</p>
+
+<p><a href="?site_sbor<?php echo $langPostfix; ?>"><strong>Komorní Sbor MGV</strong></a> (obsolete) - Pages about singing choir I was attending</p>
 
 </div>
 </body>
