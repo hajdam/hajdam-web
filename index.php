@@ -4,7 +4,7 @@ $requestedLang = (isset($_GET['lang']) && ($_GET['lang'] == 'cs' || $_GET['lang'
 $lang = $requestedLang;
 if ($requestedLang == '') {
     $supportedLangs = array('cs', 'en-GB', 'en');
-    $languages = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    $languages = explode(',', @$_SERVER['HTTP_ACCEPT_LANGUAGE']);
     $langMatch = '';
     foreach ($languages as $nextLang) {
       if (in_array($nextLang, $supportedLangs)) {

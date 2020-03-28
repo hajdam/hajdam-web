@@ -1,13 +1,18 @@
 <div id="content">
 <h1>BinEd Binary/Hexadecimal Editor</h1>
 
-<p>Open source library for binary data viewer and editor, stand-alone editor apps and extensions for various IDEs.</p> 
+<p>BinEd is a hobby project to create viewer/editor for binary data (hexadecimal editor) in Java.</p>
 
 <p>Website: <a class="urlextern" href="https://bined.exbin.org">bined.exbin.org</a></p>
 
 <p>Sources: <a class="urlextern" href="https://github.com/exbin">github.com/exbin</a></p>
 
-<center><img src="images/site_bined.png" alt="[site_bined]" width="700" border="2"/></center>
+<p>Goals are:</p>
+
+<ul><li>Free and open source (commercially friendly license Apache)</li>
+<li>Available as component / library for other apps</li>
+<li>Stand-alone editor application</li>
+<li>Plugins/extension for some applications (Java-based IDEs and other)</li></ul>
 
 <p>Editor:</p>
 
@@ -16,6 +21,10 @@
 <p>Library test app:</p>
 
 <center><img src="images/bined_library.png" alt="[bined_library]" width="700" border="2"/></center>
+
+<p>Website:</p>
+
+<center><img src="images/site_bined.png" alt="[site_bined]" width="700" border="2"/></center>
 
 </div>
 </body>

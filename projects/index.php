@@ -4,7 +4,7 @@ $requestedLang = (isset($_GET['lang']) && ($_GET['lang'] == 'cs' || $_GET['lang'
 $lang = $requestedLang;
 if ($requestedLang == '') {
     $supportedLangs = array('cs', 'en-GB', 'en');
-    $languages = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    $languages = explode(',', @$_SERVER['HTTP_ACCEPT_LANGUAGE']);
     $langMatch = '';
     foreach ($languages as $nextLang) {
       if (in_array($nextLang, $supportedLangs)) {
@@ -20,43 +20,45 @@ global $prefix, $submenu_software, $submenu_sites;
 
 $prefix = '..';
 $query = getenv('QUERY_STRING');
+$paramPos = strpos($query, '&');
+if ($paramPos !== false) $query = substr($query, 0, $paramPos);
 
-if ($lang != 'cs') {
-  if ($query == 'sites') {
+if (($query == 'sites') || (strncmp($query, "site_", 5) === 0)) {
+  if ($lang != 'cs') {
     $submenu_sites = '
-<ul><li><a href="'.$parentPrefix.'?site_exbin'.$langPrefix.'">ExBin Project</a></li>
-<li><a href="'.$parentPrefix.'?site_sharpmz'.$langPrefix.'">Sharp MZ</a></li>
-<li><a href="'.$parentPrefix.'?site_iper'.$langPrefix.'">I.P.E.R Website</a></li></ul>';
+<ul><li><a href="'.$parentPrefix.'?site_homepage'.$langPostfix.'">Homepage</a></li>
+<li><a href="'.$parentPrefix.'?site_sharpmz'.$langPostfix.'">Sharp MZ Wiki</a></li>
+<li><a href="'.$parentPrefix.'?site_iper'.$langPostfix.'">I.P.E.R Website</a></li></ul>';
   } else {
-    $submenu_software = '
-<ul><li><a href="'.$parentPrefix.'?exbin'.$langPrefix.'">ExBin Project</a></li>
-<li><a href="'.$parentPrefix.'?bined'.$langPrefix.'">BinEd Editor</a></li>
-<li><a href="'.$parentPrefix.'?mzemu'.$langPrefix.'">Sharp MZ Emulator</a></li></ul>';
+    $submenu_sites = '
+<ul><li><a href="'.$parentPrefix.'?site_homepage'.$langPostfix.'">Osobní stránka</a></li>
+<li><a href="'.$parentPrefix.'?site_sharpmz'.$langPostfix.'">Sharp MZ Wiki</a></li>
+<li><a href="'.$parentPrefix.'?site_iper'.$langPostfix.'">I.P.E.R Web</a></li></ul>';
   }
 } else {
-  if ($query == 'sites') {
-    $submenu_sites = '
-<ul><li><a href="'.$parentPrefix.'?site_exbin'.$langPrefix.'">ExBin Project</a></li>
-<li><a href="'.$parentPrefix.'?site_sharpmz'.$langPrefix.'">Sharp MZ</a></li>
-<li><a href="'.$parentPrefix.'?site_iper'.$langPrefix.'">I.P.E.R Website</a></li></ul>';
+  if ($lang != 'cs') {
+    $submenu_software = '
+<ul><li><a href="'.$parentPrefix.'?exbin'.$langPostfix.'">ExBin Project</a></li>
+<li><a href="'.$parentPrefix.'?bined'.$langPostfix.'">BinEd Editor</a></li>
+<li><a href="'.$parentPrefix.'?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li></ul>';
   } else {
     $submenu_software = '
-<ul><li><a href="'.$parentPrefix.'?exbin'.$langPrefix.'">ExBin Project</a></li>
-<li><a href="'.$parentPrefix.'?bined'.$langPrefix.'">BinEd Editor</a></li>
-<li><a href="'.$parentPrefix.'?mzemu'.$langPrefix.'">Sharp MZ Emulator</a></li></ul>';
+<ul><li><a href="'.$parentPrefix.'?exbin'.$langPostfix.'">ExBin Project</a></li>
+<li><a href="'.$parentPrefix.'?bined'.$langPostfix.'">BinEd Editor</a></li>
+<li><a href="'.$parentPrefix.'?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li></ul>';
   }
 }
 
 include('../header.php');
 
 if (empty($query)) {
-  $include = 'pages/main.php';
+  $include = 'pages/main'.$filePostfix.'.php';
 } else {
-  $target = 'pages/'.$query.'.php';
+  $target = 'pages/'.$query.$filePostfix.'.php';
   if (!(preg_match("/[a-z\/\_\-]+/", $query) === false) && file_exists($target)) {
     $include = $target;
   } else {
-    $include = 'pages/not-found.php';
+    $include = 'pages/not-found'.$filePostfix.'.php';
   }
 }
 
