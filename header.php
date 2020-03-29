@@ -39,6 +39,7 @@ if (!empty($prefix)) {
     <ul class="submenu">
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Music</a><?php echo @$submenu_music; ?></strike></li>
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></strike></li>
+      <li><strike><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Games</a><?php echo @$submenu_games; ?></strike></li>
     </ul>
   </li>
   <li><div>Social</div>
@@ -48,7 +49,7 @@ if (!empty($prefix)) {
   <li><div>Obecné</div>
     <ul class="submenu">
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">Novinky</a></li>
-      <li><a href="<?php echo $rootPrefix; ?>?about<?php echo $langPostfix; ?>">O mě</a><?php echo @$submenu_about; ?></li>
+      <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">O mě</a><?php echo @$submenu_about; ?></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></strike></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Galerie</a></strike></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Ke stažení</a></strike></li>
@@ -65,6 +66,7 @@ if (!empty($prefix)) {
     <ul class="submenu">
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Hudba</a><?php echo @$submenu_music; ?></strike></li>
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></strike></li>
+      <li><strike><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Hry</a><?php echo @$submenu_games; ?></strike></li>
     </ul>
   </li>
   <li><div>Sociální</div>

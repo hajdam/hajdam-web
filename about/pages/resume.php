@@ -1,12 +1,8 @@
 <div id="content">
+<h1>Resume</h1>
+
 <table border="0" cellspacing="8" width="100%"><tr><td>
 <a name="top"/><center><h1>Miroslav Hajda</h1></center>
-<ul>
-  <li><a href="#me">O mě</a></li>
-  <li><a href="#photos">Fotky</a></li>
-  <li><a href="#products">Tvorba</a></li>
-  <li><a href="#interests">Záliby</a></li>
-</ul>
 <br/>
 <a name="me"/><h2>O mě</h2>
 <p><strong>Jmenuji se</strong>: Miroslav Hajda<br/>
@@ -51,8 +47,6 @@ src="images/photos/fotka4.jpg" height="200" alt="fotka3" hspace="5"/><br/>
 <a href="files/photos/muni/muni2.jpg" target="_blank"><img src="files/photos/muni/_muni2.jpg" height="200" alt="Fakulta" hspace="5" border="0"/></a>
 </p><p>Kliknutím na obrázek jej můžete zobrazit ve vyšší kvalitě</p>
 <a href="#top">Nahoru</a><br/>
-<a name="products"/><h2>Tvorba</h2>
-<a name="interests"/><h2>Záliby</h2>
 Mezi mé záliby patří počítač Sharp MZ-800, japonské animované filmy...
 </td></tr></table>
 </div>

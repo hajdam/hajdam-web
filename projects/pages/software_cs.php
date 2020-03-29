@@ -13,9 +13,11 @@
   <a href="https://sharpmz.zdechov.net/?jmzemu" class="urlextern">sharpmz.zdechov.net/?jmzemu</a>
 </p>
 
+<p><a href="?consonica<?php echo $langPostfix; ?>"><strong>Consonica</strong></a> - Audio DAW / editor</p>
+
 <h2>Starší projekty</h2>
 
-<p>In the olden days I also created various simple software in older programming languages</p>
+<p>Kdysi dávno jsem také vytvořil pár jednoduchých prográmků ve starších programovacích jazycích</p>
 
 <h3>Software napsaný v Delphi</h3>
 

@@ -13,6 +13,8 @@
   <a href="https://sharpmz.zdechov.net/?jmzemu" class="urlextern">sharpmz.zdechov.net/?jmzemu</a>
 </p>
 
+<p><a href="?consonica<?php echo $langPostfix; ?>"><strong>Consonica</strong></a> - Audio DAW / editor</p>
+
 <h2>Older projects</h2>
 
 <p>In the olden days I also created various simple software in older programming languages</p>

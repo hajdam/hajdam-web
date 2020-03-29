@@ -36,6 +36,8 @@
 <td>A</td><td>27.3.2018</td><td>GSM Nokia 8</td><td>Snapdragon 835, 4 x 2,45 GHz + 4 x 1,9 GHz</td><td>Adreno 540</td><td>4 GB</td><td>64 GB Flash</td><td>micro SD</td>
 </tr></table></center>
 
+<p><em>D - skonal<br/>S - prodán<br/>A - funkční</em></p>
+
 </div>
 </body>
 </html>
