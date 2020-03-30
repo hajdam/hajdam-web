@@ -41,12 +41,12 @@ if (isset($_POST['comment']) && $_POST['comment'] != '') {
     $count_file = fopen('pages/comments/count.txt', 'w');
     putline($count_file, $count);
     fclose($count_file);
-    echo '<p>Your comment was added.</p>';
+    echo '<p>Váš komentář byl přidán.</p>';
   }
 }
 
 if ($count == 0) {
-	echo '<p>There are no comments yet.</p>';
+	echo '<p>Zatím žádné komentáře.</p>';
 } else {
 	echo '<ul>';
 	$pagepos = $pos * $perpage;
@@ -58,7 +58,7 @@ if ($count == 0) {
       $time = getline($file);
       $author = getline($file);
       $comment = '';
-      while (!feof($file)) {
+      while (isset($file) && !feof($file)) {
       	  if ($comment != '') {
       	  	  $comment .= "<br/>";
       	  }
@@ -68,21 +68,21 @@ if ($count == 0) {
       fclose($file);
       
       echo '<li>';
-      echo '<p>Comment from: <strong>'.$author.'</strong> on '.date('l jS \of F Y h:i:s A', $time).'</p>';
+      echo '<p>Komentář od: <strong>'.$author.'</strong> vložen '.date('d. m. Y H:m:s', $time).'</p>';
       echo '<p>'.$comment.'</p>';
       echo "</li>\n";
 	}
     echo '</ul>';
     echo "\n";
-    echo "<p>Showing ".($pagepos + 1)." to ".$fst." of ".$count." comments</p>\n";
+    echo "<p>Zobrazuje se ".($pagepos + 1)." až ".$fst." z ".$count." komentářů</p>\n";
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="?comments&pos='.($pos-1).'">&lt;&lt;&nbsp;Previous page</a>&nbsp;&nbsp;';
+		echo '<a href="?comments&pos='.($pos-1).'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?comments&pos='.($pos+1).'">Next page&nbsp;&gt;&gt;</a>';
+		echo '<a href="?comments&pos='.($pos+1).'">Následující stránka&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>

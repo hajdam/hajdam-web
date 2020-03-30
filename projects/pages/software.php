@@ -21,7 +21,11 @@
 
 <h3>Software written in Delphi</h3>
 
+<p><a href="?delphi<?php echo $langPostfix; ?>"><strong>Delphi Software</strong></a></p>
+
 <h3>Software written in Pascal</h3>
+
+<p><a href="?pascal<?php echo $langPostfix; ?>"><strong>Pascal Software</strong></a></p>
 
 <h3>Software for 8-bit computer</h3>
 

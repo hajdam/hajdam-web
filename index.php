@@ -21,7 +21,7 @@ $prefix = '';
 $query = getenv('QUERY_STRING');
 if (empty($query)) {
   include('header.php');
-  $include = 'pages/news'.$filePostfix.'.php';
+  $include = 'pages/welcome'.$filePostfix.'.php';
 } else {
   $paramPos = strpos($query, '&');
   if ($paramPos !== false) $query = substr($query, 0, $paramPos);

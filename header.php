@@ -21,6 +21,7 @@ if (!empty($prefix)) {
 <ul id="navmenu"><?php if ($lang != 'cs') { ?>
   <li><div>General</div>
     <ul class="submenu">
+      <li><a href="<?php echo $rootPrefix; ?>?welcome<?php echo $langPostfix; ?>">Welcome</a></li>
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">News</a></li>
       <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">About Me</a><?php echo @$submenu_about; ?></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></strike></li>
@@ -48,6 +49,7 @@ if (!empty($prefix)) {
 <?php } else { ?>
   <li><div>Obecné</div>
     <ul class="submenu">
+      <li><a href="<?php echo $rootPrefix; ?>?welcome<?php echo $langPostfix; ?>">Vítejte</a></li>
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">Novinky</a></li>
       <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">O mě</a><?php echo @$submenu_about; ?></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></strike></li>

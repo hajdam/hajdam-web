@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Softwarové projekty</h1>
 
-<p><a href="?exbin<?php echo $langPostfix; ?>"><strong>ExBin Project</strong></a> - Project to bring evolution in binary data handling
+<p><a href="?exbin<?php echo $langPostfix; ?>"><strong>ExBin Projekt</strong></a> - Pokus o evoluci v práci s binárními daty
   <a href="https://exbin.org" class="urlextern">exbin.org</a>
 </p>
 
@@ -21,7 +21,11 @@
 
 <h3>Software napsaný v Delphi</h3>
 
+<p><a href="?delphi<?php echo $langPostfix; ?>"><strong>Delphi Software</strong></a></p>
+
 <h3>Software napsaný v Pascalu</h3>
+
+<p><a href="?pascal<?php echo $langPostfix; ?>"><strong>Pascal Software</strong></a></p>
 
 <h3>Software pro 8-bitový počítač</h3>
 
