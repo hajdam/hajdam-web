@@ -1,0 +1,117 @@
+1035374400
+Vize dokonalého uložení čísla
+Existuje jednoduchý způsob, jak uložit číslo nezávisle na velikosti slova
+<style type="text/css">
+ p.c3 {text-indent: -18.0pt; margin-left: 36.0pt}
+ span.c2 {font:7.0pt "Times New Roman"}
+ h1.c1 {text-align: center}
+</style>
+<p>       Jako hlavní princip mého nového digitálního formátu
+XBFF slouží jistý systém ukládání čísel, známý většině programátorů
+z&nbsp;kódování znaků UTF8. Princip je tudíž jednoduchý a již dlouho známý.</p>
+
+<p>       Základem celého systému je BIT. Bit je základní
+jednotka informace, která je zcela logická a nevyvratitelná. Běžně se 8 bitů seskupí
+do bajtu, což je v&nbsp;současné době nejpoužívanější základní jednotka
+počítačové informace. Jeden bajt přenáší hodnotu z&nbsp;intervalu
+&lt;0..255&gt;. Kdo však určil, že bitů bude zrovna 8? Proč ne 4? Nebo 16, či
+ještě více? Ačkoli se zdá být 8  bitů akorát, není možné vyloučit, že by se
+toto mohlo někdy změnit. Abstrahujeme-li od organizace bitů do bajtů, lze
+ukládat čísla jistým jednoduchým způsobem.</p>
+
+<p>       Uvažujme jako základní interval přirozená čísla
+včetně 0. Uvažujme nyní nekonečný bitový proud, který nese číslo. Způsob je
+prostý &#8211; číslo je určeno počtem bitů jednoho druhu. Zvolme například bit 1 jako
+nositel informace a 0 jako terminální bit. Pak čísla vypadají takto&#8230;</p>
+
+0          0<br/>
+1          10<br/>
+2          110<br/>
+3          1110<br/>
+4          11110<br/>
+&#8230;<br/>
+
+<p>       Lze vidět, že tento způsob, jakkoli je prostý,
+zbytečně plýtvá místem (možná vám to připomene něco z&nbsp;oblasti komprese). Domnívám
+se, že tento způsob je ale naprosto logický, zatím bez formálního důkazu. Možná
+je na čase, abych si zapsal předmět, kde se přednáší teorie informace. Možná tu
+totiž plácám něco, co je již dávno světu známé. Pro své účely jsem tento způsob
+ukládání označil jako BNatural datové šířky 0. Ačkoli zde na první pohled není
+vidět žádná souvislost (alespoň já jsem ji neviděl), jedná se skutečně o platné
+označení. Připomenu princip ukládání čísla BNatural v&nbsp;jeho základní šířce
+7 v&nbsp;pohledu, který více osvětlí podobnost.</p>
+
+0xxxxxxx<br/>
+10xxxxxx xxxxxxxx<br/>
+110xxxxx xxxxxxxx xxxxxxxx<br/>
+&#8230;<br/>
+
+<p>       Základní tvar je 0xxxxxxx, kde x představují datové
+bity určené pro uložení vlastní hodnoty. Další tvar je 10xxxxxx xxxxxxxx,
+přičemž k&nbsp;hodnotě určené bity x se přičítá 80h. Podstatné je v&nbsp;tomto
+případě rekurzivní rozšiřování, tedy 11111111 nnnnnnnn ((N+9)*7)x a přičítá se Sum{I
+in 1..&lt;N+9&gt;} (2<span lang=EN-US>^(7*I)). N p</span>ředstavuje další číslo
+typu BNatural stejné šířky vyjádřené pomocí bitů &#8220;n&#8221;, které se
+mohou také rozšiřovat. Tento výpočet lze zobecnit na libovolnou datovou šířku a
+to takto:</p>
+
+DŠ &#8211; datová šířka<br/>
+PB &#8211; počet bitů 1 shora v prvním slově délky (DŠ+1) bitů<br/>
+RH &#8211; rozšiřující hodnota<br/>
+
+<p>- počet datových bitů: (DŠ*(PB+1+N))<br/>
+- přičítaná hodnota: </span>Sum{I in &lt;1.. PB+1+N &gt;} (2^(DŠ*I))</p>
+
+<p>Pro PB =&lt; DŠ není RH přítomna a její hodnota je 0. Když
+nyní zvolíme DŠ = 0, lze vidět, že pokud je první bit 1, rozšiřuje se číslo o
+další bit díky RH a hodnota se zvyšuje o 1.</p>
+
+<p>       Existuje mnohem jednodušší způsob, který je také &#8222;ve
+své nulové variantě&#8220; schodný. Mě se ale nelíbí:</p>
+
+0xxxxxxx<br/>
+1xxxxxxx 0xxxxxxx<br/>
+1xxxxxxx 1xxxxxxx 0xxxxxxx<br/>
+1xxxxxxx 1xxxxxxx 1xxxxxxx 0xxxxxxx<br/>
+&#8230;<br/>
+
+<p>Nelíbí se mi proto, že se musí provádět datové posuny.
+Srovnejte pro datovou šířku 1:</p>
+
+<table bgcolor="orange" width="90%" align="center" border="4" cellspacing="8"><tbody><tr><td>
+<p>Způsob jedna:</p>
+
+0          00<br/>
+1          01<br/>
+2          1000<br/>
+3          1001<br/>
+4          1010<br/>
+5          1011<br/>
+6          110000<br/>
+7          110001<br/>
+8          110010<br/>
+9          110011<br/>
+10        110100<br/>
+11        110101<br/>
+12        110110<br/>
+13        110111<br/>
+&#8230;</td><td>
+<p>Způsob dvě:</p>
+0          00<br/>
+1          01<br/>
+2          1000<br/>
+3          1001<br/>
+4          1100<br/>
+5          1101<br/>
+6          101000<br/>
+7          101001<br/>
+8          101100<br/>
+9          101101<br/>
+10        111000<br/>
+11        111001<br/>
+12        111100<br/>
+13        111101<br/>
+&#8230;</td></tr></tbody></table>
+
+<p>No vidíte to? Ne? Tak dobře &#8211; moc to vidět nejde, ale těch
+posunů je tam fakt víc. Honba za dokonalostí pokračuje&#8230;</p>

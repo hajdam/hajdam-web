@@ -1,0 +1,95 @@
+1035374400
+Proč vytvářet nový digitální formát
+Rozhodl jsem se vytvořit nový digitální formát
+<style type="text/css">
+ p.c3 {text-indent: -18.0pt; margin-left: 36.0pt}
+ span.c2 {font:7.0pt "Times New Roman"}
+ h1.c1 {text-align: center}
+</style>
+    <p>
+      Pokud jste si toho ještě na mé stránce nevšimli, tak jsem se rozhodl
+      vytvořit nový digitální formát pro ukládání různých typů dat. Jistě si
+      řeknete že je to nesmysl. Formátů už existuje spousta a nějaký další
+      akorát znepřehlední situaci. V tomto článku bych rád uvedl některé
+      důvody, které mě k vytvoření formátu XB vedly.</p>
+
+    <p>
+      Kolik znáte grafických formátů? 10? 20? 30? A kolik znáte formátů
+      standardizovaných pro použití na webových stránkách? Vždyť to znáte.
+      Chcete-li použít jednoduché obrázky, sáhnete po formátu <b>GIF</b>, který
+      si získal největší oblibu a je nejvíce podporován. Pokud však chcete více
+      než 256 barev sáhnete po formátu <b>PNG</b>, nebo jedná-li se o
+      fotografii, tak <b>JPG</b>. Chcete-li provozovat animace, buď se
+      spokojíte s pár barvami a formátem <b>GIF</b>, nebo sáhnete po videu,
+      které umí i zvuky, jako například <b>AVI</b>, <b>MOV</b>, <b>WMV</b>,
+      <b>MPG</b>, <b>RAM</b>, <b>ASF</b> nebo nějakém ještě exotičtějšímu.
+      Chcete-li provozovat interaktivnější animace, sáhnete zřejmě po formátu
+      <b>Flash</b>. Chcete-li přehrávat zvuk, zvolíte zřejmě <b>WAV</b>, nebo
+      <b>SND</b>, případně <b>AU</b>, <b>MID</b>, <b>MP3</b>, <b>WMA</b> a to
+      ani nemluvím o <b>MOD</b>, <b>XM</b>, <b>S3M</b> a řadě dalších, natož o
+      formátech podporovaných pouze určitými firmami, jako např. <b>BMP</b>.
+      Chcete-li aby vaše stránky příliš nezatěžovali nezatěžovaly server,
+      můžete sáhnout po různých skriptech, jako <b>JavaScript</b>, <b>Visual
+      Basic Skript</b>, nebo <b>Java apletech</b>. Za zmíňku stojí i další
+      formáty používané pro šíření dokumentů, jako jsou např. <b>DOC</b>,
+      <b>XLS</b>, <b>RTF</b>, <b>PS</b>, <b>PDF</b> a další. Jak je možné, že
+      pro vyjádření stejného významu dat existuje někdy i několik desítek
+      podstat ekvivalentních datových formátů? Je to prosté &#8211; za vším hledej
+      peníze.</p>
+
+    <p>
+      V dřívějších dobách se společnostem jevilo výhodné formáty patentovat a
+      vydělávat tak na licenčních poplatcích za použití formátu. Naštěstí již
+      dnes není dost dobře možné díky rozsáhlé programátorské základně prosadit
+      formát s licenčními podmínkami za každé použití, pokračují firmy
+      v různých opatřeních vedoucích k maximalizaci zisku. Uveďme například
+      formát <b>DOC</b> společnosti Microsoft, jehož dokumentace nebyla nikdy
+      zveřejněna, a proto musí uživatel sáhnout po produktu této společnosti,
+      aby mohl takový dokument zobrazit ve správném tvaru. Mezi dalšími bychom
+      mohli uvést většinu formátu, proto se zaměřme spíše na případy opačné.
+      Mezi příjemné výjimky patří formát <b>PNG</b>, který je vyvíjen Open
+      Source komunitou pro použití na internetových stránkách. K dispozici jsou
+      zdrojové kódy knihovny a kompresní algoritmus není vázán žádnými
+      licenčními poplatky. Mezi podobné pokusy v oblasti videa a zvuku patří
+      <b>DivX</b>, <b>XVid</b>, <b>Vobis OGG</b>.</p>
+
+    <p>
+      S rozvojem internetu se začaly objevovat textové formáty rodiny MarkUp
+      Language, mezi které patří například <b>HTML</b>, <b>MathML</b>,
+      <b>XML</b>, <b>XPath</b>, <b>VRML</b> a další. Přes nesporné výhody které
+      tyto jazyky přináší jedná se relativně mladé formáty, které se stále
+      ještě vyvíjí a teprve nachází uplatnění v mnoha oblastech počítačového
+      průmyslu. Přes jednoznačný přínos doufám, že se jejich použití nerozšíří
+      i na oblasti, které jsou dnes výsadou spíše binárních formátů, jako
+      například zvuk a video. Proto jsem se rozhodl vytvořit svůj vlastní
+      formát. Cílem je vytvořit binární formát, který bude přinášet co nejvíce
+      výhod jazyků rodiny <b>XML</b> a přesto zůstane čistě binární. Zdá se vám
+      to nemožné? Možné to je a dokonce to není ani příliš obtížné, takže bych
+      to mohl zvládnout i já :-) Které vlastnosti jsem se rozhodl především
+      zachovat:
+    </p>
+    <p class="MsoNormal c3">
+      -<span class="c2">        </span> rozšiřitelnost &#8211; jazyk <b>XML</b>
+      umožňuje snadno vytvářet vlastní formáty, což by neměl být problém
+      přepracovat do binární formy
+    </p>
+    <p class="MsoNormal c3">
+      -<span class="c2">        </span> čitelnost &#8211; sice nelze umožnit snadnou
+      čitelnost pomocí textového editoru, ale díky jednotnému tvaru bloků může
+      vhodná aplikace vhodně zobrazit data
+    </p>
+    <p class="MsoNormal c3">
+      -<span class="c2">        </span> rozsáhlá aplikační základna &#8211; tak tady
+      budu asi potřebovat pomoc&#8230;
+    </p>
+    <p class="MsoNormal c3">
+      -<span class="c2">        </span> použití neomezený hodnot &#8211; mezi
+      nedoceněné výhody textové formy zápisu patří možnost zápisu libovolně
+      velkých čísel a řetězců libovolné délky</p>
+
+      <p>
+      Co říci závěrem? Snad jen to, že digitální formát by neměl být omezován
+      žádnými licencemi, které dle mého názoru pouze zpomalují vývoj IT,
+      znechucují zákazníky a firmy. Zisk z omezení použití formátu je vyvažován
+      ztrátou znechucených zákazníků a kazí dobré jméno firmy (je-li jaké).
+      Například Microsoft Corporation a většina jejich formátů.</p>

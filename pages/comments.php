@@ -58,7 +58,7 @@ if ($count == 0) {
       $time = getline($file);
       $author = getline($file);
       $comment = '';
-      while (isset($file) && !feof($file)) {
+      while (is_file($file) && !feof($file)) {
       	  if ($comment != '') {
       	  	  $comment .= "<br/>";
       	  }

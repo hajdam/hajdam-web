@@ -1,0 +1,7 @@
+1181387409
+Page Update
+I decided to do some small insignificant update after really long time..
+<p>It's almost few years after I made my decision not to proceed work on this page. Main reason was, that my semifinished syste was too complex to manage. At least it passed as a good example to gather more experiences with PHP for my next future tasks. Not until last week, when I decided that it might be worth making an update, this time to add new content and improve look unlikely last update from version 3 ;-)</p>
+<p>Another goal was to allow some kind of blog posting. First I was thinking about using existing services for that purpose, but then I realized, that I might be able to refresh my limited PHP knowledges and modify current page. It might be better to throw out everything and start from scratch, but I have not enought will to force that out. I assume, that it would have got same result as last time.</p>
+<p>But I will try to do some cleaning and fresh pages content. For example, there is about 130 downloads of sources of this page and I cannot even image, what use will that be for them, maybe for inspiration at least... :-)</p>
+<p>More details about page update might be included in next post.</p>

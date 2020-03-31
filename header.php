@@ -24,7 +24,7 @@ if (!empty($prefix)) {
       <li><a href="<?php echo $rootPrefix; ?>?welcome<?php echo $langPostfix; ?>">Welcome</a></li>
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">News</a></li>
       <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">About Me</a><?php echo @$submenu_about; ?></li>
-      <li><strike><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></strike></li>
+      <li><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Gallery</a></strike></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Downloads</a></strike></li>
     </ul>

@@ -1,0 +1,5 @@
+1201803954
+I bought new computer
+I decided to upgrade my computer to for better performance
+<p>Absence of SATA disc controller, troubles with sound and low processing capability caused me a lot of headache, I decided that I should by some new components for my computer to met my new LCD. I should make data backup and switch operating system from Windows XP to Linux (Fedora 8) which I wasn&quot;t able to do, because I was too lazy so far. Windows to Linux operating systems ratio should then adjust from 2/7 to 1/8.</p>
+<p>And in my work I do SQL skripts for data conversions mostly which is one-use case and routine, but there are some interesting algorithms at least. It allows me to focus more to my own project which is about to reach 15th work release. Well, I hope to get to website update after that, because I intend to work on better presentations for my projects.</p>

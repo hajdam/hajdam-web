@@ -1,26 +1,17 @@
 <div id="content">
-<table border="0" cellspacing="8" width="100%"><tr><td>
-<a name="top"/><center><h1>Miroslav Hajda</h1></center>
-<ul>
-  <li><a href="#me">O mě</a></li>
-  <li><a href="#photos">Fotky</a></li>
-  <li><a href="#products">Tvorba</a></li>
-  <li><a href="#interests">Záliby</a></li>
-</ul>
-<br/>
-<a name="me"/><h2>O mě</h2>
-<p><strong>Jmenuji se</strong>: Miroslav Hajda<br/>
-<strong>Bydliště</strong>: Zděchov<br/>
-<strong>Narodil jsem se</strong> : 5.února 1982 ve Vsetíně<br/>
-<strong>Stav</strong>: svobodný<br/>
-<strong>Povolání</strong>: pracuji jako programátor pro firmu <a href="http://www.magion.cz/">Magion</a><br/>
-<strong>Hmotnost</strong>: 110 kg<br/>
+<h1>About Me</h1>
+<p><strong>Full Name</strong>: Miroslav Hajda<br/>
+<strong>Residency</strong>: <a href="http://zdechov.cz">Zděchov</a>, Czech Republic<br/>
+<strong>Born</strong> : 1982<br/>
+<strong>State</strong>: Single<br/>
+<strong>Occupation</strong>: Unemployed<br/>
+<strong>Weight</strong>: 107 kg<br/>
 <strong>Vzdělání</strong>: 4 roky Základní škola Zděchov, 5 let Základní škola Hovězí, 4 roky
 <a href="http://www.inext.cz/mgv" target="_blank">Masarykovo gymnázium Vsetín</a>, 5,5 roku
 <a href="http://www.muni.cz" target="_blank">Masarykova univerzita v Brně</a>
 <a href="http://fi.muni.cz" target="_blank">Fakulta informatiky</a> (magisterský titul, specializace Informační systémy).<br/>
-<strong>Oblíbené jídlo</strong>: brambory smažené, vařené, pečené...<br/>
-<strong>Oblíbená barva</strong>: modrá<br/>
+<strong>Favorite food</strong>: potatoes as fries, boiled, baked...<br/>
+<strong>Favorite color</strong>: blue<br/>
 <strong>Email</strong>: <a href="mailto:bomi@centrum.cz">bomi@centrum.cz</a>,
 případně <a href="mailto:hajdam@seznam.cz">hajdam@seznam.cz</a><br/>
 <strong>Jabber</strong>: hajdam@jabbim.cz<br/>

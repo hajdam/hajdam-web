@@ -38,10 +38,10 @@ if (($query == 'sites') || (strncmp($query, "site_", 5) === 0)) {
 } else if (($query == 'concepts') || (strncmp($query, "concept_", 8) === 0)) {
   if ($lang != 'cs') {
     $submenu_concepts = '
-<ul><li><strike><a href="'.$parentPrefix.'?concept_todo'.$langPostfix.'">TODO</a></li></ul>';
+<ul><li><strike><a href="'.$parentPrefix.'?concept_todo'.$langPostfix.'">TODO</a></strike></li></ul>';
   } else {
     $submenu_concepts = '
-<ul><li><strike><a href="'.$parentPrefix.'?concept_todo'.$langPostfix.'">TODO</a></li></ul>';
+<ul><li><strike><a href="'.$parentPrefix.'?concept_todo'.$langPostfix.'">TODO</a></strike></li></ul>';
   }
 } else {
   if ($lang != 'cs') {

@@ -1,10 +1,13 @@
 <div id="content">
-<h1>Software written in Delphi</h1>
+<h1>Programy napsané v Delphi</h1>
+
+<div class="itemgroup">
+<h2>Agent P7</h2>
 
 <div class="itemgroup">
 <h2>Othello</h2>
 
-<p>Simple Othello/Reversi Game.</p>
+<p>Jednoduchá hra Othello/Reversi.</p>
 
 <div align="center"><img src="images/delphi/othello.png" width="370"/></div><br/>
 

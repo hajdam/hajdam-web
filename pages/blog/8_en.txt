@@ -1,0 +1,11 @@
+1232129164
+With the new year, new news :-)
+After a long time I visited my own homepage and it seems to be appropriate to update it a little bit soon. Other news for example is that I bought a new keyboard ;-)
+<p>This year, I would like to update and rework these pages in form more appropriatte to a blog. It would be also useful to change its appearance and also adding some new content should not hurt - I might find something useful while cleaning the hard drive.</p>
+
+<p>That's because I decided this year and already performed upgrade from Fedora 9 to Fedora 10, this time mainly because of all the mess on the disk, but to me, however, still most data maitaning still awaits on me.</p>
+
+<p>After Christmas I also buyed Yamaha PSR-S550 keyboard, so hopefully it can bring some new experience in the field of music.</p>
+<p align="center"><img src="images/titles/yamaha_psr-s550.jpg" alt="YAMAHA PSR-S550B" /></p>
+
+<p>My activity on the XBUP project unfortunately had weakened. Besides the fact that I'm not that sucessful sparing time as much as earlier, I also got stuck on several issues, like currently on the declaration of attributes and subblocks. That ruined my timetables of development a bit hitting the reality and I also failed to get estabilish a team for that project... I still believe that this project has a purpose, yet it will probably doomed in the meantime :-(</p>

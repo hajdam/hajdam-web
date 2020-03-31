@@ -1,0 +1,11 @@
+1232129164
+S novým rokem nová aktualita :-)
+Po dlouhé době jsem se kouknul na svůj web a bude záhodno na něm trochu zapracovat. Kromě toho jsem si například koupil klávesy ;-)
+<p>Letos bych se rád dostal k aktualizaci i těchto stránek a přepracoval je více do formy blogu. Nejspíš by to chtělo i nějakou tu změnu vzhledu a prospělo by i přidání nějakého nového užitečného obsahu - třeba při úklidu na disku narazím na něco užitečného.</p>
+
+<p>I letos jsem se na přelomu roku místo aktualizace z Fedory 9 odhodlal k reinstalaci systému na Fedoru 10, tentokrát hlavně kvůli pročištění nepořádku na disku, které mne však ale ještě stále z větší části čeká.</p>
+
+<p>Po vánocích jsem si také pořídil klávesy Yamaha PSR-S550, takže bych se snad mohl brzy dostat i k nějakým pokusům v oblasti hudby.</p>
+<p align="center"><img src="images/titles/yamaha_psr-s550.jpg" alt="YAMAHA PSR-S550B" /></p>
+
+<p>Moje aktivita na projektu XBUP bohužel dost poklesla. Kromě toho, že už se mi nedaří pro něj ukrajovat tak velké části osobního volna jako dříve, uvázl jsem také na několika problémech, aktuálně je to například deklarace typů atributů a podbloků. Moje dřívější časové plány vývoje se tak značně rozchází s realitou a zatím se mi nepodařilo sehnat někoho dalšího do týmu... I když stále věřím, že má tento projekt smysl, bude asi přesto nakonec odsouzen k zániku :-(</p>

@@ -1,0 +1,7 @@
+1181387409
+Aktualizace stránky
+Po dlouhé době jsem se konečně odhodlal udělat nějakou tu drobnou aktualizaci
+<p>Už je to pár let, co jsem odložil práci na této stránce. Důvodem bylo například to, že mnou rozpracovaný systém byl jaksi příliš složitý. Alespoň snad splnil ten účel, že jsem si na něm vyzkoušel práci s PHP a získal snad i nějaké zkušenosti do budoucna. Až minulý týden jsem se rozhodl, že by bylo záhodno stránku trochu aktualizovat, tentokrát snad na rozdíl od minulé verze ji, na rozdíl od poslední úpravy, spíš vzhledově i obsahově zlepšit ;-)</p>
+<p>Dalším cílem bylo umožnit vedení nějaké formy blogu. Původně jsem zvažoval i použití některé existující služby, ale nakonec jsem se rozhodl opět trochu potrénovat práci s PHP a upravit stávající stránku. Lepší by možná bylo vše zahodit a začít znovu, ale na to zase nemám moc chuť a navíc by to zase určitě dopadlo stejně neslavně jako posledně.</p>
+<p>Po obsahové stránce se pokusím udělat trochu pořádek. K mému velkému překvapení si například zdrojový kód stránky stáhnulo přes 130 lidí, což teda nevím na co jim to bude, třeba pro inspiraci... :-)</p>
+<p>Další detaily o úpravě stránky snad budou v přístím příspěvku.</p>

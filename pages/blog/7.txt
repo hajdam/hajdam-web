@@ -1,0 +1,5 @@
+1201803954
+Kopil jsem si nový počítač
+Rozhodl jsem se, že je vhodná doba posilit dostupnou výpočetní kapacitu
+<p>Jelikož mě omezovala nepřítomnost SATA řadiče a problémy se zvukem a i celkově již nedostačující výkon, rozhodl jsem se, že by bylo záhodno k novému LCD monitoru přikoupit do počítače i nějaké ty lepší komponenty. Celou akci jsem se rozhodl spojit se zálohováním dat a s změnou operačního systému z Windows XP na Linux (Fedora 8), k čemuž jsem se díky své lenivosti dostal až teď. Po celé akci by se měl poměr instalací Windows/Linux v naší domácnosti dostat z 2/7 na 1/8.</p>
+<p>V&nbsp;práci převážně vytvářím SQL skripty pro převody dat, což je celkem jednorázová záležitost a až na občas zajímavé algoritmy, je to už skoro rutina. Díky tomu se ale můžu více věnovat vlastnímu projektu u&nbsp;něhož se blížím uvolnění 15-té pracovní verze. Snad se pak také dostanu k drobné aktualizaci obsahu, neboť se poté hodlám více zaměřit na prezentaci svých projektů.</p>
