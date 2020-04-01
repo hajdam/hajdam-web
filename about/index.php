@@ -25,13 +25,13 @@ if ($paramPos !== false) $query = substr($query, 0, $paramPos);
 
 if ($lang != 'cs') {
   $submenu_about = '
-<ul><li><strike><a href="'.$parentPrefix.'?resume'.$langPostfix.'">Resume</a></strike></li>
+<ul><li><a href="'.$parentPrefix.'?resume'.$langPostfix.'">Resume</a></li>
 <li><strike><a href="'.$parentPrefix.'?pets'.$langPostfix.'">Pets</a></strike></li>
 <li><a href="'.$parentPrefix.'?computers'.$langPostfix.'">Computers</a></li>
 </ul>';
 } else {
   $submenu_about = '
-<ul><li><strike><a href="'.$parentPrefix.'?resume'.$langPostfix.'">Životopis</a></strike></li>
+<ul><li><a href="'.$parentPrefix.'?resume'.$langPostfix.'">Životopis</a></li>
 <li><strike><a href="'.$parentPrefix.'?pets'.$langPostfix.'">Mazlíčci</a></strike></li>
 <li><a href="'.$parentPrefix.'?computers'.$langPostfix.'">Počítače</a></li></ul>';
 }

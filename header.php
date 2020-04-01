@@ -52,7 +52,7 @@ if (!empty($prefix)) {
       <li><a href="<?php echo $rootPrefix; ?>?welcome<?php echo $langPostfix; ?>">Vítejte</a></li>
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">Novinky</a></li>
       <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">O mě</a><?php echo @$submenu_about; ?></li>
-      <li><strike><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></strike></li>
+      <li><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Galerie</a></strike></li>
       <li><strike><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Ke stažení</a></strike></li>
     </ul>

@@ -1,7 +1,8 @@
 <div id="content">
 <h1>O mě</h1>
-<p><strong>Jmenuji se</strong>: Miroslav Hajda<br/>
-<strong>Bydliště</strong>: <a href="http://zdechov.cz">Zděchov</a>, Česká Republika<br/>
+<p>Ahoj, jmenuji se Miroslav Hajda a pocházím z obce <a href="http://zdechov.cz">Zděchov</a>, Česká Republika.</p>
+
+
 <strong>Narodil jsem se</strong> : 1982 ve Vsetíně<br/>
 <strong>Stav</strong>: svobodný<br/>
 <strong>Povolání</strong>: nezaměstnaný<br/>

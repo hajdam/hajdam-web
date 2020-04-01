@@ -1,22 +1,21 @@
 <div id="content">
 <h1>About Me</h1>
-<p><strong>Full Name</strong>: Miroslav Hajda<br/>
-<strong>Residency</strong>: <a href="http://zdechov.cz">Zděchov</a>, Czech Republic<br/>
+<p>Hi, my name is Miroslav Hajda and I'm from <a href="http://zdechov.cz">Zděchov</a>, Czech Republic.</p>
+
+<strong>Residency</strong>: <br/>
 <strong>Born</strong> : 1982<br/>
 <strong>State</strong>: Single<br/>
 <strong>Occupation</strong>: Unemployed<br/>
 <strong>Weight</strong>: 107 kg<br/>
+<strong>Favorite food</strong>: potatoes as fries, boiled, baked...<br/>
+<strong>Favorite color</strong>: blue<br/>
+<strong>Languages</strong>: A little bit of Czech, English and German languages<br/>
+
 <strong>Vzdělání</strong>: 4 roky Základní škola Zděchov, 5 let Základní škola Hovězí, 4 roky
 <a href="http://www.inext.cz/mgv" target="_blank">Masarykovo gymnázium Vsetín</a>, 5,5 roku
 <a href="http://www.muni.cz" target="_blank">Masarykova univerzita v Brně</a>
 <a href="http://fi.muni.cz" target="_blank">Fakulta informatiky</a> (magisterský titul, specializace Informační systémy).<br/>
-<strong>Favorite food</strong>: potatoes as fries, boiled, baked...<br/>
-<strong>Favorite color</strong>: blue<br/>
-<strong>Email</strong>: <a href="mailto:bomi@centrum.cz">bomi@centrum.cz</a>,
-případně <a href="mailto:hajdam@seznam.cz">hajdam@seznam.cz</a><br/>
-<strong>Jabber</strong>: hajdam@jabbim.cz<br/>
-<strong>ICQ</strong>: 173223897<br/>
-<strong>Jazyky</strong>: Trochu umím češtinu, angličtinu a němčinu :-)<br/>
+
 <strong>Programovací jazyky</strong>: (řazeno podle znalosti) Pascal, Object Pascal (Delphi), Java, SQL, Power Builder, PHP, Basic 1Z016, Ansi C, C++, Prolog, Haskel<br/>
 </p><a href="#top">Nahoru</a><br/>
 <a name="photos"/><h2>Fotky</h2>
