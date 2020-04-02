@@ -1,5 +1,5 @@
 <div id="content">
-<p>Add <a href="?add-comment">new comment</a>.</p>
+<p>Add <a href="?add-comment<?php echo $langPostfix; ?>">new comment</a>.</p>
 <p>Comments from visitors of this website:</p>
 <?php
 
@@ -58,7 +58,7 @@ if ($count == 0) {
       $time = getline($file);
       $author = getline($file);
       $comment = '';
-      while (is_file($file) && !feof($file)) {
+      while ($file !== false && !feof($file)) {
       	  if ($comment != '') {
       	  	  $comment .= "<br/>";
       	  }
@@ -78,11 +78,11 @@ if ($count == 0) {
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="?comments&pos='.($pos-1).'">&lt;&lt;&nbsp;Previous page</a>&nbsp;&nbsp;';
+		echo '<a href="?comments&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Previous page</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?comments&pos='.($pos+1).'">Next page&nbsp;&gt;&gt;</a>';
+		echo '<a href="?comments&pos='.($pos+1).$langPostfix.'">Next page&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>

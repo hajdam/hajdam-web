@@ -38,6 +38,7 @@ if (!empty($prefix)) {
   </li>
   <li><div>Creations</div>
     <ul class="submenu">
+      <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Textual</a><?php echo @$submenu_text; ?></li>
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Music</a><?php echo @$submenu_music; ?></strike></li>
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></strike></li>
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Games</a><?php echo @$submenu_games; ?></strike></li>
@@ -66,6 +67,7 @@ if (!empty($prefix)) {
   </li>
   <li><div>Tvorba</div>
     <ul class="submenu">
+      <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Texty</a><?php echo @$submenu_text; ?></li>
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Hudba</a><?php echo @$submenu_music; ?></strike></li>
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></strike></li>
       <li><strike><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Hry</a><?php echo @$submenu_games; ?></strike></li>

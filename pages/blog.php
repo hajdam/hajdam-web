@@ -21,7 +21,33 @@ $pos = isset($_GET['pos']) ? (int) $_GET['pos'] : 0;
 if ($pos < 0) $pos = 0;
 if ($pos * $perpage > $count) $pos = intdiv($count, $perpage); 	
 
-if ($count == 0) {
+if (isset($_GET['post'])) {
+	$post = (int) $_GET['post'];
+
+	$filepath = 'pages/blog/'.$post.'_en.txt';
+	if (!is_file($filepath)) $filepath = 'pages/blog/'.$post.'.txt';
+    $file = fopen($filepath, 'r');
+    $time = getline($file);
+    $title = getline($file);
+    $shorttext = getline($file);
+    $content = '';
+    while ($file !== false && !feof($file)) {
+  	  if ($content != '') {
+        $content .= "\n";
+      }
+      $content .= getline($file);
+    }
+    echo '<h2>'.$title."</h2>\n";
+    echo '<p>Posted on '.date('l jS \of F Y h:i:s A', $time).'<br/><br/>'.$shorttext.'</p>';
+    echo '<p>'.$content."\n</p>";
+
+	if ($post > 1) {
+	  echo '<a href="?blog&post='.($post-1).$langPostfix.'">&lt;&lt;&nbsp;Previous post</a>&nbsp;&nbsp;';
+	}
+	if ($post < $count) {
+	  echo '<a href="?blog&post='.($post+1).$langPostfix.'">Next post&nbsp;&gt;&gt;</a>';
+    }
+} else if ($count == 0) {
 	echo '<p>There are no post yet.</p>';
 } else {
 	echo '<ul>';
@@ -30,23 +56,16 @@ if ($count == 0) {
 	$fst = $pagepos + $perpage;
 	if ($fst > $count) $fst = $count;
 	for ($i = $fst; $i > $pagepos; $i--) {
-      $file = fopen('pages/blog/'.$i.'.txt', 'r');
+      $filepath = 'pages/blog/'.$i.'_en.txt';
+      if (!is_file($filepath)) $filepath = 'pages/blog/'.$i.'.txt';
+      $file = fopen($filepath, 'r');
       $time = getline($file);
       $title = getline($file);
       $shorttext = getline($file);
-      $post = '';
-      while (is_file($file) && !feof($file)) {
-      	  if ($post != '') {
-      	  	  $post .= "\n";
-      	  }
-                        
-      	  $post .= getline($file);
-      }
       fclose($file);
       
       echo '<li>';
-      echo '<p>Post: <strong>'.$title.'</strong> on '.date('l jS \of F Y h:i:s A', $time).'</p>';
-      echo '<p>'.$shorttext.'</p>';
+      echo '<p><strong><a href="?blog&post='.$i.$langPostfix.'">'.$title.'</a></strong><br/>Posted on '.date('l jS \of F Y h:i:s A', $time).'<br/>'.$shorttext.'</p>';
       echo "</li>\n";
 	}
     echo '</ul>';
@@ -55,11 +74,11 @@ if ($count == 0) {
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="?blog&pos='.($pos-1).'">&lt;&lt;&nbsp;Previous page</a>&nbsp;&nbsp;';
+		echo '<a href="?blog&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Previous page</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?blog&pos='.($pos+1).'">Next page&nbsp;&gt;&gt;</a>';
+		echo '<a href="?blog&pos='.($pos+1).$langPostfix.'">Next page&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>

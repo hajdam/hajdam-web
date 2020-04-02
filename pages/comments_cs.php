@@ -1,5 +1,5 @@
 <div id="content">
-<p>Přidat <a href="?add-comment">nový komentář</a>.</p>
+<p>Přidat <a href="?add-comment<?php $langPostfix; ?>">nový komentář</a>.</p>
 <p>Komentáře návštěvníků této stránky:</p>
 <?php
 
@@ -58,7 +58,7 @@ if ($count == 0) {
       $time = getline($file);
       $author = getline($file);
       $comment = '';
-      while (is_file($file) && !feof($file)) {
+      while ($file !== false && !feof($file)) {
       	  if ($comment != '') {
       	  	  $comment .= "<br/>";
       	  }
@@ -78,11 +78,11 @@ if ($count == 0) {
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="?comments&pos='.($pos-1).'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
+		echo '<a href="?comments&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?comments&pos='.($pos+1).'">Následující stránka&nbsp;&gt;&gt;</a>';
+		echo '<a href="?comments&pos='.($pos+1).$langPostfix.'">Následující stránka&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>

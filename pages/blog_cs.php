@@ -21,7 +21,31 @@ $pos = isset($_GET['pos']) ? (int) $_GET['pos'] : 0;
 if ($pos < 0) $pos = 0;
 if ($pos * $perpage > $count) $pos = intdiv($count, $perpage); 	
 
-if ($count == 0) {
+if (isset($_GET['post'])) {
+	$post = (int) $_GET['post'];
+
+    $file = fopen('pages/blog/'.$post.'.txt', 'r');
+    $time = getline($file);
+    $title = getline($file);
+    $shorttext = getline($file);
+    $content = '';
+    while ($file !== false && !feof($file)) {
+  	  if ($content != '') {
+        $content .= "\n";
+      }
+      $content .= getline($file);
+    }
+    echo '<h2>'.$title."</h2>\n";
+    echo '<p>Článek vložen '.date('d. m. Y H:m:s', $time).'<br/><br/>'.$shorttext.'</p>';
+    echo '<p>'.$content."\n</p>";
+
+	if ($post > 1) {
+	  echo '<a href="?blog&post='.($post-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí článek</a>&nbsp;&nbsp;';
+	}
+	if ($post < $count) {
+	  echo '<a href="?blog&post='.($post+1).$langPostfix.'">Následující článek&nbsp;&gt;&gt;</a>';
+    }
+} else if ($count == 0) {
 	echo '<p>Zatím žádné články.</p>';
 } else {
 	echo '<ul>';
@@ -35,7 +59,7 @@ if ($count == 0) {
       $title = getline($file);
       $shorttext = getline($file);
       $post = '';
-      while (is_file($file) && !feof($file)) {
+      while ($file !== false && !feof($file)) {
       	  if ($post != '') {
       	  	  $post .= "\n";
       	  }
@@ -45,8 +69,7 @@ if ($count == 0) {
       fclose($file);
       
       echo '<li>';
-      echo '<p>Článek: <strong>'.$title.'</strong> vložen '.date('d. m. Y H:m:s', $time).'</p>';
-      echo '<p>'.$shorttext.'</p>';
+      echo '<p><strong><a href="?blog&post='.$i.$langPostfix.'">'.$title.'</a></strong><br/>Článek vložen '.date('d. m. Y H:m:s', $time).'<br/>'.$shorttext.'</p>';
       echo "</li>\n";
 	}
     echo '</ul>';
@@ -55,11 +78,11 @@ if ($count == 0) {
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="blog&pos='.($pos-1).'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
+		echo '<a href="blog&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?blog&pos='.($pos+1).'">Následující stránka&nbsp;&gt;&gt;</a>';
+		echo '<a href="?blog&pos='.($pos+1).$langPostfix.'">Následující stránka&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>
