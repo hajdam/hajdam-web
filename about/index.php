@@ -25,15 +25,15 @@ if ($paramPos !== false) $query = substr($query, 0, $paramPos);
 
 if ($lang != 'cs') {
   $submenu_about = '
-<ul><li><a href="'.$parentPrefix.'?resume'.$langPostfix.'">Resume</a></li>
-<li><strike><a href="'.$parentPrefix.'?pets'.$langPostfix.'">Pets</a></strike></li>
-<li><a href="'.$parentPrefix.'?computers'.$langPostfix.'">Computers</a></li>
+<ul><li><a href="?resume'.$langPostfix.'">Resume</a></li>
+<li><strike><a href="?pets'.$langPostfix.'">Pets</a></strike></li>
+<li><a href="?computers'.$langPostfix.'">Computers</a></li>
 </ul>';
 } else {
   $submenu_about = '
-<ul><li><a href="'.$parentPrefix.'?resume'.$langPostfix.'">Životopis</a></li>
-<li><strike><a href="'.$parentPrefix.'?pets'.$langPostfix.'">Mazlíčci</a></strike></li>
-<li><a href="'.$parentPrefix.'?computers'.$langPostfix.'">Počítače</a></li></ul>';
+<ul><li><a href="?resume'.$langPostfix.'">Životopis</a></li>
+<li><strike><a href="?pets'.$langPostfix.'">Mazlíčci</a></strike></li>
+<li><a href="?computers'.$langPostfix.'">Počítače</a></li></ul>';
 }
 
 include('../header.php');

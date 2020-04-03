@@ -1,0 +1,37 @@
+1068764400
+Moje první krůčky s Linuxem
+Verše
+<p>Procesore, procesore,<br/>
+co se v tobě zase mele?<br/>
+Windowsy mi spadly zas,<br/>
+na Linux přejít nejvyšší čas.</p>
+
+<p>Jak jsem řekl, tak udělal,<br/>
+na disku místo nachystal,<br/>
+CD si již domů nesu,<br/>
+vzrušením se trochu třesu.</p>
+
+<p>Instalace chybu píše,<br/>
+nevadí, to snést se dá<br/>
+každý chybu udělá,<br/>
+restart mačkám tiše.</p>
+
+<p>Systém pěkný býti zdá se<br/>
+avšak vyzná se v něm jen prase,<br/>
+textové všechna nastavení<br/>
+začátečník jen těžko mění.</p>
+
+<p>Konfiguraci louskám dlouze,<br/>
+nápověda psaná stroze,<br/>
+nutné změnit zvyky je,<br/>
+nízká cena přece je.</p>
+
+<p>Tučnák milý zdá se býti,<br/>
+avšak černý UNIX dlíti<br/>
+nepřestáva v srdci mu,<br/>
+vám říkám na rovinu.</p>
+
+<p>Nevzdávám to, lépe časem<br/>
+porozumím dějům v něm<br/>
+a přispěju snad svým umem<br/>
+mi byl tučňák přítelem.</p>

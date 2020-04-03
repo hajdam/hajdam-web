@@ -26,36 +26,36 @@ if ($paramPos !== false) $query = substr($query, 0, $paramPos);
 if (($query == 'sites') || (strncmp($query, "site_", 5) === 0)) {
   if ($lang != 'cs') {
     $submenu_sites = '
-<ul><li><a href="'.$parentPrefix.'?site_homepage'.$langPostfix.'">Homepage</a></li>
-<li><a href="'.$parentPrefix.'?site_sharpmz'.$langPostfix.'">Sharp MZ Wiki</a></li>
-<li><a href="'.$parentPrefix.'?site_iper'.$langPostfix.'">I.P.E.R Website</a></li></ul>';
+<ul><li><a href="?site_homepage'.$langPostfix.'">Homepage</a></li>
+<li><a href="?site_sharpmz'.$langPostfix.'">Sharp MZ Wiki</a></li>
+<li><a href="?site_iper'.$langPostfix.'">I.P.E.R Website</a></li></ul>';
   } else {
     $submenu_sites = '
-<ul><li><a href="'.$parentPrefix.'?site_homepage'.$langPostfix.'">Osobní stránka</a></li>
-<li><a href="'.$parentPrefix.'?site_sharpmz'.$langPostfix.'">Sharp MZ Wiki</a></li>
-<li><a href="'.$parentPrefix.'?site_iper'.$langPostfix.'">I.P.E.R Web</a></li></ul>';
+<ul><li><a href="?site_homepage'.$langPostfix.'">Osobní stránka</a></li>
+<li><a href="?site_sharpmz'.$langPostfix.'">Sharp MZ Wiki</a></li>
+<li><a href="?site_iper'.$langPostfix.'">I.P.E.R Web</a></li></ul>';
   }
 } else if (($query == 'concepts') || (strncmp($query, "concept_", 8) === 0)) {
   if ($lang != 'cs') {
     $submenu_concepts = '
-<ul><li><strike><a href="'.$parentPrefix.'?concept_todo'.$langPostfix.'">TODO</a></strike></li></ul>';
+<ul><li><strike><a href="?concept_todo'.$langPostfix.'">TODO</a></strike></li></ul>';
   } else {
     $submenu_concepts = '
-<ul><li><strike><a href="'.$parentPrefix.'?concept_todo'.$langPostfix.'">TODO</a></strike></li></ul>';
+<ul><li><strike><a href="?concept_todo'.$langPostfix.'">TODO</a></strike></li></ul>';
   }
 } else {
   if ($lang != 'cs') {
     $submenu_software = '
-<ul><li><a href="'.$parentPrefix.'?exbin'.$langPostfix.'">ExBin Project</a></li>
-<li><a href="'.$parentPrefix.'?bined'.$langPostfix.'">BinEd Editor</a></li>
-<li><a href="'.$parentPrefix.'?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li>
-<li><a href="'.$parentPrefix.'?consonica'.$langPostfix.'">Consonica</a></li></ul>';
+<ul><li><a href="?exbin'.$langPostfix.'">ExBin Project</a></li>
+<li><a href="?bined'.$langPostfix.'">BinEd Editor</a></li>
+<li><a href="?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li>
+<li><a href="?consonica'.$langPostfix.'">Consonica</a></li></ul>';
   } else {
     $submenu_software = '
-<ul><li><a href="'.$parentPrefix.'?exbin'.$langPostfix.'">ExBin Project</a></li>
-<li><a href="'.$parentPrefix.'?bined'.$langPostfix.'">BinEd Editor</a></li>
-<li><a href="'.$parentPrefix.'?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li>
-<li><a href="'.$parentPrefix.'?consonica'.$langPostfix.'">Consonica</a></li></ul>';
+<ul><li><a href="?exbin'.$langPostfix.'">ExBin Project</a></li>
+<li><a href="?bined'.$langPostfix.'">BinEd Editor</a></li>
+<li><a href="?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li>
+<li><a href="?consonica'.$langPostfix.'">Consonica</a></li></ul>';
   }
 }
 

@@ -1,4 +1,5 @@
 <?php
+global $lang, $requestedLang;
 $requestedLang = (isset($_GET['lang']) && ($_GET['lang'] == 'cs' || $_GET['lang'] == 'en')) ? $_GET['lang'] : '';
 
 $lang = $requestedLang;

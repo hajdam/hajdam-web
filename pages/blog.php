@@ -1,6 +1,7 @@
 <div id="content">
 <h1>Blog</h1>
 <?php
+include 'pages/inc/blog_inc.php';
 
 function getline($fl) {
   $fp = @fgets($fl, 65536);
@@ -56,16 +57,8 @@ if (isset($_GET['post'])) {
 	$fst = $pagepos + $perpage;
 	if ($fst > $count) $fst = $count;
 	for ($i = $fst; $i > $pagepos; $i--) {
-      $filepath = 'pages/blog/'.$i.'_en.txt';
-      if (!is_file($filepath)) $filepath = 'pages/blog/'.$i.'.txt';
-      $file = fopen($filepath, 'r');
-      $time = getline($file);
-      $title = getline($file);
-      $shorttext = getline($file);
-      fclose($file);
-      
       echo '<li>';
-      echo '<p><strong><a href="?blog&post='.$i.$langPostfix.'">'.$title.'</a></strong><br/>Posted on '.date('l jS \of F Y h:i:s A', $time).'<br/>'.$shorttext.'</p>';
+      showBlog($i);
       echo "</li>\n";
 	}
     echo '</ul>';

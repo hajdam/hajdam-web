@@ -1,0 +1,438 @@
+
+                SHARP MZ-800 EMULTOR PRO DOS  V.1.0 ALFA 007
+                =============================================
+
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º                                                                            º
+º OBSAH TOHOTO DOKUMENTU                                                     º
+º                                                                            º
+º  1. Slovo £vodem                                                           º
+º  2. Auto©i                                                                 º
+º  3. Hardwarov‚ n roky                                                     °º
+º  4. Ot zky FAQ                                                           °±º
+º  5. Z pisn¡k v˜voje                                                     °±²º
+º                                                                        °±²Ûº
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ 1. SLOVO —VODEM
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Dost v   se V m do rukou emul tor osmibitov‚ho po‡¡ta‡e SHARP MZ-800 (MZ-811,
+MZ-821),  kter˜  je  kompatibiln¡ s po‡¡ta‡em SHARP MZ-700. J drem po‡¡ta‡e je
+procesor  ZILOG  80  Advanced  (Z80A).  Tento  emul tor  vytvo©il  BOMI  (BOMI
+software) v programovac¡m jazyku Borland Pascal 7.0. Tento program je freeware
+a  je  mo‘n‚ si k nˆmu se svolen¡m autor– st hnout zdrojov‚ k¢dy a modifikovat
+je.
+
+Nyn¡  ale  na rovinu : Kdo by v dne¨n¡ dobˆ je¨tˆ pou‘¡val nˆjak˜ emul tor pro
+8-bitov˜  po‡¡ta‡,  kter˜  se  vyskytuje jen v p r tis¡cech kusech a nav¡c pro
+DOS? Jedinˆ takov  skupinka ¨¡lenc–, kter  se sdru‘uje pod touto adresou :-]
+http://mzunity.hyperlink.cz (aspo¤ mysl¡m, ‘e se t¡m budou zab˜vat)
+
+D le  bych  V s  tak‚ r d upozornil na to, ‘e jsem za‡ te‡n¡k, a proto program
+nen¡  v  mnoha  smˆrech  vytvo©en  optim lnˆ. Pokud byste se chtˆli zapojit do
+vytv ©en¡ tohoto programu napi¨te mi na m–j e-mail: bomi@centrum.cz
+
+Nˆkolik inspirativn¡ch vˆt :
+
+- kter˜koli program je zastaral˜
+- kter˜koli nov˜ program stoj¡ v¡ce a trv  d‚le
+- kter˜koli program bude r–st, a‘ zapln¡ ve¨kerou pamˆŸ, kter  je k dispozici
+- slo‘itost  programu  roste a‘ p©ekro‡¡ schopnost program tora, kter˜ ho mus¡
+  udr‘ovat
+- je-li program u‘ite‡n˜, bude se muset p©edˆlat
+- je-li program neu‘ite‡n˜, vypracuje se k nˆmu dokumentace
+
+z Murphyho z kon–
+
+ 2. AUTOžI
+ÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+ Jm‚no                                 ³Kontaktn¡ e-mail
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+ BOMI software - Miroslav Hajda        ³bomi@centrum.cz, hajdam@seznam.cz
+ ZA Software - Zdenˆk  Adler           ³zdeneka@seznam.cz, adlerz@post.cz,
+                                       ³zdeneka@usa.net
+ Emulace Z80 :                         ³pscardoso@lme.usp.br
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ D le dˆkujeme dal¨¡m ‡len–m MzUnity za³
+  pomoc Z. Adlerovi :-)                ³
+   - Pavel Vanˆk                MzUnity³vanek.pavel@post.cz(?)
+   - Feri(?)                       UMZE³feri@i.am
+  a dal¨¡m ... ?                       ³
+                                       ³
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+
+þ v¨echna pr va vyhrazena
+þ program je volnˆ ¨i©iteln˜
+þ z kaz £prav bez svolen¡ autor–
+
+==============================================================================
+                           (C) BOMI software 2000
+                       (C)1998,1999 ZA Software, SCAV
+                 UZ80 - Z80 emulator by pscardoso@lme.usp.br
+==============================================================================
+
+ 3. HARDWAROV NROKY
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ Tyto £daje nebyly testov ny !!
+
+ 3.1 Minim ln¡ konfigurace :
+
+þ CPU    : 286
+þ VIDEO  : VGA
+þ HD     : ?
+þ SOUND  : -
+þ MEMORY : 400kb
+
+ 3.2 Doporu‡en  konfigurace
+
+þ CPU    : 450 Mhz
+þ VIDEO  : VGA
+þ HD     : ?
+þ SOUND  : -
+þ MEMORY : 600kb + 1024 EMS
+
+ 4. OTZKY FAQ
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+D - DOTAZ
+O - ODPOV‰…
+
+D: Pro‡ nefunguje program "A_TO_SNAD_NE"?
+O: Chyba  nen¡  v  emulaci  textov‚ho  re‘imu,  n˜br‘  v  chybˆ emulace obvodu
+   ‡asova‡e 8253 a p©eru¨en¡. Pokus¡m se s t¡m nˆco udˆlat.
+
+D: Pro‡ se ob‡as v m¢du MZ700 objev¡ m¡sto fontu balast?
+O: Nev¡m, sna‘il jsem se tento jev minimalizovat, ale po© d se je¨tˆ objevuje.
+
+D: Pro‡ se mi mezi znaky v textov‚m re‘imu objevuj¡ pruhy?
+O: Hm, va¨e grafick  karta je jin , ne‘ pro kterou jsem program testoval. Budu
+   se sna‘it s t¡m nˆco udˆlat.
+
+ 5. ZPISN‹K VVOJE
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ V tomto z pisu se vyskytuje jak z znam v˜voje emul toru spole‡nost¡ BOMI, tak
+v˜voj  p–vodn¡ho  emul toru  Zde¤kem  Adlerem  a v˜voj jednotky procesoru Z80,
+kter˜ vytvo©il pscardoso@lme.usp.br
+
+ 5.1 V˜voj spole‡nost¡ BOMI software
+
+ Vysvˆtlivky :
+
+  [þ] D–le‘it  pozn mka
+  [+] Nov  funkce
+  [*] Vylep¨en  funkce
+  [-] Odstranˆn  chyba
+
+27.10-28.10 :
+  [*] Dissasembler
+  
+24.10.2000 :
+  [*] Grafika MZ-800
+  [+] Dissasembler
+
+20.10.2000 :
+  [*] Grafika MZ-800
+
+8.10.2000 :
+  [þ] Kone‡nˆ to za‡¡n  vypadat trochu funk‡nˆ...
+  [-] Paleta MZ700 p©i emulaci
+  [*] Grafika MZ-800
+
+6.10.2000 :
+  [*] Nastaven¡
+  [*] Grafika MZ-800
+  [-] Detekce €e¨tiny
+  [+] Mo‘nost spu¨tˆn¡ s parametrem souboru MZF
+  [+] Asociace MZF souboru pro Windows
+
+4.10.2000 :
+  [-] Re‘im MZ-700
+  [+] FAQ :-)
+
+1.10.2000 :
+  [+] Zmˆna fontu v Textov‚m re‘imu
+
+28.9.2000, 29.9.2000 :
+  [+] Podpora nˆkter˜ch funkc¡ v dialogu konfigurace
+
+26.9.2000 :
+  [-] Re‘im Mz-700
+
+25.9.2000 :
+  [*] Okno Nastaven¡
+
+10.9.2000 18.9.2000 :
+  [+] Okno Nastaven¡
+
+5.9.2000 - 10.9.2000 :
+  [-] Mapov n¡ pamˆti v m¢du 800
+  [*] Obnova obrazovky
+  [-] Textov˜ re‘im bez emulace do grafiky
+  [-] detekce a nastaven¡ ‡e¨tiny
+
+4.9.2000 :
+  [-] Opraveny barvy v logu
+  [-] Opraveno vykreslov n¡ znak– v m¢du 700                       Rada: ZSoft
+  [+] Podpora ‡esk˜ch znak– Configuration|Czech_Ascii
+  [+] Menu Tools: Kalkula‡ka, Ascii tabulka
+  [+] Menu Window
+
+3.9.2000 :
+  [þ] P©ejmenov n¡ jednotek
+  [+] P©id no logo BOMI
+  [+] P©id na funkce Debug|User_Screen
+
+28.8.2000, 29.8.2000 :                                              Ver. 1.0.1
+  [þ] Ozna‡en¡ verze
+  [*] Upraven debuger : zmˆna barvy a vykreslov n¡
+  [-] P©i zru¨en¡ na‡¡t n¡ se vr t¡ Break
+  [+] Obnova obrazovky
+  [*] Zrychlen¡ vykreslov n¡ emulace re‘imu TEXT 40x25
+  [-] Zru¨eno zrychlen‚ vykreslov n¡ - chyba
+  [*] Zachov n¡ adres ©e p©i na‡¡t n¡
+  [+] € ste‡n‚ vykreslov n¡ MZ-800
+  [þ] Objeveny chyby v na‡¡t n¡ soubor– MZ800, emulace KEYB
+
+27.8.2000 :
+  [þ] Kone‡nˆ jsem si zahr l p r her pro MZ-700
+  [+] Umo‘nˆn Reset AltF8 a CtrlReset CtrlAltF8
+  [-] Obnoveno na‡¡t n¡ MZF soubor–
+  [-] Zobrazen¡ souboru CTIMNE.TXT jako TScroller
+  [+] Z stupci na str nky MZUnity a BOMI
+
+24.8.2000 :
+  [-] € ste‡n‚ obnoven¡ ‡ten¡ souboru MZF
+
+22.8.2000 :
+  [+] Zobrazen¡  informac¡  CTIMNE.TXT  -  pou‘it  TEditor  (funguje  pouze  v
+       chr nˆn‚m re‘imu)
+
+20.8.2000 :
+  [+] Okno Debugeru
+  [-] —prava p©¡stupu do pamˆti : Funguje Monitor                  Rada: ZSoft
+  [-] Menu Debug|Run a Debug|Reset
+  [-] Vykreslov n¡ textov˜ch znak– na obrazovku
+
+19.8.2000 :
+  [þ] Kone‡nˆ to p¡¨e na obrazovku
+  [*] Re‘im emulace 700 m¢du obrazovky - pou‘ito 320x200x256 MCGA
+  [+] Kl vesnice tak trochu funguje :)
+
+9.8.2000, 10.8.2000, 13.8.2000, 15.8.2000 :
+  [þ] Hled n¡ chyb a £pravy j dra
+
+8.8.2000 :
+  [þ] Prvn¡ pokusn‚ spu¨tˆn¡ - nebˆ‘¡ to :(
+
+7.8.2000 :
+  [þ] Tak zase pokra‡ujeme : izolace p–vodn¡ch sou‡ st¡
+  [+] Pokus  o  vytvo©en¡  emulace  re‘imu  40x25  jako grafiky - moje grafika
+       nezvl d  tento re‘im pod Windowsem :( Trio S3 V64+
+  [*] jednotka O8255, Gdc, Mz800Sys
+
+9.7.2000 :
+  [þ] jak je mo‘n‚, ‘e to v–bec fungovalo ?
+  [*] jednotky Gdc, Mz800Sys, O8253, O8255, MzMem, Global
+  [+] jednotka Keyb
+  [+] okno Warning
+
+8.7.2000 :
+  [þ]         !!! v tom je ale chaos, v–bec se v tom nevyzn m ...
+  [+] jednotka O8253 - ‡asova‡
+  [+] jednotka Gdc
+
+27.6.2000 :
+  [+] Jednotka RAM - zpracov n¡ pamˆti
+
+24.6.2000 :
+  [þ] implementov n   emul tor   Zde¤ka   Adlera   -   obrovsk‚  probl‚my  :-)
+       vych zej¡c¡  z  naprost‚ rozd¡lnosti bˆ‘n‚ho a objektov‚ho programov n¡
+       a stylu ve formˆ programu v–bec, odebr ny nˆkter‚ sou‡ sti (menu,load),
+       vlastn¡ emulace na p–vodn¡ b zi
+  [*] na‡¡t n¡ MZF pomoc¡ TV p©¡mo v emul toru
+  [+] okno About
+  [+] funkce RUN
+
+do 23.6.2000 :                                                          [V.0]
+  [þ] Prakticky se jedn  pouze o p r © dk– textu
+  [+] z kladn¡ plocha Turbo Vision
+  [+] standartn¡ na‡ten¡ souboru *.MZF
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 5.2 V˜voj Zde¤kem Adlerem
+
+Zacatek vyvoje emulatoru: 3.12.1998
+
+- Prvni verze 1.00, zatim je podporovan pouze mod MZ-700
+- upravena ROMKA pro rychlejsi start emulatoru (vyhozeho kopirovani
+  CGROM->CGRAM), dale upraveno nahravani z CMT
+- nedodelana emulace zalohovaneho RD a FD (jenom se tvari, ze jsou pritomny)
+  OVLADANI: ALT+F8 = RESET
+  ALT+F6 = Znovunahrani znakove sady
+  ALT+F4 = DEBUGGER
+  UKONCENI EMULATORU: CTRL+ALT+DEL........zatim...
+- Dodelana emulace zalohovaneho RD 1MB s SRAM emulaci i bez ni, mozno
+  prepinat
+- Pridano mapovani pameti v modu MZ-800
+- Pokusna verze grafiky 320X200, jedna rovina(cernobile), zapis single
+  write
+- Zkouska modu 640X200 cernobile, znaky jsou obracene - otocit zapis bytu do
+  VRAM VGA karty
+- Mod 640X200 cernobile funkcni, neobraci znaky, FET uz konecne funguje...
+- Castecne zrychleni vystupu na obrazovku modu MZ-800 prepisem do ASM
+- Znacne urychlena doba, za kterou se "vytvori" ramdisk
+- Pridan zapis do vsech ctyr bitovych rovin EGA/VGA, ale barvy jsou spatne...
+- Procedury zapisu do graficke karty v modu 320X200 a 640X200 byly slouceny...
+- Po prepnuti do DEBUGGERU a zpet je zatim treba provest reset pomoci ALT+F8
+- Dodelano ovladani borderu - akorat to trochu vic blika...
+
+14.2.1999
+- Pridana pokusna jednokanalova PSG emulace, chybi melody synchronizace
+- Poopraveno preruseni v IM2 - nizsi byte z PIO
+
+20.2.1999
+- Emulace PSG predelana pro zvukovou kartu SB kompatibilni, pres MIDI -
+  3 kanaly (trochu to chrochta...), sumovy generator neni podporovan...
+
+21.2.1999
+- Kompletne prekopany debugger - zahrnuje disassembler, zobrazuje
+  registry Z80, graficky mod, systemovy mod a vektor preruseni PIO...
+
+24.2.1999
+- Uz konecne funguje BASIC !!! Proc ale porad spousti "AUTO RUN" ???
+  Neblika mi ale kurzor, proc ???
+
+26.2.1999
+- Zprovoznena emulace tiskarny bud do souboru, nebo na LPT1 !!!
+
+29.2.1999
+- Pridany zapisove mody pro videokartu ..... proc to dela ty pruhy???
+
+3.3.1999
+- Dodelana moznost editovat RAM SHARPa, editace ROM neni umoznena. Zapis
+  se provadi v hexdec forme a je vzdy potreba napsat vyssi i nizssi cast
+  bytu, jinak nejde z editoru pomoci ESC vyskocit.
+
+4.3.1999
+-V menu doplnena volba mapovani pameti, a volba emulace PSG bud na
+ PC speaker nebo na zvukovou kartu ADLIB / Sounblaster kompatibilni.
+
+6.3.1999
+-Z prikazove radky debuggeru jde zadat ctyrmistne cislo, po jehoz potvrzeni
+ se nastavi soucasne obrazovka s disasemblovanou pameti, tak i registr PC.
+ Take pridana moznost pohybovat se v disasemblovanych instrukcich pomoci
+ sipek nahoru a dolu. Pozor ale na sipku nahoru!!! registr PC se totiz
+ pritom snizi pouze o jednicku a nektere instrukce zaberou vice hodinovych
+ cyklu!!! Proto je nejlepsi sipkou nahoru pro jistotu povyjet aspon 4X.
+
+7.3.1999
+-Byla opravena silene pomala instrukce LDIR, ktera kdyz se pouzila v
+ programu ke kopirovani do PCGRAM, tak to trvalo silene dlouho.
+ Proto bylo vyhozeno obnovovani obrazovky v modu MZ-700 pri kazdem
+ zapisu do PCGRAM. Ma to jedinou nevyhodu: kdyz se nejdriv zapisou
+ znaky na obrazovku a teprve potom se meni znakova sada, tak to asi
+ nebude to prave... Naprava je ale mozna stiskem ESC a nasledovnym
+ spustenim emulace pomoci F9. Soucasne s timto byla horni ROM SHARPa
+ vracena do puvodniho stavu (...bylo tam vyhozeno kopirovani CGROM->
+ PCGRAM).
+-Nove pridan zvukovy vystup, u nehoz se provadelo maskovani audia z
+ CTC0 pres porty D2 a D3 u interface 8255. Zatim je pouze na PC SPEAKER
+ bez ohledu na to, jak je nastaven zvukovy vystup v DEBUGGERU.
+ Z DEBUGGERU je ho mozno pouze vypnout.
+
+10.3.1999
+-Spraveny zapisove mody do VGA karty. Chyba byla v tom, ze pred samotnym
+ zapisem do videokarty se musi provest cteni naprazdno pro naplneni
+ vnitrnich latch registru. Porad ale zapisove mody nefunguji na 100%
+
+**********************
+***** Verze 3.00 *****
+**********************
+15.3.1999
+-Opravena hloupa chyba v mapovani pameti. Pri prepnuti do modu 320X200
+ totiz VRAM prekryva ramku pouze od 8000h do 9FFFh a v modu 640X200
+ prekryva celou oblast od 8000h do BFFFh. Uz zase funguje o neco
+ vic programu........ :-)
+
+-Spravena chyba pri zapisu do konfiguracniho souboru pri zapisu
+ udaje o emulaci PSG.
+
+19.3.1999
+-Pri nahravani MZF souboru zustava v tomtez adresari...
+-Zkraceny nektere rutiny pro vystup na obrazovku
+
+21.3.1999
+-Opravena chybicka pri nahravani z CMT, pri nemz je nutno nahrat celou
+ hlavicku (128 bytu) do pameti od adresy 10f0. Ja jsem z hlavicky
+ vybiral jenom udaje o souboru a jeho nazev, proto to zlobilo...
+
+22.3.1999
+-Spraveno zadavani adresy z prikazove radky debuggeru. Cislo je ted mozno
+ napsat jedno az x mistne, pricemz kdyz ma mene mist nez ctyri, tak si ho
+ doplni nulami. Kdyz ma mist vic jak ctyri, tak je orizne.
+ Pr: 38 --->  0038
+     00F000 --> F000
+-Doplnen system napovedy, ktery jde z debuggeru vyvolat pomoci F1, nebo z
+ prikazove radky napsanim HELP.
+-Chyba pri mapovani pameti v modu MZ-700!!! Zmatek pri mapovani VRAM, CGROM
+ a PCGRAM. Opravit !!!!!!!!!!!!!!!!!!!!!!!!!!
+
+23.3.1999
+- Spravena chyba mapovani v modu 700 (aspon to tak vypada)
+- Kdyz zlobi klavesnice, tak nekdy postaci si prepnout NumLock
+  do opacneho stavu.
+
+1.4.1999
+- Jdeme na vojnu ... :-(
+
+21,22.8.1999
+- Pridana emulace radice FDD WD2797, zatim cte jenom diskety 320KB 3,5",
+  IPLDISK jde spustit, BASIC uz se ale nerozjede, CPM zustane v cerne
+  obrazovce.
+
+- veskere cteci operace s FDD uz funguji, zapis jeste neni podporovan
+
+20.12.1999
+- Opravena chyba pri mapovani pameti, kdy se to podelalo tehdy, kdyz
+  jsme se 2X po sobe prepli do stejneho modu (700 i 800)
+
+12.1.2000
+- opravena chyba v emulaci Z80 v instrukci CPIR, uz funguje TURBO COPY
+
+20.1.2000
+-Opravena chyba emulace CMT
+
+5.2.2000
+- MZ700 mod predelan do textoveho rezimu, vice nez 2X rychlejsi!!!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 5.3 V˜voj emulace Z80
+
+ Last changes
+
+ 18/JAN/2000 - Opravena instrukce CPI, uz funguje Turbo Copy           Z.Adler
+ 30/MAY/1998 - Fixed LD A, R instruction. Now spectrum snapshot
+                Cobra is working.
+ 29/MAY/1998 - Fixed the IN R,(C) instruction  (the 16 bit port
+                address needs to be BC). Now ZXSpectrum keyboard
+                is working.
+
+ 21/MAY/1998 - Public release (version 0.21)
+ 21/MAY/1998 - Fixed R register incremention. Now ladybug works.
+ 14/MAY/1998 - Fixed IN R,(X) (this instruction affect flags!
+ 07/MAY/1998 - Fixed LDIR, CPIR, OTIR, INIR, etc (now Galaxians
+                bee attack us again.)
+
+ 06/MAY/1998 - Public release (version 0.2)
+ 04/MAY/1998 - implementation of INI, IND, INIR, INDR
+ 03/MAY/1998 - implementation of CPI, CPD, CPIR, CPDR
+ 02/MAY/1998 - implementation of OUTI, OTIR, OUTD, OTDR
+ 30/APR/1998 - fixed bugs in CCF
+ 28/APR/1998 - fixed LDIR, LDDR functions (problems with delphi)
+ 27/APR/1998 - now EvalXXXInstr preservs (e)si, (e)di, (e)bx.
+ 16/APR/1998 - First public release (version 0.1)
+
+                      Copyright (C) BOMI software 2000

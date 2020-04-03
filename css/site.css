@@ -70,9 +70,12 @@ div#divider {
     height: 0.3em;
 }
 
-ul#navmenu {
+div#leftbar {
     float: left;
     width: 11em;
+}
+
+ul#navmenu {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 
@@ -265,26 +268,6 @@ div#content {
     color: white;
 }
 
-.plugins {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-}
-
-.plugins td, .plugins th {
-    border: 1px solid #ddd;
-    text-align: left;
-    padding: 6px;
-}
-
-.plugins tr:nth-child(even){background-color: #f2f2f2}
-
-.plugins th {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    background-color: #6C70CF;
-    color: white;
-}
-
 .features {
     border-collapse: collapse;
 }
@@ -373,5 +356,10 @@ div#content {
 .button-green:active {
   background: #5ca934;
   border-color: #3c6f22 #478228 #478228;
+}
+
+.itemgroup {
+  background-color: #f0f0f0;
+  padding: 0 .5em .5em .5em;
 }
 

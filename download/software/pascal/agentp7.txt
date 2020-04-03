@@ -1,0 +1,313 @@
+
+
+         ±±±    ±±±   ±±±±±  ±   ±  ±±±±±       ±±±±   ±±±±±
+        ±ÄÄ¿±  ±ÄÄ¿±  ±ÄÄÄ   ±   ±  ÄÄ±ÂÄ       ±ÄÄ¿±  ±ÄÄ¿±
+        ±  ³±  ±  ³±  ±      ±±  ±    ±³        ±  ³±    ³±
+        ±±±±±  ±      ±±±±   ±¿± ±    ±³        ±±±±     ³±
+        ±ÄÄ´±  ±  ±±  ±ÄÄ    ±À¿±±    ±³        ±³      ³±
+        ±  ³±  ±  ³±  ±      ± ÀÄ±    ±³        ±³      ³±
+        ±  ³±   ±±±   ±±±±±  ±   ±    ±³        ±³     ³±
+
+
+
+==============================================================================
+                            Hra AGENT programator 7
+==============================================================================
+faze 1 : Herni system alfa 7  BOMI software  Miroslav Hajda 20.2.1999 Zdechov
+
+ Obsah tohoto textu:
+ -------------------
+
+1. Uvod
+ 1.1 Narok na pocitac
+ 1.2 Autori
+ 1.3 Vyvoj a rozdily verzi
+
+2. Ovladani
+ 2.1 Volby ve hre
+
+3. Editovani
+ 3.1 Slozeni souboru
+ 3.2 Vysvetleni jednotlivych prikazu
+ 3.3 Chybove hlaseni
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄ»
+  ³ 1.  UVOD  º
+  ÀÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ Hra se sklada ze dvou casti :
+
+ Interpretr prikazu
+ ------------------
+ Je  to  vykonavatelny program, ktery podle obsahu zdrojoveho souboru vypisuje
+text  a  nabizi  moznosti  dalsiho  vyvoje  deje.  Je  to tedy hlavni soubor a
+umoznuje  i  vyuziti  pro  tvorbu  vlastnich dejovych linii. Program pracuje v
+textovem  rezimu  80  znaku  na  25  radku  pri  pouziti  16 barev na barevnem
+monitoru.
+
+ Zdrojovy soubor
+ ---------------
+ Soubor  obsahujici  text  hry  a  prikazy  pro  interpretr. Soubor by mel mit
+priponu  *.TXG  a  prvni radek souboru by mel znit "; BOMI TXG PROCEDING FILE"
+(dvojcarky uvozuji text a do vlastniho souboru by se psat nemely).
+
+
+ğ 1.1 Narok na pocitac
+
+ Program pozaduje minimalne
+ --------------------------
+ Procesor               :  286
+ Pamet                  :  200 kb RAM
+ Operacni system        :  DOS 5.0 nebo vyssi
+                           WIN 3.1 nebo vyssi (WIN 95 / 98)
+ Zvukova karta          :  ?
+ Graficka karta         :  jakakoli zvladajici rezim 80x25 v 16 barvach
+
+
+ğ 1.2 Autori
+
+ Hlavnim  autorem  a  iniciatorem celeho programu je spolecnost BOMI software,
+ktera  navazala  kontakt  s  temito lidmy, kteri se z casti podileji na tvorbe
+zdrojovych textu : Jiri Hlavac, Lukas Hrbacek, Radek Folta, Jiri Hajda
+
+Nejvetsi  podekovani  nalezi  Jirimu  Hlavacovi,  ktery  se dlouhodobe venoval
+tvorbe vlastnich zdrojovych textu a testoval alfa verze.
+
+
+ğ 1.3 Vyvoj a rozdily verzi
+
+ Vysvetlivky :
+
+  [ş] Dulezita poznamka
+  [+] Nova funkce
+  [*] Vylepsena funkce
+  [-] Odstranena chyba
+
+ Verze 1.0 alfa 1
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [ş] Program  pracoval  na naprosto rozdilnem principu, kdy zdrojovy text byl
+      zakomponovam   ve   vlastnim   programu.   To   znemoznovalo   vytvareni
+      rozsahlejsich textu, nebot se tim umerne zvetsovala delka programu a tim
+      i  jeho  narocnost  na pamet. Proto se spolecnost BOMI software rozhodla
+      prejit na system, kdy text a prikazy jsou ulozeny ve vnejsim souboru
+
+ Verze 1.0 alfa 2
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [ş] Prvni  pokusna  verze,  kdy  program pozaduje zadani jmena souboru a pak
+      jeho obsah zobrazi do jednoducheho okna, aniz by jakkoli dbal na obsah a
+      prikazy
+
+ Verze 1.0 alfa 3
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [ş] V teto verzi jiz pracuje cteni ze souboru
+  [-] Nezobrazovani obsahu do okna
+  [+] Vykonavani prikazu
+  [+] Chybova  hlaseni  s  pocatkem  "FILE:",  nebo  "LOAD:"  (  cela  hlaseni
+      anglicky)
+  [+] Informace o cinnosti v dolnim radku
+  [+] Urceni  poctu  radku  pred  kazdym blokem textu ve tvaru "; x", kde x je
+      pocet radku a prikazu nasledujicich za timto navestim a patrici k tomuto
+      bloku
+  [+] Pokud  pri  zobrazovani  presahne  pocet  zobrazenych  radku  obrazovku,
+      program pozada o stisk klavesy a radky zobrazuje od horniho okraje
+  [+] Prikaz  "SELECT x1 x2 x3 .. xn"  :  urcuje,  kolik moznosti volby nalezi
+      bloku po vypsani jeho celeho obsahu
+  [+] Prikaz "NORMALCOLOR x y" : urcuje, jakou barvou bude zobrazovan normalni
+      text. Parametr "x" urcuje barvu textu a parametr "y" barvu pozadi.
+  [+] Prikaz  "COLOR x y"  : urcuje, jakou barvou bude zobrazovan text v ramci
+      radku, to znamena, ze neurcuje jakou barvou se bude obrazovka mazat
+
+ Verze 1.0 alfa 4
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [*] Zacatek  bloku nyni muze byt libovolne cislo, nebot neni potrebne vedet,
+      kolik radku bloku patri - bloku patri vsechny radky az do zacatku noveho
+      bloku.  Pro  lepsi  orietaci  v textu doporucujeme jako cislo psat cislo
+      bloku, ktere mu v posloupnosti nalezi
+  [*] Zmizeni kurzoru pomoci sedeho znaku v levem hornim rohu obrazovky
+  [-] Mazani radku az do konce vzdy
+  [+] Prikaz "REM x1 x2 .. xn" : poznamka, text se nevypisuje na obrazovku
+  [+] Prikaz "GOTO x" : okamzity skok na zadany blok
+  [+] Prikaz "GOSUB x"  :  skok  na  zadany blok s navratem po celem zobrazeni
+      bloku
+  [+] Prikaz   "IF x x1 x2 .. xn THEN"  :  vetveni  programu  podle  podminky,
+      parametry mohou byt bud relace, nebo logicke operatory
+  [+] Prikaz "ELSE" : alternativni vetev po prikazu IF
+  [+] Prikaz "END" : konec vetveni prikazu IF a ELSE
+  [*] Parametr  skoku  muze byt hodnota [+|-]x, ktera urcuje zavisly skok, kdy
+      cislo bloku je rovno <cislo aktualniho bloku>+ x
+  [+] Prikaz "VAR x1 x2" : definovani promenne, hodnoty jsou typu longint
+  [+] Prikaz  "LET x1=x2 x3 x4 .. xn" : zmena hodnoty promenne, x3 az xn mohou
+      byt operatory + a -
+  [+] Chybove hlaseni pri prekroceni poctu promennych
+  [+] Hlidani poctu parametru u prikazu
+  [+] Posledni prikaz muze byt "; END OF FILE"
+  [+] Definovani promennych VERZE SAVE SELECTOR GOSUBNUM
+
+ Verze 1.0 alfa 5
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [*] Hlaseni chyb cesky
+  [+] Pridani horniho menu po stisku <F10>
+  [+] Parametry z prikazove radky
+  [+] Prekladaci ascii tabulky pro zobrazeni textu
+  [+] Napoveda po zvoleni parametru "/?"
+  [*] Ukryti kurzoru pomoci biosu
+  [+] Ukonceni po stisku <ESC>
+  [+] Zobrazeni autorova textu po skonceni programu
+  [+] Ukladani a nacitani pozice <F2> <F3>
+  [+] Napsani nepritomnosti napovedy po stisku <F1>
+  [+] Parametry Kamenickych, Latin II, Cesky - urcuji aktivni Ascii tabulku
+  [+] Parametr /P - po ukonceni se ceka na stisk klavesy
+  [+] Parametr /S - pri chybe program pipne
+  [-] preskakovani radku pri pokracujicim zobrazovani
+
+ Verze 1.0 alfa 6
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [+] pridani kurzoru mysi
+  [-] nacitani neexistujici ulozene pozice
+  [*] Zobrazeni okna pro napovedu a jeho znovusmazani
+  [*] Pridani promenne ASCII
+
+ Verze 1.0 alfa 7
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [+] Nove zobrazovani chyb
+  [+] Pridany prekladaci ascii tabulky
+  [*] Prekladani i zdrojovych textu, nejenom textu menu
+  [-] Odstranena chyba pri zpetnem cteni
+  [+] Spousteni modulu
+  [*] Podani zadosti DOSu o rezim CO80
+
+ Verze 1.0 alfa 8
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [ş] Cely program byl prepracovan do Borland Turbo Vision
+  [+] Okno About
+  [+] Menu Soubor|Otevrit, Nastaveni|Cestina
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ»
+  ³ 2.  OVLADANI  º
+  ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ Ovladani lze rozdelit na ovladani menu a vlastni ovladani hry
+
+ğ 2.1 Volby ve hre
+
+ V teto verzi jsou 4 moznosti ovladani vypisovani textu
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ - Pozadavek na stisk libovolne klavesy k vypsani dalsiho textu v ramci bloku
+ - Pozadavek na stisk klavesy pro prechod na dalsi blok
+ - Pozadavek volby pokracovani deje hry v ramci klaves A - Z
+ - Pozadavek  na  stisk  klavesy  pro  ukonceni  deje  s  naslednym dotazem na
+  znovuspusteni od zacatku
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ»
+  ³ 3.  EDITOVANI  º
+  ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ V  teto  casti  nalezne  pokyny  pro  tvorbu vlastnich originalnich textu, to
+znamena, ze jsou zde vysvetleny jednotlive funkce INTERPRETRU teto hry.
+
+
+ğ 3.1 Slozeni souboru
+
+ Popis verze 1.0
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ Interpretr  ziskava  prikazy  z  textoveho  souboru, ktery by mel myt priponu
+.TXG,  coz  vsak  neni  povinne. Textovy soubor se sklada z jednotlivych radku
+ukoncenych  znaky  CR  a  LF (#10 #13), ktere se v beznych textovych editorech
+vytvareji  stiskem  klavesy  ENTER  ("Ù"). Maximalni delka radku je 80 znaku.
+Prvni  radek musi byt "; BOMI TEXTGAME FILE" (psane bez dvojcarek). Kazdy novy
+blok  textu musi zacinat "; x" ,kde x je libovolne cele cislo (doporucuji psat
+cislo  bloku). Kazdy dalsi prikaz nachazejici se v bloku musi byt uvozen "; ".
+Krome  textu  musi  navic  obsahovat  kazdy blok prikaz SELECT, nebo GOTO (viz
+dale), existuje vsak vyjimka, kterou je prikaz GOSUB. Zakladnim principem jsou
+tzv.  nestrukturovane  skoky mezi jednotlivymy bloky textu (podobne jako jazyk
+BASIC    na    starsich   pocitacich).  Posledni  radek  souboru  by  mel  byt
+"; END OF FILE".
+
+
+ğ 3.2 Vysvetleni jednotlivych prikazu
+
+SELECT [+|-]<cislo radku> [[+|-]<cislo radku2> [.. [[+|-]<cislo radku n>]]]
+-  za timto prikazem "skok dle volby hrace" se musi nachazet minimalne jeden a
+maximalne  19  cisel  podminenych  voleb  skoku. Jednotlive cisla jsou od sebe
+oddeleny  mezerou  " " (space). Cislo skoku bez znamenka udava cislo bloku, na
+ktery  se  volba  odkazuje,  pricemz cislo bloku se pocita od zacatku souboru.
+Tato  metoda je dosti neprehledna a proto lze s vyhodou pouzit prirustku, nebo
+ubytku od aktualniho bloku pomoci znamenek "+" a "-". Pokud zadate pouze jedno
+cislo, potom budete pouze vyzvani ke stisknuti klavesy. Pokud bude cislo skoku
+rovno  0  oznami  interpretr pri teto volbe prohru. Pokud je pocet voleb vetsi
+nez 1 bude hrac pri hre interpretrem vyzvani ke stisku klavesy "A" az n, kde n
+je  pismeno abecedy odpovidajici posledni volbe. Vysvetleni jednotlivych voleb
+je nutne uvest v textu.
+
+GOTO [+|-]<cislo radku>
+-  tento  prikaz  automaticky  prejde  na  blok  podle  cisla skoku a stejnych
+pravidel pro toto cislo, jako u SELECT.
+
+NORMALCOLOR <barva textu> <barva pozadi>
+-  tento  prikaz  urcuje,  jakou barvou bude smazana obrazovka pred zobrazenim
+textu,  a proto by mel byt uveden pred prvnim radkem, jinak bude platit az pro
+dalsi blok (pripadne dalsi smazani obrazovky).
+
+COLOR <barva textu> <barva pozadi>
+-  tento  prikaz urcuje barvu textu ktery po nem nasleduje. Prikaz plati az po
+predefinovani dalsim prikazem COLOR, nebo po konec bloku.
+
+REM <text 1>[ <text 2>[ ..[ <text n]]]
+-  "poznamka".  Text za timto prikazem nebude zobrazovan na obrazovce. Muze si
+jej  prohlizet  pouze  ten,  kdo  si  zobrazi  zdrojovy text - slouzi k popisu
+zdrojoveho souboru.
+
+VAR <promenna> <pocatecni_hodnota>
+- deklarace promennych. Promenna je zastoupena identifikatorem o maximalni delce
+10 znaku pricemz prvni znak musi byt pismeno. Pocatecni hodnota je celociselneho
+typu longint.
+
+LET <promenna>=<vypocet>
+-  zmena hodnoty promenne. Ve vypoctu jsou povoleny dalsi promenne a operatory
+"+" a "-", vsechny ciselne hodnoty vsak musi byt typu longint (ne s desetinnou
+carkou).
+
+IF <podminka1> [<operator1> <podminka2> [[.. <operator n> <vypocet n+1>]]][THEN]
+-  vetveni  programu. Vsechny prikazy a texty za timto prikazem jsou provadeny
+pouze  v  pripade,  ze  podminka za prikazem IF je pravdivy. Podminka je vyraz
+<vypocet><relace><vypocet>  a plati pro ni stejne pravidla jako u prikazu LET.
+Povolene  operatory  jsou AND OR a XOR a povolene relace "=" "<" ">" "<>" "<="
+a ">=".
+
+ELSE
+- alternativni vetev programu. Jsou-li radky pred ELSE vykonavany pak radky za
+IF vykonavany nebudou a naopak.
+
+END
+-  konec vetve programu. Tento prikaz ukoncuje platnost predchoziho prikazu IF
+a ELSE v ramci bloku.
+
+GOSUB [+|-]<cislo radku>
+-  prechod  na  "subblok".  Odpovida  podprogramu v Basicu. Prejde stejne jako
+GOTO  na  blok  zadaneho cisla, ale po provedeni celeho bloku se vrati zpet na
+misto v bloku, ze ktereho byl tento prikaz volan.
+
+EXEC <prikaz Dosu>
+- provede zvoleny prikaz DOSu
+
+ğ 3.3 Chybove hlaseni
+
+ Chybove hlaseni lze rozdelit podle dvou hledisek
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+- Chyba pri nacitani souboru :
+  - Vnitrni chyba jednotky Load
+  - Soubor Nenalezen
+  - Radek je moc dlouhy
+  - Pokus o cteni za koncem souboru
+
+- Chyby syntaxe
+  - Soubor neni podporovaneho typu
+  - Chybi SELECT, nebo GOTO v bloku n
+  - Neznamy prikaz na radce n
+  - Chybny format prikazu na radce n
+  - Prilis mnoho parametru pro prikaz na radce n
+  - Shodne jmeno dvou promennych pri deklaraci na radce n
+  - Neni misto pro rezervaci nove promenne na radce n
+
+Konec dokumentu

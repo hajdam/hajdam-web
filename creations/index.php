@@ -26,32 +26,28 @@ if ($paramPos !== false) $query = substr($query, 0, $paramPos);
 if (($query == 'text') || (strncmp($query, "text_", 5) === 0)) {
   if ($lang != 'cs') {
     $submenu_text = '
-<ul><li><a href="'.$parentPrefix.'?text_literary'.$langPostfix.'">Literary</a></li>
-<li><a href="'.$parentPrefix.'?text_subtitles'.$langPostfix.'">Subtitles</a></li></ul>';
+<ul><li><a href="?text_literary'.$langPostfix.'">Literary</a></li>
+<li><a href="?text_subtitles'.$langPostfix.'">Subtitles</a></li></ul>';
   } else {
     $submenu_text = '
-<ul><li><a href="'.$parentPrefix.'?text_literary'.$langPostfix.'">Literární</a></li>
-<li><a href="'.$parentPrefix.'?text_subtitles'.$langPostfix.'">Titulky</a></li></ul>';
+<ul><li><a href="?text_literary'.$langPostfix.'">Literární</a></li>
+<li><a href="?text_subtitles'.$langPostfix.'">Titulky</a></li></ul>';
   }
 } else if (($query == 'music') || (strncmp($query, "music_", 6) === 0)) {
   if ($lang != 'cs') {
     $submenu_music = '
-<ul><li><strike><a href="'.$parentPrefix.'?music_old'.$langPostfix.'">Old</a></strike></li></ul>';
+<ul><li><strike><a href="?music_old'.$langPostfix.'">Old</a></strike></li></ul>';
   } else {
     $submenu_music = '
-<ul><li><strike><a href="'.$parentPrefix.'?music_old'.$langPostfix.'">Old</a></strike></li></ul>';
+<ul><li><strike><a href="?music_old'.$langPostfix.'">Old</a></strike></li></ul>';
   }
 } else if (($query == 'media') || (strncmp($query, "media_", 6) === 0)) {
   if ($lang != 'cs') {
     $submenu_media = '
-<ul><li><a href="'.$parentPrefix.'?exbin'.$langPostfix.'">ExBin Project</a></li>
-<li><a href="'.$parentPrefix.'?bined'.$langPostfix.'">BinEd Editor</a></li>
-<li><a href="'.$parentPrefix.'?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li></ul>';
+<ul><li><strike><a href="?todo'.$langPostfix.'">TODO</a></strike></li></ul>';
   } else {
     $submenu_media = '
-<ul><li><a href="'.$parentPrefix.'?exbin'.$langPostfix.'">ExBin Project</a></li>
-<li><a href="'.$parentPrefix.'?bined'.$langPostfix.'">BinEd Editor</a></li>
-<li><a href="'.$parentPrefix.'?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li></ul>';
+<ul><li><strike><a href="?todo'.$langPostfix.'">TODO</a></strike></li></ul>';
   }
 }
 

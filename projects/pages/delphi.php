@@ -11,8 +11,8 @@
 <table border="0" width="100%" bgcolor="#C0C0C0">
   <tr>
     <td width="100%">Download work release 9</td>
-    <td align="right"><a href="?download/software/othello009.zip"><img
-    border="0" src="images/ftypes/zip.gif" width="32" height="32"></a></td>
+    <td align="right"><a href="../download?software/delphi/othello009.zip"><img
+    border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a></td>
   </tr>
 </table>
 
@@ -21,9 +21,9 @@
 <table border="0" width="100%" bgcolor="#C0C0C0">
   <tr>
     <td width="50%">Download final version</td>
-    <td align="right"><a href="?download/software/othello.doc"><img
-    border="0" src="images/ftypes/txt.gif" width="32" height="32"></a><a href="?download/software/othello.zip"><img
-    border="0" src="images/ftypes/zip.gif" width="32" height="32"></a></td>
+    <td align="right"><a href="../download?software/delphi/othello.doc"><img
+    border="0" src="../images/filetypes/txt-32x32.gif" width="32" height="32"></a><a href="../download?software/delphi/othello.zip"><img
+    border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a></td>
   </tr>
 </table>
 </div>
