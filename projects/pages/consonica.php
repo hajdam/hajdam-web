@@ -11,7 +11,7 @@
 
 <p>Sources: <a class="urlextern" href="https://github.com/hajdam/frinika-studio">github.com/hajdam/frinika-studio</a></p>
 
-<center><img src="images/consonica_frinika-studio.png" alt="[consonica_frinika-studio]" width="500" border="2"/></center>
+<p><img src="images/consonica_frinika-studio.png" alt="[consonica_frinika-studio]" width="500" border="2" class="center"/></p>
 
 </div>
 </body>

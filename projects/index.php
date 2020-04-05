@@ -38,10 +38,10 @@ if (($query == 'sites') || (strncmp($query, "site_", 5) === 0)) {
 } else if (($query == 'concepts') || (strncmp($query, "concept_", 8) === 0)) {
   if ($lang != 'cs') {
     $submenu_concepts = '
-<ul><li><strike><a href="?concept_todo'.$langPostfix.'">TODO</a></strike></li></ul>';
+<ul><li><del><a href="?concept_todo'.$langPostfix.'">TODO</a></del></li></ul>';
   } else {
     $submenu_concepts = '
-<ul><li><strike><a href="?concept_todo'.$langPostfix.'">TODO</a></strike></li></ul>';
+<ul><li><del><a href="?concept_todo'.$langPostfix.'">TODO</a></del></li></ul>';
   }
 } else {
   if ($lang != 'cs') {
@@ -59,6 +59,7 @@ if (($query == 'sites') || (strncmp($query, "site_", 5) === 0)) {
   }
 }
 
+$childIndex = 'projects';
 include('../header.php');
 
 if (empty($query)) {

@@ -1,5 +1,5 @@
 <div id="content">
-<img src="about/images/photos/fotka5.jpg" align="right" />
+<img src="about/images/photos/fotka5.jpg" alt="[fotka]" style="float: right" />
 <h1>Miroslav Hajda - Osobní stránky</h1>
 <?php if (time() > filectime('author-alive.dat') + (60 * 60 * 24 * 90)) {
   echo '<p><h3 style="color: red; background-color: yellow;">Tato stránka je opuštěna - autor této stránky je buď mrtev nebo velice dlouho neprovedl žádnou úpravu</h3></p>';

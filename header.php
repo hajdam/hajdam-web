@@ -6,9 +6,8 @@ if (!empty($prefix)) {
     $parentPrefix = '/';
     $rootPrefix = '';
 } ?><!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<?php echo $lang; ?>" xml:lang="<?php echo $lang; ?>">
 <head>
-<meta http-equiv="Content-Language" content="<?php echo $lang; ?>" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="SHORTCUT ICON" href="<?php echo $rootPrefix; ?>hajdam.ico" />
 <link href="<?php echo $parentPrefix; ?>css/site.css" rel="stylesheet">
@@ -26,23 +25,24 @@ if (!empty($prefix)) {
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">News</a></li>
       <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">About Me</a><?php echo @$submenu_about; ?></li>
       <li><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></li>
-      <li><strike><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Gallery</a></strike></li>
-      <li><strike><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Downloads</a></strike></li>
+      <li><del><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Gallery</a></del></li>
+      <li><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Downloads</a></li>
     </ul>
   </li>
   <li><div>Projects</div>
     <ul class="submenu">
       <li><a href="<?php echo $parentPrefix; ?>projects?software<?php echo $langPostfix; ?>">Software</a><?php echo @$submenu_software; ?></li>
       <li><a href="<?php echo $parentPrefix; ?>projects?sites<?php echo $langPostfix; ?>">Sites</a><?php echo @$submenu_sites; ?></li>
-      <li><strike><a href="<?php echo $parentPrefix; ?>projects?concepts<?php echo $langPostfix; ?>">Concepts</a><?php echo @$submenu_concepts; ?></strike></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>projects?concepts<?php echo $langPostfix; ?>">Concepts</a><?php echo @$submenu_concepts; ?></del></li>
     </ul>
   </li>
   <li><div>Creations</div>
     <ul class="submenu">
       <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Textual</a><?php echo @$submenu_text; ?></li>
-      <li><strike><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Music</a><?php echo @$submenu_music; ?></strike></li>
-      <li><strike><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></strike></li>
-      <li><strike><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Games</a><?php echo @$submenu_games; ?></strike></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Graphic</a><?php echo @$submenu_graphic; ?></del></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Music</a><?php echo @$submenu_music; ?></del></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></del></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Games</a><?php echo @$submenu_games; ?></del></li>
     </ul>
   </li>
   <li><div>Social</div>
@@ -55,23 +55,24 @@ if (!empty($prefix)) {
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">Novinky</a></li>
       <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">O mě</a><?php echo @$submenu_about; ?></li>
       <li><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></li>
-      <li><strike><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Galerie</a></strike></li>
-      <li><strike><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Ke stažení</a></strike></li>
+      <li><del><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Galerie</a></del></li>
+      <li><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Ke stažení</a></li>
     </ul>
   </li>
   <li><div>Projekty</div>
     <ul class="submenu">
       <li><a href="<?php echo $parentPrefix; ?>projects?software<?php echo $langPostfix; ?>">Software</a><?php echo @$submenu_software; ?></li>
       <li><a href="<?php echo $parentPrefix; ?>projects?sites<?php echo $langPostfix; ?>">Webové stránky</a><?php echo @$submenu_sites; ?></li>
-      <li><strike><a href="<?php echo $parentPrefix; ?>projects?concepts<?php echo $langPostfix; ?>">Koncepty</a><?php echo @$submenu_concepts; ?></strike></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>projects?concepts<?php echo $langPostfix; ?>">Koncepty</a><?php echo @$submenu_concepts; ?></del></li>
     </ul>
   </li>
   <li><div>Tvorba</div>
     <ul class="submenu">
       <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Texty</a><?php echo @$submenu_text; ?></li>
-      <li><strike><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Hudba</a><?php echo @$submenu_music; ?></strike></li>
-      <li><strike><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></strike></li>
-      <li><strike><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Hry</a><?php echo @$submenu_games; ?></strike></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Grafika</a><?php echo @$submenu_graphic; ?></del></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Hudba</a><?php echo @$submenu_music; ?></del></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></del></li>
+      <li><del><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Hry</a><?php echo @$submenu_games; ?></del></li>
     </ul>
   </li>
   <li><div>Sociální</div>
@@ -86,9 +87,9 @@ if (!empty($prefix)) {
 </ul>
 <?php
 if ($lang == 'cs') {
-  echo '<p><center><a href="?'.$query.'&amp;lang=en"><img src="'.$parentPrefix.'images/flags/en.gif" alt="[en]"/>&nbsp;English version</a></center></p>';
+  echo '<p style="text-align: center"><a href="?'.($query == '' ? '' : $query.'&amp;').'lang=en"><img src="'.$parentPrefix.'images/flags/en.gif" alt="[en]"/>&nbsp;English version</a></p>';
 } else {
-  echo '<p><center><a href="?'.$query.'&amp;lang=cs"><img src="'.$parentPrefix.'images/flags/cz.gif" alt="[cs]"/>&nbsp;Česká verze</a></center></p>';
+  echo '<p style="text-align: center"><a href="?'.($query == '' ? '' : $query.'&amp;').'lang=cs"><img src="'.$parentPrefix.'images/flags/cz.gif" alt="[cs]"/>&nbsp;Česká verze</a></p>';
 }
 ?>
 </div>

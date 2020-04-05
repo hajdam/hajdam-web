@@ -4,11 +4,11 @@
 <p>Byla to recesistická stránka, která si dělala legraci z elfů. Vytvořil jsem pouze jednoduché skripty, které umožňovali editaci stránky.</p>
 
 <p>Stránka: <a class="urlextern" href="http://iper.wz.cz/">http://iper.wz.cz/</a></p>
-<p>Zdroje: <strike>TODO</strike></p>
+<p>Zdroje: <del>TODO</del></p>
 
-<center><img src="images/site_iper1.png" alt="[site_iper1]" width="700" border="2"/></center>
+<p><img src="images/site_iper1.png" alt="[site_iper1]" width="700" border="2" class="center"/></p>
 
-<center><img src="images/site_iper2.png" alt="[site_iper2]" width="700" border="2"/></center>
+<p><img src="images/site_iper2.png" alt="[site_iper2]" width="700" border="2" class="center"/></p>
 
 </div>
 </body>

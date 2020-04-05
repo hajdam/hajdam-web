@@ -36,21 +36,22 @@ if (($query == 'text') || (strncmp($query, "text_", 5) === 0)) {
 } else if (($query == 'music') || (strncmp($query, "music_", 6) === 0)) {
   if ($lang != 'cs') {
     $submenu_music = '
-<ul><li><strike><a href="?music_old'.$langPostfix.'">Old</a></strike></li></ul>';
+<ul><li><del><a href="?music_old'.$langPostfix.'">Old</a></del></li></ul>';
   } else {
     $submenu_music = '
-<ul><li><strike><a href="?music_old'.$langPostfix.'">Old</a></strike></li></ul>';
+<ul><li><del><a href="?music_old'.$langPostfix.'">Old</a></del></li></ul>';
   }
 } else if (($query == 'media') || (strncmp($query, "media_", 6) === 0)) {
   if ($lang != 'cs') {
     $submenu_media = '
-<ul><li><strike><a href="?todo'.$langPostfix.'">TODO</a></strike></li></ul>';
+<ul><li><del><a href="?todo'.$langPostfix.'">TODO</a></del></li></ul>';
   } else {
     $submenu_media = '
-<ul><li><strike><a href="?todo'.$langPostfix.'">TODO</a></strike></li></ul>';
+<ul><li><del><a href="?todo'.$langPostfix.'">TODO</a></del></li></ul>';
   }
 }
 
+$childIndex = 'creations';
 include('../header.php');
 
 if (empty($query)) {

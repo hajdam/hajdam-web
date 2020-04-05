@@ -9,13 +9,13 @@
 
 <p>Sources: <a class="urlextern" href="https://github.com/hajdam/jmzemu">github.com/hajdam/jmzemu</a> (TODO)</p>
 
-<p><center><img src="images/mzemu_jmzemu.png" alt="[mzemu_jmzemu]" width="500" border="2"/></center></p>
+<p><img src="images/mzemu_jmzemu.png" alt="[mzemu_jmzemu]" width="500" border="2" class="center"/></p>
 
 <h2>Sharp MZ Emulator for Windows</h2>
 
 <p>Version for Windows which was written in Borland Delphi 7 (based on shareware version from Zdeněk Adler, so not available for download):</p>
 
-<p><center><img src="images/mzemu_sharpemu-0.1.4pre0.png" alt="[mzemu_sharpemu-0.1.4pre0]" width="500" border="2"/></center></p>
+<p><img src="images/mzemu_sharpemu-0.1.4pre0.png" alt="[mzemu_sharpemu-0.1.4pre0]" width="500" border="2" class="center"/></p>
 
 <h2>Sharp MZ Emulator for DOS</h2>
 
@@ -34,7 +34,7 @@
 
 <p>2000-11-30: Development was terminated.</p>
 
-<p><center><img src="images/mzemu_dosemu1.gif" alt="[mzemu_dosemu1]" width="500" border="2"/></center></p>
+<p><img src="images/mzemu_dosemu1.gif" alt="[mzemu_dosemu1]" width="500" border="2" class="center"/></p>
 
 <table border="0" width="100%" bgcolor="#C0C0C0">
   <tr>

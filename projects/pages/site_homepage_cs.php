@@ -9,19 +9,19 @@
 
 <p>Verze 4.0 - 4.1</p>
 
-<center><img src="images/site_homepage_v4.1.png" alt="[site_homepage_v4.1]" width="500" border="2"/></center>
+<p><img src="images/site_homepage_v4.1.png" alt="[site_homepage_v4.1]" width="500" border="2" class="center"/></p>
 
 <p>Verze 3.0 - 3.3</p>
 
-<center><img src="images/site_homepage_v3.3.png" alt="[site_homepage_v3.3]" width="500" border="2"/></center>
+<p><img src="images/site_homepage_v3.3.png" alt="[site_homepage_v3.3]" width="500" border="2" class="center"/></p>
 
 <p>Verze 2.0 - 2.3</p>
 
-<center><img src="images/site_homepage_v2.3.png" alt="[site_homepage_v2.3]" width="500" border="2"/></center>
+<p><img src="images/site_homepage_v2.3.png" alt="[site_homepage_v2.3]" width="500" border="2" class="center"/></p>
 
 <p>Verze 1</p>
 
-<center><img src="images/site_homepage_v1.png" alt="[site_homepage_v1]" width="500" border="2"/></center>
+<p><img src="images/site_homepage_v1.png" alt="[site_homepage_v1]" width="500" border="2" class="center"/></p>
 
 </div>
 </body>

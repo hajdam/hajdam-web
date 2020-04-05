@@ -10,6 +10,12 @@ html, body {
     width: 66em;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div#name {
     margin-left: 0em;
     margin-top: 1em;
@@ -197,6 +203,10 @@ div#content {
     text-align: justify;
     border: solid rgb(208, 208, 208);
     border-width: 1px 0px 0px 1px;
+}
+
+div#dirlisting img {
+	vertical-align: middle;
 }
 
 .urlextern {

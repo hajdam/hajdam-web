@@ -13,6 +13,9 @@ if ($requestedLang == '') {
         break;
       }
     }
+    if ($lang == '') {
+    	$lang = 'en';
+    }
 }
 $filePostfix = ($lang == 'cs') ? '_cs' : '';
 $langPostfix = ($requestedLang != '') ? '&amp;lang='.$requestedLang : '';
@@ -26,6 +29,7 @@ if (empty($query)) {
 } else {
   $paramPos = strpos($query, '&');
   if ($paramPos !== false) $query = substr($query, 0, $paramPos);
+  if (strpos($query, '=')) $query = '';
   $target = 'pages/'.$query.$filePostfix.'.php';
 
   include('header.php');

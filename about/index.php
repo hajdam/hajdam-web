@@ -26,16 +26,17 @@ if ($paramPos !== false) $query = substr($query, 0, $paramPos);
 if ($lang != 'cs') {
   $submenu_about = '
 <ul><li><a href="?resume'.$langPostfix.'">Resume</a></li>
-<li><strike><a href="?pets'.$langPostfix.'">Pets</a></strike></li>
+<li><del><a href="?pets'.$langPostfix.'">Pets</a></del></li>
 <li><a href="?computers'.$langPostfix.'">Computers</a></li>
 </ul>';
 } else {
   $submenu_about = '
 <ul><li><a href="?resume'.$langPostfix.'">Životopis</a></li>
-<li><strike><a href="?pets'.$langPostfix.'">Mazlíčci</a></strike></li>
+<li><del><a href="?pets'.$langPostfix.'">Mazlíčci</a></del></li>
 <li><a href="?computers'.$langPostfix.'">Počítače</a></li></ul>';
 }
 
+$childIndex = 'about';
 include('../header.php');
 
 if (empty($query)) {

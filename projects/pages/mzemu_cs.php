@@ -9,19 +9,19 @@
 
 <p>Zdroje: <a class="urlextern" href="https://github.com/hajdam/jmzemu">github.com/hajdam/jmzemu</a> (TODO)</p>
 
-<p><center><img src="images/mzemu_jmzemu.png" alt="[mzemu_jmzemu]" width="500" border="2"/></center></p>
+<p><img src="images/mzemu_jmzemu.png" alt="[mzemu_jmzemu]" width="500" border="2" class="center"/></p>
 
 <h2>Sharp MZ Emulátor pro Windows</h2>
 
 <p>Verze pro Windows, která byla napsána v Borland Delphi 7 (založená na shareware verzi poskytnuté Zdeněkem Adlerem, není k dispozici ke stažení):</p>
 
-<p><center><img src="images/mzemu_sharpemu-0.1.4pre0.png" alt="[mzemu_sharpemu-0.1.4pre0]" width="500" border="2"/></center></p>
+<p><img src="images/mzemu_sharpemu-0.1.4pre0.png" alt="[mzemu_sharpemu-0.1.4pre0]" width="500" border="2" class="center"/></p>
 
 <h2>Sharp MZ Emulátor pro DOS</h2>
 
 <p>Verze pro MS-DOS, která byla napsána v Borland Pascalu pomocí knihoven Turbo Vision.</p>
 
-<p><center><img src="images/mzemu_dosemu1.gif" alt="[mzemu_dosemu1]" width="500" border="2"/></center></p>
+<p><img src="images/mzemu_dosemu1.gif" alt="[mzemu_dosemu1]" width="500" border="2" class="center"/></p>
 
 <p>Emulátor je napsán anglicky. Má však český soubor s popisem ctimne.txt a lze si
 zvolit typ znakové sady.</p>

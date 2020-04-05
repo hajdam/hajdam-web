@@ -9,19 +9,19 @@
 
 <p>Version 4.0 to 4.1</p>
 
-<center><img src="images/site_homepage_v4.1.png" alt="[site_homepage_v4.1]" width="500" border="2"/></center>
+<p><img src="images/site_homepage_v4.1.png" alt="[site_homepage_v4.1]" width="500" border="2" class="center"/></p>
 
 <p>Version 3.0 to 3.3</p>
 
-<center><img src="images/site_homepage_v3.3.png" alt="[site_homepage_v3.3]" width="500" border="2"/></center>
+<p><img src="images/site_homepage_v3.3.png" alt="[site_homepage_v3.3]" width="500" border="2" class="center"/></p>
 
 <p>Version 2.0 to 2.3</p>
 
-<center><img src="images/site_homepage_v2.3.png" alt="[site_homepage_v2.3]" width="500" border="2"/></center>
+<p><img src="images/site_homepage_v2.3.png" alt="[site_homepage_v2.3]" width="500" border="2" class="center"/></p>
 
 <p>Version 1</p>
 
-<center><img src="images/site_homepage_v1.png" alt="[site_homepage_v1]" width="500" border="2"/></center>
+<p><img src="images/site_homepage_v1.png" alt="[site_homepage_v1]" width="500" border="2" class="center"/></p>
 
 </div>
 </body>

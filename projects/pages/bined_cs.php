@@ -16,15 +16,15 @@
 
 <p>Editor:</p>
 
-<center><img src="images/bined_editor.png" alt="[bined_editor]" width="700" border="2"/></center>
+<p><img src="images/bined_editor.png" alt="[bined_editor]" width="700" border="2" class="center"/></p>
 
 <p>Aplikace pro test knihovny:</p>
 
-<center><img src="images/bined_library.png" alt="[bined_library]" width="700" border="2"/></center>
+<p><img src="images/bined_library.png" alt="[bined_library]" width="700" border="2" class="center"/></p>
 
 <p>Stránka projektu:</p>
 
-<center><img src="images/site_bined.png" alt="[site_bined]" width="700" border="2"/></center>
+<p><img src="images/site_bined.png" alt="[site_bined]" width="700" border="2" class="center"/></p>
 
 </div>
 </body>

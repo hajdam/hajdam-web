@@ -2,8 +2,7 @@
 <h1>Computers I Owned</h1>
 <p>List of computers we had in family or I owned in person:</p>
 
-
-<center><table border="1" width="98%" cellspacing="0"><tr valign="top" bgcolor="#7F7FCF">
+<table border="1" width="98%" cellspacing="0" class="center"><tr valign="top" bgcolor="#7F7FCF">
 <td>?</td><td>Date</td><td>Computer</td></td><td>Processor</td><td>Graphics</td><td>Memory</td><td>Solid Drive</td><td>Removable media</td>
 </tr><tr>
 <td>S</td><td>26.1.1994</td><td>SHARP MZ-821</td><td>Zilog Z80 3,5 MHz</td><td>GDG 16 kB</td><td>64 kB</td><td>Ramdisk 256kB</td><td>cassette (approx. 512 kB)</td>
@@ -35,7 +34,7 @@
 <td>A</td><td>7.12.2017</td><td>Lenovo Yoga 510-14AST</td><td>AMD A6-9210, 2 Cores 2,4 GHz</td><td>AMD Radeon R4</td><td>4 GB</td><td>128 GB SSD</td><td>SD card</td>
 </tr><tr>
 <td>A</td><td>27.3.2018</td><td>GSM Nokia 8</td><td>Snapdragon 835, 4 x 2,45 GHz + 4 x 1,9 GHz</td><td>Adreno 540</td><td>4 GB</td><td>64 GB Flash</td><td>micro SD</td>
-</tr></table></center>
+</tr></table>
 
 <p><em>D - dead<br/>S - sold<br/>A - active</em></p>
 
