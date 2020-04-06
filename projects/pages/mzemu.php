@@ -39,11 +39,11 @@
 <table border="0" width="100%" bgcolor="#C0C0C0">
   <tr>
     <td>You can download version in progress. Second file contains sources</td>
-    <td width="100" align="right"><a href="../download/?sharpmz/dosemu/ctimne.txt"><img src="../images/filetypes/txt-32x32.gif" width="32"
+    <td width="100" align="right"><a href="../download/?software/dosemu/ctimne.txt"><img src="../images/filetypes/txt-32x32.gif" width="32"
     height="32" alt="ctimne.txt (15,7 kB)" border="0" title="ctime.txt"></a><a
-    href="../download/?sharpmz/dosemu/mzdos007.zip"><img border="0"
+    href="../download/?software/dosemu/mzdos007.zip"><img border="0"
     src="../images/filetypes/zip-32x32.gif" width="32" height="32" alt="mzdos007.zip" title="Main application"></a><a
-    href="../download/?sharpmz/dosemu/mzdos007src.zip"><img border="0"
+    href="../download/?software/dosemu/mzdos007src.zip"><img border="0"
     src="../images/filetypes/zip-32x32.gif" width="32" height="32" alt="mzdos007src.zip" title="Sources"></a></td>
   </tr>
 </table>

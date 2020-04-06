@@ -39,7 +39,7 @@ if (!empty($prefix)) {
   <li><div>Creations</div>
     <ul class="submenu">
       <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Textual</a><?php echo @$submenu_text; ?></li>
-      <li><del><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Graphic</a><?php echo @$submenu_graphic; ?></del></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Graphic</a><?php echo @$submenu_graphic; ?></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Music</a><?php echo @$submenu_music; ?></del></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></del></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Games</a><?php echo @$submenu_games; ?></del></li>
@@ -69,7 +69,7 @@ if (!empty($prefix)) {
   <li><div>Tvorba</div>
     <ul class="submenu">
       <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Texty</a><?php echo @$submenu_text; ?></li>
-      <li><del><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Grafika</a><?php echo @$submenu_graphic; ?></del></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Grafika</a><?php echo @$submenu_graphic; ?></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Hudba</a><?php echo @$submenu_music; ?></del></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?media<?php echo $langPostfix; ?>">Media</a><?php echo @$submenu_media; ?></del></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Hry</a><?php echo @$submenu_games; ?></del></li>
