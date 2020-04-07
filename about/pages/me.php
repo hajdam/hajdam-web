@@ -1,50 +1,63 @@
 <div id="content">
 <h1>About Me</h1>
-<p>Hi, my name is Miroslav Hajda and I'm from <a href="http://zdechov.cz">Zděchov</a>, Czech Republic.</p>
 
-<strong>Residency</strong>: <br/>
-<strong>Born</strong> : 1982<br/>
-<strong>State</strong>: Single<br/>
-<strong>Occupation</strong>: Unemployed<br/>
-<strong>Weight</strong>: 107 kg<br/>
-<strong>Favorite food</strong>: potatoes as fries, boiled, baked...<br/>
-<strong>Favorite color</strong>: blue<br/>
-<strong>Languages</strong>: A little bit of Czech, English and German languages<br/>
+<p>Hi, my name is Miroslav Hajda and I'm from village <a class="urlextern" href="http://zdechov.cz">Zděchov</a>, Czech Republic. I'm 38 years old, about 187 cm tall and my weight is about 107 kg.</p>
 
-<strong>Vzdělání</strong>: 4 roky Základní škola Zděchov, 5 let Základní škola Hovězí, 4 roky
-<a href="http://www.inext.cz/mgv" target="_blank">Masarykovo gymnázium Vsetín</a>, 5,5 roku
-<a href="http://www.muni.cz" target="_blank">Masarykova univerzita v Brně</a>
-<a href="http://fi.muni.cz" target="_blank">Fakulta informatiky</a> (magisterský titul, specializace Informační systémy).<br/>
+<p>I'm programmer by profession, my native language is Czech, but I speak a bit English. My favourite color is blue and favourite food are potatoes.</p>
 
-<strong>Programovací jazyky</strong>: (řazeno podle znalosti) Pascal, Object Pascal (Delphi), Java, SQL, Power Builder, PHP, Basic 1Z016, Ansi C, C++, Prolog, Haskel<br/>
-</p><a href="#top">Nahoru</a><br/>
-<a name="photos"/><h2>Fotky</h2>
-<p>Tak tady máte pár mojich fotek:</p>
-<img src="images/photos/fotka1.jpg" height="200" alt="fotka1" hspace="5"/><img
-src="images/photos/fotka2.jpg" height="200" alt="fotka2" hspace="5"/><img
-src="images/photos/fotka3.jpg" height="200" alt="fotka3" hspace="5"/><img
-src="images/photos/fotka4.jpg" height="200" alt="fotka3" hspace="5"/><br/>
-<p>A pak tu mám fotky tříd:</p>
-<p>- Základní škola Hovězí:<br/>
-<a href="files/photos/zsh/h5a.jpg" target="_blank"><img src="files/photos/zsh/_h5a.jpg" height="200" alt="Hovězí 5A" hspace="5" border="0"/></a>
-<a href="files/photos/zsh/h6a.jpg" target="_blank"><img src="files/photos/zsh/_h6a.jpg" height="200" alt="Hovězí 6A" hspace="5" border="0"/></a>
-<a href="files/photos/zsh/h7a.jpg" target="_blank"><img src="files/photos/zsh/_h7a.jpg" height="200" alt="Hovězí 7A" hspace="5" border="0"/></a>
-<a href="files/photos/zsh/h8a.jpg" target="_blank"><img src="files/photos/zsh/_h8a.jpg" height="200" alt="Hovězí 8A" hspace="5" border="0"/></a>
-<a href="files/photos/zsh/h9a.jpg" target="_blank"><img src="files/photos/zsh/_h9a.jpg" height="200" alt="Hovězí 9A" hspace="5" border="0"/></a><br/>
-</p><p>- Masarykovo gymnázium Vsetín:<br/>
-<a href="files/photos/mgv/g1a.jpg" target="_blank"><img src="files/photos/mgv/_g1a.jpg" height="200" alt="Gymnázium 1A" hspace="5" border="0"/></a>
-<a href="files/photos/mgv/g2a.jpg" target="_blank"><img src="files/photos/mgv/_g2a.jpg" height="200" alt="Gymnázium 2A" hspace="5" border="0"/></a>
-<a href="files/photos/mgv/g3a.jpg" target="_blank"><img src="files/photos/mgv/_g3a.jpg" height="200" alt="Gymnázium 3A" hspace="5" border="0"/></a>
-<a href="files/photos/mgv/g4a.jpg" target="_blank"><img src="files/photos/mgv/_g4a.jpg" height="200" alt="Gymnázium 4A" hspace="5" border="0"/></a>
-</p><p>- Masarykova univerzita Brno:<br/>
-<a href="files/photos/muni/muni1.jpg" target="_blank"><img src="files/photos/muni/_muni1.jpg" height="200" alt="Rektorát" hspace="5" border="0"/></a>
-<a href="files/photos/muni/muni2.jpg" target="_blank"><img src="files/photos/muni/_muni2.jpg" height="200" alt="Fakulta" hspace="5" border="0"/></a>
-</p><p>Kliknutím na obrázek jej můžete zobrazit ve vyšší kvalitě</p>
-<a href="#top">Nahoru</a><br/>
-<a name="products"/><h2>Tvorba</h2>
-<a name="interests"/><h2>Záliby</h2>
-Mezi mé záliby patří počítač Sharp MZ-800, japonské animované filmy...
-</td></tr></table>
+<p>Here are some of my photos, mostly from various IDs:</p>
+
+<p>
+<img src="images/photos/fotka1.jpg" height="200" alt="[fotka 1]" hspace="5"/>
+<img src="images/photos/fotka2.jpg" height="200" alt="[fotka 2]" hspace="5"/>
+<img src="images/photos/fotka3.jpg" height="200" alt="[fotka 3]" hspace="5"/>
+<img src="images/photos/fotka4.jpg" height="200" alt="[fotka 4]" hspace="5"/>
+<img src="images/photos/fotka5.jpg" height="200" alt="[fotka 5]" hspace="5"/>
+</p>
+
+<h2>Education</h2>
+
+<p>I attended elementary/primary school 4 years in <a class="urlextern" href="http://zdechov.cz">Zděchov</a> and 5 years in <a class="urlextern" href="http://obec-hovezi.cz">Hovězí</a>.</p>
+
+<p>Some photos from Hovězí:</p>
+
+<p>
+<a href="images/education/zs%20hovezi/h5a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h5a.jpg" height="200" alt="[Hovězí 5.A]" hspace="5" border="0"/></a>
+<a href="images/education/zs%20hovezi/h6a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h6a.jpg" height="200" alt="[Hovězí 6.A]" hspace="5" border="0"/></a>
+<a href="images/education/zs%20hovezi/h7a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h7a.jpg" height="200" alt="[Hovězí 7.A]" hspace="5" border="0"/></a>
+<a href="images/education/zs%20hovezi/h8a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h8a.jpg" height="200" alt="[Hovězí 8.A]" hspace="5" border="0"/></a>
+<a href="images/education/zs%20hovezi/h9a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h9a.jpg" height="200" alt="[Hovězí 9.A]" hspace="5" border="0"/></a>
+</p>
+
+<p>After that I studied grammar school <a class="urlextern" href="http://mgvsetin.cz">Masarykovo gymnázium</a> in <a class="urlextern" href="http://vsetin.cz">Vsetín</a>.</p>
+
+<p>Few photos of classes, although I look terrible there...</p>
+
+<p>
+<a href="images/education/mg%20vsetin/g1a.jpg" target="_blank"><img src="images/education/mg%20vsetin/.preview/_g1a.jpg" height="200" alt="[Gymnázium 1.A]" hspace="5" border="0"/></a>
+<a href="images/education/mg%20vsetin/g2a.jpg" target="_blank"><img src="images/education/mg%20vsetin/.preview/_g2a.jpg" height="200" alt="[Gymnázium 2.A]" hspace="5" border="0"/></a>
+<a href="images/education/mg%20vsetin/g3a.jpg" target="_blank"><img src="images/education/mg%20vsetin/.preview/_g3a.jpg" height="200" alt="[Gymnázium 3.A]" hspace="5" border="0"/></a>
+<a href="images/education/mg%20vsetin/g4a.jpg" target="_blank"><img src="images/education/mg%20vsetin/.preview/_g4a.jpg" height="200" alt="[Gymnázium 4.A]" hspace="5" border="0"/></a>
+</p>
+
+<p>Then I went to university for 5,5 years, studied on <a class="urlextern" href="http://fi.muni.cz">faculty of informatics</a> of <a class="urlextern" href="http://www.muni.cz">Masaryk Univerzity</a> in <a class="urlextern" href="http://brno.cz">Brno</a>.</p>
+
+<p>Photos of rectorate and faculty buildings:</p>
+<p>
+<a href="images/education/muni%20brno/muni1.jpg" target="_blank"><img src="images/education/muni%20brno/.preview/_muni1.jpg" height="200" alt="[Rektorát]" hspace="5" border="0"/></a>
+<a href="images/education/muni%20brno/muni2.jpg" target="_blank"><img src="images/education/muni%20brno/.preview/_muni2.jpg" height="200" alt="[Fakulta]" hspace="5" border="0"/></a>
+</p>
+
+<h2>What Can You Find Here</h2>
+
+<p>My hobbies are Sharp MZ-800 8-bit computer, japanese animated series / movies, but mostly you will find various files and programming creations that I once produced here...</p>
+
+<p>Or you can take a look on:</p>
+
+<p><a href="?resume<?php echo $langPostfix; ?>">My resume/cv</a></p>
+<p><a href="?pets<?php echo $langPostfix; ?>">Our home pets</a></p>
+<p><a href="?computers<?php echo $langPostfix; ?>">How my computer changed over time</a></p>
+
 </div>
 </body>
 </html>
