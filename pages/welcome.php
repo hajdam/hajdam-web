@@ -7,7 +7,7 @@
 <p>Welcome stray wanderer!</p>
 <p><strong>Website is under development!</strong> (From 24.3.2020)</p>
 <p>Please visit <a href="old/version-4.1">previous website instead</a>.</p>
-<p><small>&copy; Miroslav Hajda 2020 | Version 4.2 | Hosted on <a href="https://www.zdechov.net">zdechov.net</a> | <a href="https://github.com/hajdam/hajdam-web">Source</a></small></p>
+<p><small>&copy; Miroslav Hajda 2020 | Version 4.2 | Hosted on <a class="urlextern" href="https://www.zdechov.net">zdechov.net</a> | <a class="urlextern" href="https://github.com/hajdam/hajdam-web">Source</a></small></p>
 </div>
 </body>
 </html>

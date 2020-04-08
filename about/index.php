@@ -40,7 +40,8 @@ $childIndex = 'about';
 include('../header.php');
 
 if (empty($query)) {
-  $include = 'pages/main'.$filePostfix.'.php';
+  header('Location: '.'?me'.$langPostfix);
+  exit();
 } else {
   $target = 'pages/'.$query.$filePostfix.'.php';
   if (!(preg_match("/[a-z\/\_\-]+/", $query) === false) && file_exists($target)) {

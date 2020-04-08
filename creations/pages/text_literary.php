@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Textual Creations - Literary</h1>
 <?php
-//echo strtotime('12-12-2003');
+//echo strtotime('6-1-2006');
 function getline($fl) {
   $fp = @fgets($fl, 65536);
   $fp = substr($fp, 0, strlen($fp) - 1);

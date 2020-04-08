@@ -27,6 +27,12 @@ if (empty($query)) {
   include('header.php');
   $include = 'pages/welcome'.$filePostfix.'.php';
 } else {
+  // Previous version redirections
+  if (strncmp($query, "download/", 9) === 0) {
+    header('Location: '.'download/?'.substr($query, 9));
+    exit();
+  }
+	
   $paramPos = strpos($query, '&');
   if ($paramPos !== false) $query = substr($query, 0, $paramPos);
   if (strpos($query, '=')) $query = '';

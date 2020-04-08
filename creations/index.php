@@ -51,12 +51,12 @@ if (($query == 'text') || (strncmp($query, "text/", 5) === 0)) {
     $submenu_music = '
 <ul><li><del><a href="?music/old'.$langPostfix.'">Old</a></del></li></ul>';
   }
-} else if (($query == 'media') || (strncmp($query, "media/", 6) === 0)) {
+} else if (($query == 'video') || (strncmp($query, "video/", 6) === 0)) {
   if ($lang != 'cs') {
-    $submenu_media = '
+    $submenu_video = '
 <ul><li><del><a href="?todo'.$langPostfix.'">TODO</a></del></li></ul>';
   } else {
-    $submenu_media = '
+    $submenu_video = '
 <ul><li><del><a href="?todo'.$langPostfix.'">TODO</a></del></li></ul>';
   }
 }
