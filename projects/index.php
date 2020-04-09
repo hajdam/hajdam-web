@@ -35,14 +35,14 @@ if (($query == 'sites') || (strncmp($query, "site/", 5) === 0)) {
 <li><a href="?site/sharpmz'.$langPostfix.'">Sharp MZ Wiki</a></li>
 <li><a href="?site/iper'.$langPostfix.'">I.P.E.R Web</a></li></ul>';
   }
-} else if (($query == 'concepts') || (strncmp($query, "concept_", 8) === 0)) {
-//  if ($lang != 'cs') {
-//    $submenu_concepts = '
-//<ul><li><del><a href="?concept_todo'.$langPostfix.'">TODO</a></del></li></ul>';
-//  } else {
-//    $submenu_concepts = '
-//<ul><li><del><a href="?concept_todo'.$langPostfix.'">TODO</a></del></li></ul>';
-//  }
+} else if (($query == 'concepts') || (strncmp($query, "concept/", 8) === 0)) {
+  if ($lang != 'cs') {
+    $submenu_concepts = '
+<ul><li><a href="?concept/sharpmz'.$langPostfix.'">Sharp MZ</a></li></ul>';
+  } else {
+    $submenu_concepts = '
+<ul><li><a href="?concept/sharpmz'.$langPostfix.'">Sharp MZ</a></li></ul>';
+  }
 } else {
   if ($lang != 'cs') {
     $submenu_software = '
@@ -69,6 +69,7 @@ if (empty($query)) {
   if (!(preg_match("/[a-z\/\_\-]+/", $query) === false) && file_exists($target)) {
     $include = $target;
   } else {
+ 	http_response_code(404);
     $include = 'pages/not-found'.$filePostfix.'.php';
   }
 }

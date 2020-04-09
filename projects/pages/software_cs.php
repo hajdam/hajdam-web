@@ -15,21 +15,25 @@
 
 <p><a href="?consonica<?php echo $langPostfix; ?>"><strong>Consonica</strong></a> - Audio DAW / editor</p>
 
+<h2>Projekty napsané v Javě</h2>
+
+<p><a href="?software/java<?php echo $langPostfix; ?>"><strong>Java Software</strong></a></p>
+
 <h2>Starší projekty</h2>
 
 <p>Kdysi dávno jsem také vytvořil pár jednoduchých prográmků ve starších programovacích jazycích</p>
 
 <h3>Software napsaný v Delphi</h3>
 
-<p><a href="?delphi<?php echo $langPostfix; ?>"><strong>Delphi Software</strong></a></p>
+<p><a href="?software/delphi<?php echo $langPostfix; ?>"><strong>Delphi Software</strong></a></p>
 
 <h3>Software napsaný v Pascalu</h3>
 
-<p><a href="?pascal<?php echo $langPostfix; ?>"><strong>Pascal Software</strong></a></p>
+<p><a href="?software/pascal<?php echo $langPostfix; ?>"><strong>Pascal Software</strong></a></p>
 
 <h3>Software pro 8-bitový počítač</h3>
 
-<p><a href="?sharpmz<?php echo $langPostfix; ?>"><strong>Software pro Sharp MZ</strong></a> - Sbírka software vytvořeného pro počítač Sharp MZ-800</p>
+<p><a href="?software/sharpmz<?php echo $langPostfix; ?>"><strong>Software pro Sharp MZ</strong></a> - Sbírka software vytvořeného pro počítač Sharp MZ-800</p>
 
 </div>
 </body>

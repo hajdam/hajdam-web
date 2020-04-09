@@ -46,10 +46,10 @@ if (($query == 'text') || (strncmp($query, "text/", 5) === 0)) {
 } else if (($query == 'music') || (strncmp($query, "music/", 6) === 0)) {
   if ($lang != 'cs') {
     $submenu_music = '
-<ul><li><del><a href="?music/old'.$langPostfix.'">Old</a></del></li></ul>';
+<ul><li><a href="?music/old'.$langPostfix.'">Old</a></li></ul>';
   } else {
     $submenu_music = '
-<ul><li><del><a href="?music/old'.$langPostfix.'">Old</a></del></li></ul>';
+<ul><li><a href="?music/old'.$langPostfix.'">Staré</a></li></ul>';
   }
 } else if (($query == 'video') || (strncmp($query, "video/", 6) === 0)) {
   if ($lang != 'cs') {
@@ -71,6 +71,7 @@ if (empty($query)) {
   if (!(preg_match("/[a-z\/\_\-]+/", $query) === false) && file_exists($target)) {
     $include = $target;
   } else {
+  	http_response_code(404);
     $include = 'pages/not-found'.$filePostfix.'.php';
   }
 }

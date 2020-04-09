@@ -38,9 +38,9 @@ if (!empty($prefix)) {
   </li>
   <li><div>Creations</div>
     <ul class="submenu">
-      <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Textual</a><?php echo @$submenu_text; ?></li>
-      <li><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Graphic</a><?php echo @$submenu_graphic; ?></li>
-      <li><del><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Music</a><?php echo @$submenu_music; ?></del></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?texts<?php echo $langPostfix; ?>">Texts</a><?php echo @$submenu_texts; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?graphics<?php echo $langPostfix; ?>">Graphics</a><?php echo @$submenu_graphics; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Music</a><?php echo @$submenu_music; ?></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?video<?php echo $langPostfix; ?>">Video</a><?php echo @$submenu_video; ?></del></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Games</a><?php echo @$submenu_games; ?></del></li>
     </ul>
@@ -70,7 +70,7 @@ if (!empty($prefix)) {
     <ul class="submenu">
       <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Texty</a><?php echo @$submenu_text; ?></li>
       <li><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Grafika</a><?php echo @$submenu_graphic; ?></li>
-      <li><del><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Hudba</a><?php echo @$submenu_music; ?></del></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Hudba</a><?php echo @$submenu_music; ?></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?video<?php echo $langPostfix; ?>">Videa</a><?php echo @$submenu_video; ?></del></li>
       <li><del><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Hry</a><?php echo @$submenu_games; ?></del></li>
     </ul>

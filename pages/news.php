@@ -48,7 +48,7 @@ if (isset($_GET['post'])) {
 	  echo '<a href="?news&post='.($post+1).$langPostfix.'">Next post&nbsp;&gt;&gt;</a>';
     }
 } else if ($count == 0) {
-	echo '<p>There are no post yet.</p>';
+	echo '<p>There is no post yet.</p>';
 } else {
 	echo '<ul>';
 	$pagepos = $pos * $perpage;

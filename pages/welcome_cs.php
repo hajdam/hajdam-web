@@ -1,4 +1,10 @@
-<div id="content">
+<div id="content"><?php
+function getline($fl) {
+  $fp = @fgets($fl, 65536);
+  $fp = substr($fp, 0, strlen($fp) - 1);
+  return $fp;
+}
+?>
 <img src="about/images/photos/fotka5.jpg" alt="[fotka]" style="float: right" />
 <h1>Miroslav Hajda - Osobní stránky</h1>
 <?php if (time() > filectime('author-alive.dat') + (60 * 60 * 24 * 90)) {
@@ -7,6 +13,55 @@
 <p>Vítej zbloudilý poutníku!</p>
 <p><strong>Stránka je ve výstavbě!</strong> (Od 24. 3. 2020)</p>
 <p>Navštivte prosím prozatím <a href="old/version-4.1">předchozí stránku</a>.</p>
+
+<h2>Poslední novinka:</h2>
+
+<?php include "pages/inc/news_inc.php";
+
+$count_file = fopen('pages/news/count.txt', 'r');
+$blog_count = getline($count_file);
+fclose($count_file);
+
+if ($blog_count > 0) {
+  showNews($blog_count);
+} else {
+  echo '</p>Zatím nejsou žádné novinky.</p>';
+} ?>
+
+<p>Zobrazit <a href="?news<?php echo $langPostfix; ?>">všechny novinky</a>.</p>
+
+<h2>Poslední článek na blogu:</h2>
+
+<?php include "pages/inc/blog_inc.php";
+
+$count_file = fopen('pages/blog/count.txt', 'r');
+$blog_count = getline($count_file);
+fclose($count_file);
+
+if ($blog_count > 0) {
+  showBlog($blog_count);
+} else {
+  echo '</p>Zatím nejsou na blogu žádné články.</p>';
+} ?>
+
+<p>Zobrazit <a href="?blog<?php echo $langPostfix; ?>">všechny články blogu</a>.</p>
+
+<h2>Poslední komentář návštěvníka:</h2>
+
+<?php include "pages/inc/comment_inc.php";
+
+$count_file = fopen('pages/comments/count.txt', 'r');
+$comment_count = getline($count_file);
+fclose($count_file);
+
+if ($comment_count > 0) {
+  showComment($comment_count);
+} else {
+  echo '</p>Zatím nejsou žádné komentáře návštěvníků.</p>';
+} ?>
+
+<p>Můžete <a href="?comments<?php echo $langPostfix; ?>">zobrazit všechny komentáře</a> nebo <a href="?add-comment<?php echo $langPostfix; ?>">přidat nový</a>.</p>
+
 <p><small>&copy; Miroslav Hajda 2020 | Verze 4.2 | Hostováno u <a class="urlextern" href="https://www.zdechov.net">zdechov.net</a> | <a class="urlextern" href="https://github.com/hajdam/hajdam-web">Zdroj stránky</a></small></p>
 </div>
 </body>

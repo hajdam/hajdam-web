@@ -15,21 +15,25 @@
 
 <p><a href="?consonica<?php echo $langPostfix; ?>"><strong>Consonica</strong></a> - Audio DAW / editor</p>
 
+<h2>Java Projects</h2>
+
+<p><a href="?software/java<?php echo $langPostfix; ?>"><strong>Java Software</strong></a></p>
+
 <h2>Older projects</h2>
 
 <p>In the olden days I also created various simple software in older programming languages</p>
 
 <h3>Software written in Delphi</h3>
 
-<p><a href="?delphi<?php echo $langPostfix; ?>"><strong>Delphi Software</strong></a></p>
+<p><a href="?software/delphi<?php echo $langPostfix; ?>"><strong>Delphi Software</strong></a></p>
 
 <h3>Software written in Pascal</h3>
 
-<p><a href="?pascal<?php echo $langPostfix; ?>"><strong>Pascal Software</strong></a></p>
+<p><a href="?software/pascal<?php echo $langPostfix; ?>"><strong>Pascal Software</strong></a></p>
 
 <h3>Software for 8-bit computer</h3>
 
-<p><a href="?sharpmz<?php echo $langPostfix; ?>"><strong>Software for Sharp MZ</strong></a> - Collection of software created for 8-bit computer Sharp MZ-800</p>
+<p><a href="?software/sharpmz<?php echo $langPostfix; ?>"><strong>Software for Sharp MZ</strong></a> - Collection of software created for 8-bit computer Sharp MZ-800</p>
 
 </div>
 </body>
