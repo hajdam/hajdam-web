@@ -23,7 +23,7 @@ $query = getenv('QUERY_STRING');
 $paramPos = strpos($query, '&');
 if ($paramPos !== false) $query = substr($query, 0, $paramPos);
 
-if (($query == 'text') || (strncmp($query, "text/", 5) === 0)) {
+if (($query == 'texts') || (strncmp($query, "text/", 5) === 0)) {
   if ($lang != 'cs') {
     $submenu_text = '
 <ul><li><a href="?text/literary'.$langPostfix.'">Literary</a></li>
@@ -33,7 +33,7 @@ if (($query == 'text') || (strncmp($query, "text/", 5) === 0)) {
 <ul><li><a href="?text/literary'.$langPostfix.'">Literární</a></li>
 <li><a href="?text/subtitles'.$langPostfix.'">Titulky</a></li></ul>';
   }
-} else if (($query == 'graphic') || (strncmp($query, "graphic/", 8) === 0)) {
+} else if (($query == 'graphics') || (strncmp($query, "graphic/", 8) === 0)) {
   if ($lang != 'cs') {
     $submenu_graphic = '
 <ul><li><a href="?graphic/icons'.$langPostfix.'">Icons</a></li>
@@ -54,10 +54,18 @@ if (($query == 'text') || (strncmp($query, "text/", 5) === 0)) {
 } else if (($query == 'video') || (strncmp($query, "video/", 6) === 0)) {
   if ($lang != 'cs') {
     $submenu_video = '
-<ul><li><del><a href="?todo'.$langPostfix.'">TODO</a></del></li></ul>';
+<ul><li><a href="?video/old'.$langPostfix.'">Old</a></li></ul>';
   } else {
     $submenu_video = '
-<ul><li><del><a href="?todo'.$langPostfix.'">TODO</a></del></li></ul>';
+<ul><li><a href="?video/old'.$langPostfix.'">Staré</a></li></ul>';
+  }
+} else if (($query == 'games') || (strncmp($query, "game/", 5) === 0)) {
+  if ($lang != 'cs') {
+    $submenu_game = '
+<ul><li><a href="?game/minecraft'.$langPostfix.'">Minecraft</a></li></ul>';
+  } else {
+    $submenu_game = '
+<ul><li><a href="?game/minecraft'.$langPostfix.'">Minecraft</a></li></ul>';
   }
 }
 
@@ -71,7 +79,7 @@ if (empty($query)) {
   if (!(preg_match("/[a-z\/\_\-]+/", $query) === false) && file_exists($target)) {
     $include = $target;
   } else {
-  	http_response_code(404);
+    http_response_code(404);
     $include = 'pages/not-found'.$filePostfix.'.php';
   }
 }

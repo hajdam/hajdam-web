@@ -48,7 +48,33 @@
 <a href="images/education/muni%20brno/muni2.jpg" target="_blank"><img src="images/education/muni%20brno/.preview/_muni2.jpg" height="200" alt="[Fakulta]" hspace="5" border="0"/></a>
 </p>
 
-<h2>What Can You Find Here</h2>
+<h2>Work Experience</h2>
+
+<h3>Magion (10/2007 - 01/2013)</h3>
+
+<p><a class="urlextern" href="https://magion.cz">Magion</a> company in Vsetin is developing economical information systems. When I worked there, they were using Sybase Power Builder and later they started to move to .NET C#/ASP.NET and SilverLight, which was not quite my cup of coffe.</p>
+
+<p><img src="images/magion_vsetin.jpg" alt="[Magion Vsetin]" hspace="5" border="0"/></p>
+
+<h3>IBM Delivery Center (02/2013 - 01/2014)</h3>
+
+<p>I worked in team for infrastructure support tools in IBM GSDC Czech Republic a subsidiary of <a class="urlextern" href="https://ibm.com">IBM corporation</a> which was in technology park in Brno. We worked in smaller teams on stand-alone tools based on Java technologies, JSF, PrimeFaces and RichFaces. But the team was basically disbandoned.</p>
+
+<p><img src="images/ibm_dcbrno.jpg" alt="[IBM DC Brno]" hspace="5" border="0"/></p>
+
+<h3>Javlin/CloverETL (02/2015 - 05/2016)</h3>
+
+<p>I worked in Java and Eclipse framework on develoment of <a class="urlextern" href="https://cloverdx.com">ETL tool</a> for data transformation in company's Brno office. This is the field I'm strongly interested in. Company had almost start-up feel and part of the product was open-source, but this open-source was abandoned and company shifted more towards premium model with expert services offerings.</p>
+
+<p><img src="images/javlin_brno.jpg" alt="[Javlin Brno]" hspace="5" border="0"/></p>
+
+<h3>NetSuite/Oracle (03/2017 - 12/2019)</h3>
+
+<p>I was working in <a class="urlextern" href="https://netsuite.com/">NetSuite</a> as a Java backend developer on platform for omnichannel commerce software in Brno, later company was taken over by <a class="urlextern" href="https://oracle.com">Oracle Corporation</a>. The extend of the platform and specific combination with JavaScript was a bit out of my scope, but mostly I had some health issues in the end.</p>
+
+<p><img src="images/netsuite_brno.jpg" alt="[NetSuite Brno]" hspace="5" border="0"/></p>
+
+<h2>What Else Can You Find Here</h2>
 
 <p>My hobbies are Sharp MZ-800 8-bit computer, japanese animated series / movies, but mostly you will find various files and programming creations that I once produced here...</p>
 

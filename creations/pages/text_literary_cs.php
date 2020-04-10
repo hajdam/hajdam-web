@@ -1,7 +1,6 @@
 <div id="content">
-<h1>Textual Creations - Literary</h1>
+<h1>Textové výtvory - Literární</h1>
 <?php
-//echo strtotime('6-1-2006');
 function getline($fl) {
   $fp = @fgets($fl, 65536);
   $fp = substr($fp, 0, strlen($fp) - 1);
@@ -24,8 +23,8 @@ if ($pos * $perpage > $count) $pos = intdiv($count, $perpage);
 if (isset($_GET['item'])) {
 	$item = (int) $_GET['item'];
 
-	$filepath = 'pages/literary/'.$item.'_en.txt';
-	if (!is_file($filepath)) $filepath = 'pages/literary/'.$item.'.txt';
+	$filepath = 'pages/literary/'.$item.'.txt';
+	if (!is_file($filepath)) $filepath = 'pages/literary/'.$item.'_en.txt';
     $file = fopen($filepath, 'r');
     $time = getline($file);
     $title = getline($file);
@@ -38,17 +37,17 @@ if (isset($_GET['item'])) {
       $content .= getline($file);
     }
     echo '<h2>'.$title."</h2>\n";
-    echo '<p>Created on '.date('l jS \of F Y h:i:s A', $time).'<br/><br/>'.$shorttext.'</p>';
+    echo '<p>Vytvořeno '.date('d. m. Y H:m:s', $time).'<br/><br/>'.$shorttext.'</p>';
     echo '<p>'.$content."\n</p>";
 
 	if ($item > 1) {
-	  echo '<a href="?texts/literary&item='.($item-1).$langPostfix.'">&lt;&lt;&nbsp;Previous item</a>&nbsp;&nbsp;';
+	  echo '<a href="?text/literary&item='.($item-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí položka</a>&nbsp;&nbsp;';
 	}
 	if ($item < $count) {
-	  echo '<a href="?texts/literary&item='.($item+1).$langPostfix.'">Next item&nbsp;&gt;&gt;</a>';
+	  echo '<a href="?text/literary&item='.($item+1).$langPostfix.'">Následující položka&nbsp;&gt;&gt;</a>';
     }
 } else if ($count == 0) {
-	echo '<p>There are no items yet.</p>';
+	echo '<p>Ještě tu nejsou žádné položky.</p>';
 } else {
 	echo '<ul>';
 	$pagepos = $pos * $perpage;
@@ -57,10 +56,10 @@ if (isset($_GET['item'])) {
 	if ($fst > $count) $fst = $count;
 	for ($i = $fst; $i > $pagepos; $i--) {
 	  $notice = '';
-      $filepath = 'pages/literary/'.$i.'_en.txt';
+      $filepath = 'pages/literary/'.$i.'.txt';
       if (!is_file($filepath)) {
-      	$filepath = 'pages/literary/'.$i.'.txt';
-      	$notice = ' (czech only)';
+      	$filepath = 'pages/literary/'.$i.'_en.txt';
+        $notice = ' (pouze anglicky)';
       }
       $file = fopen($filepath, 'r');
       $time = getline($file);
@@ -69,7 +68,7 @@ if (isset($_GET['item'])) {
       fclose($file);
 
       echo '<li>';
-      echo '<p><strong><a href="?texts/literary&item='.$i.$langPostfix.'">'.$title.'</a></strong>'.$notice.'<br/>Created on '.date('l jS \of F Y h:i:s A', $time).'<br/>'.$shorttext.'</p>';
+      echo '<p><strong><a href="?text/literary&item='.$i.$langPostfix.'">'.$title.'</a></strong>'.$notice.'<br/>Vytvořeno '.date('d. m. Y H:m:s', $time).'<br/>'.$shorttext.'</p>';
       echo "</li>\n";
 	}
     echo '</ul>';
@@ -78,11 +77,11 @@ if (isset($_GET['item'])) {
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="?texts/literary&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Previous page</a>&nbsp;&nbsp;';
+		echo '<a href="?text/literary&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?texts/literary&pos='.($pos+1).$langPostfix.'">Next page&nbsp;&gt;&gt;</a>';
+		echo '<a href="?text/literary&pos='.($pos+1).$langPostfix.'">Následující stránka&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>

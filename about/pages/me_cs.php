@@ -48,7 +48,33 @@
 <a href="images/education/muni%20brno/muni2.jpg" target="_blank"><img src="images/education/muni%20brno/.preview/_muni2.jpg" height="200" alt="[Fakulta]" hspace="5" border="0"/></a>
 </p>
 
-<h2>Co tu najdete</h2>
+<h2>Pracovní zkušenosti</h2>
+
+<h3>Magion (10/2007 - 01/2013)</h3>
+
+<p>Společnost <a class="urlextern" href="https://magion.cz">Magion</a> ve Vsetíně se zabývá vývojem ekonomických informačních systémů. V době, kdy jsem tam pracoval se používal Sybase Power Builder, později se začalo přecházet na .NET C#/ASP.NET a SilverLight, což mi úplně nevyhovovalo.</p>
+
+<p><img src="images/magion_vsetin.jpg" alt="[Magion Vsetin]" hspace="5" border="0"/></p>
+
+<h3>IBM Delivery Center (02/2013 - 01/2014)</h3>
+
+<p>V místní pobočce firmy <a class="urlextern" href="https://ibm.com">IBM</a> v technologickém parku v Brně jsem pracoval v týmu pro nástroje pro podporu infrastruktury. Pracovalo se tehdy v menších týmech na samostatných nástrojích založených na Java technologiích, JSF, PrimeFaces a RichFaces. Nicméně došlo k rozpadu týmu.</p>
+
+<p><img src="images/ibm_dcbrno.jpg" alt="[IBM DC Brno]" hspace="5" border="0"/></p>
+
+<h3>Javlin/CloverETL (02/2015 - 05/2016)</h3>
+
+<p>V brněnské pobočce jsem pracoval v Javě a Eclipse frameworku na vývoji <a class="urlextern" href="https://cloverdx.com">ETL nástroje</a> pro datové transformace, což je oblast o kterou se silně zajímám. Šlo skoro o start-up a část produktu byla open-source, bohužel firma se rozhodla open-source opustit a přejít více na premiový model s nabízením expertních služeb.</p>
+
+<p><img src="images/javlin_brno.jpg" alt="[Javlin Brno]" hspace="5" border="0"/></p>
+
+<h3>NetSuite/Oracle (03/2017 - 12/2019)</h3>
+
+<p>V Brněnském vývojovém centru firmy <a class="urlextern" href="https://netsuite.com/">NetSuite</a> jsem pracoval jako Java programátor na platformě pro webové obchody, později společnost přešla pod vlastnictví společností <a class="urlextern" href="https://oracle.com">Oracle</a>. Rozsah platformy a kombinace s JavaScriptem byla pro mne poněkud obtížná, ale hlavně nastoupily zdravotní potíže.</p>
+
+<p><img src="images/netsuite_brno.jpg" alt="[NetSuite Brno]" hspace="5" border="0"/></p>
+
+<h2>Co tu dále najdete</h2>
 
 <p>Mezi mé záliby patří počítač Sharp MZ-800, japonské animované seriály/filmy, ale převážně zde najdete různé soubory a programátorské výtvory, které jsem kdysi vyplodil...</p>
 

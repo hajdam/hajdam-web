@@ -12,7 +12,6 @@ function getline($fl) {
 } ?>
 <p>Vítej zbloudilý poutníku!</p>
 <p><strong>Stránka je ve výstavbě!</strong> (Od 24. 3. 2020)</p>
-<p>Navštivte prosím prozatím <a href="old/version-4.1">předchozí stránku</a>.</p>
 
 <h2>Poslední novinka:</h2>
 

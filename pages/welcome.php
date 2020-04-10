@@ -12,7 +12,6 @@ function getline($fl) {
 } ?>
 <p>Welcome stray wanderer!</p>
 <p><strong>Website is under development!</strong> (From 24.3.2020)</p>
-<p>Please visit <a href="old/version-4.1">previous website instead</a>.</p>
 
 <h2>Latest news:</h2>
 
