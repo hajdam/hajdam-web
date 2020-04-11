@@ -25,7 +25,7 @@ if (!empty($prefix)) {
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">News</a></li>
       <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">About Me</a><?php echo @$submenu_about; ?></li>
       <li><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></li>
-      <li><del><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Gallery</a></del></li>
+      <li><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Gallery</a></li>
       <li><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Downloads</a></li>
     </ul>
   </li>
@@ -41,8 +41,8 @@ if (!empty($prefix)) {
       <li><a href="<?php echo $parentPrefix; ?>creations?texts<?php echo $langPostfix; ?>">Texts</a><?php echo @$submenu_texts; ?></li>
       <li><a href="<?php echo $parentPrefix; ?>creations?graphics<?php echo $langPostfix; ?>">Graphics</a><?php echo @$submenu_graphics; ?></li>
       <li><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Music</a><?php echo @$submenu_music; ?></li>
-      <li><del><a href="<?php echo $parentPrefix; ?>creations?video<?php echo $langPostfix; ?>">Video</a><?php echo @$submenu_video; ?></del></li>
-      <li><del><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Games</a><?php echo @$submenu_games; ?></del></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?video<?php echo $langPostfix; ?>">Video</a><?php echo @$submenu_video; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Games</a><?php echo @$submenu_game; ?></li>
     </ul>
   </li>
   <li><div>Social</div>
@@ -55,7 +55,7 @@ if (!empty($prefix)) {
       <li><a href="<?php echo $rootPrefix; ?>?news<?php echo $langPostfix; ?>">Novinky</a></li>
       <li><a href="<?php echo $rootPrefix; ?>about?me<?php echo $langPostfix; ?>">O mě</a><?php echo @$submenu_about; ?></li>
       <li><a href="<?php echo $rootPrefix; ?>?blog<?php echo $langPostfix; ?>">Blog</a></li>
-      <li><del><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Galerie</a></del></li>
+      <li><a href="<?php echo $rootPrefix; ?>?gallery<?php echo $langPostfix; ?>">Galerie</a></li>
       <li><a href="<?php echo $rootPrefix; ?>?downloads<?php echo $langPostfix; ?>">Ke stažení</a></li>
     </ul>
   </li>
@@ -68,11 +68,11 @@ if (!empty($prefix)) {
   </li>
   <li><div>Tvorba</div>
     <ul class="submenu">
-      <li><a href="<?php echo $parentPrefix; ?>creations?text<?php echo $langPostfix; ?>">Texty</a><?php echo @$submenu_text; ?></li>
-      <li><a href="<?php echo $parentPrefix; ?>creations?graphic<?php echo $langPostfix; ?>">Grafika</a><?php echo @$submenu_graphic; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?texts<?php echo $langPostfix; ?>">Texty</a><?php echo @$submenu_text; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?graphics<?php echo $langPostfix; ?>">Grafika</a><?php echo @$submenu_graphic; ?></li>
       <li><a href="<?php echo $parentPrefix; ?>creations?music<?php echo $langPostfix; ?>">Hudba</a><?php echo @$submenu_music; ?></li>
-      <li><del><a href="<?php echo $parentPrefix; ?>creations?video<?php echo $langPostfix; ?>">Videa</a><?php echo @$submenu_video; ?></del></li>
-      <li><del><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Hry</a><?php echo @$submenu_games; ?></del></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?video<?php echo $langPostfix; ?>">Videa</a><?php echo @$submenu_video; ?></li>
+      <li><a href="<?php echo $parentPrefix; ?>creations?games<?php echo $langPostfix; ?>">Hry</a><?php echo @$submenu_game; ?></li>
     </ul>
   </li>
   <li><div>Sociální</div>
