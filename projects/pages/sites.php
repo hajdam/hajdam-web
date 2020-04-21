@@ -1,5 +1,5 @@
 <div id="content">
-<p>Created websites:</p>
+<h1>Created Websites</h1>
 
 <p><a href="?site/homepage<?php echo $langPostfix; ?>"><strong>Homepage</strong></a> - This website</p>
 

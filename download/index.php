@@ -1,6 +1,16 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  include 'pages/inc/download_inc.php';
+  
+  //header("Content-type: application/x-zip-compressed");
+  //header("Content-disposition: filename=download.zip");
+  echo 'TEST';
+  exit();
+}
+
 // Store referer
 $referer = @$_SERVER['HTTP_REFERER'];
+
 $component = "";
 
 function startsWith($text, $match) {

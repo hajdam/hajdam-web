@@ -69,7 +69,7 @@
 
 <p>At some point I also experimented with modification of the railcraft mod, to add some more signs...</p>
 
-<p><img src="images/minecraft_railcraft-signs_mod.jpg" alt="[minecraft_railcraft-signs_mod]" class="center"/></p>
+<p><img src="images/minecraft/railcraft-signs_mod.jpg" alt="[minecraft_railcraft-signs_mod]" class="center"/></p>
 
 </div>
 </body>

@@ -6,13 +6,13 @@
 <p>Morče 1: Střapec</p>
 <p><img src="images/pets/guinea_pig1.jpg" alt="[Guinea pig 1]" width="400" class="center"/></p>
 
-<p>Morče 2: Ňoňo (zhruba 2003 - 2006)</p>
+<p>Morče 2: Pulsar (1994 - 2001)</p>
 <p><img src="images/pets/guinea_pig2.jpg" alt="[Guinea pig 2]" width="400" class="center"/></p>
 
-<p>Morče 3: Pulsar</p>
+<p>Morče 3: Ňoňo (2001 - 2008)</p>
 <p><img src="images/pets/guinea_pig3.jpg" alt="[Guinea pig 3]" width="400" class="center"/></p>
 
-<p>Morče 4: Bertold</p>
+<p>Morče 4: Bertold (2008 - 2015)</p>
 <p><img src="images/pets/guinea_pig4.jpg" alt="[Guinea pig 4]" width="400" class="center"/></p>
 
 <p>Morče 5: Kuido (2015 - )</p>

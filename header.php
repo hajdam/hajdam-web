@@ -15,9 +15,8 @@ if (!empty($prefix)) {
 </head>
 
 <body>
-<div id="name"><h1><a href="<?php echo $parentPrefix; ?>"><img src="<?php echo $parentPrefix; ?>images/hajdam-logo.png" alt="[HajdaM]" title="Icon" width="50" height="50" style="vertical-align: text-top; margin-top: -7px;"/>&nbsp;<?php echo ($lang == 'cs') ? 'HajdaM' : 'HajdaM' ?></a></h1></div>
-<div id="divider"></div>
-<div id="leftbar">
+<span id="leftbar">
+<span id="logo"><h1><a href="<?php echo $parentPrefix; ?>"><img src="<?php echo $parentPrefix; ?>images/hajdam-logo.png" alt="[HajdaM]" title="Icon" width="50" height="50" style="vertical-align: text-top; margin-top: -7px;"/>&nbsp;<?php echo ($lang == 'cs') ? 'HajdaM' : 'HajdaM' ?></a></h1></span>
 <ul id="navmenu"><?php if ($lang != 'cs') { ?>
   <li><div>General</div>
     <ul class="submenu">
@@ -92,4 +91,4 @@ if ($lang == 'cs') {
   echo '<p style="text-align: center"><a href="?'.($query == '' ? '' : $query.'&amp;').'lang=cs"><img src="'.$parentPrefix.'images/flags/cz.gif" alt="[cs]"/>&nbsp;Česká verze</a></p>';
 }
 ?>
-</div>
+</span>

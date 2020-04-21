@@ -32,6 +32,11 @@ if (empty($query)) {
     header('Location: '.'download/?'.substr($query, 9));
     exit();
   }
+  
+  if ($query == 'lang=cs' || $query == 'lang=en') {
+    header('Location: '.'?welcome&'.$query);
+    exit();
+  }
 	
   $paramPos = strpos($query, '&');
   if ($paramPos !== false) $query = substr($query, 0, $paramPos);

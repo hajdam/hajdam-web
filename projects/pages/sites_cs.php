@@ -1,5 +1,5 @@
 <div id="content">
-<p>Vytvořené stránky:</p>
+<h1>Vytvořené stránky</h1>
 
 <p><a href="?site/homepage<?php echo $langPostfix; ?>"><strong>Domovská stránka</strong></a> - Tato stránka</p>
 

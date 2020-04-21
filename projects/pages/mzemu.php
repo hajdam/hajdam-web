@@ -21,9 +21,9 @@
 
 <p>Version for MS-DOS written in Borland Pascal using Turbo Vision libraries.</p>
 
-<p>Emulator is written in English. But is also contains file ctimne.txt with description in czech languange and it's possible to switch code charset type.</p>
+<p>Emulator is written in English. But it also contains file ctimne.txt with description in czech language and it's possible to switch code charset type.</p>
 
-<p><u>Emulator contains as of version 1.0 alfa 7:</u> 
+<p><u>Emulator contains (as of version 1.0 alfa 7):</u> 
 
 <ul>
   <li>Emulation of MZ800 - text mode, graphics only partial</li>

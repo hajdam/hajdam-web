@@ -5,12 +5,12 @@ function getline($fl) {
   return $fp;
 }
 ?>
-<img src="about/images/photos/fotka5.jpg" alt="[fotka]" style="float: right" />
 <h1>Miroslav Hajda - Osobní stránky</h1>
+<img src="about/images/photos/fotka5.jpg" alt="[fotka]" style="float: right" />
 <?php if (time() > filectime('author-alive.dat') + (60 * 60 * 24 * 90)) {
   echo '<p><h3 style="color: red; background-color: yellow;">Tato stránka je opuštěna - autor této stránky je buď mrtev nebo velice dlouho neprovedl žádnou úpravu</h3></p>';
 } ?>
-<p>Vítej zbloudilý poutníku!</p>
+<p>Vítej zbloudilý poutníče!</p>
 <p><strong>Stránka je ve výstavbě!</strong> (Od 24. 3. 2020)</p>
 
 <h2>Poslední novinka:</h2>

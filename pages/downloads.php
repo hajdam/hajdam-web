@@ -24,12 +24,16 @@ if ($path != '') {
   echo '<h1>Downloads</h1>'."\n";	
 }
 
+echo '<form method="post" name="download" action="download/">'."\n";
+echo '<input type="hidden" value="'.$rootpath.'/">'."\n";
+
 $hasdirs = false;
 $handle = opendir($rootpath.'/'.$path);
 while (($item = readdir($handle))!==false) {
   if ($item[0] != '.') {
   	$itempath = $path.$item;
     if (is_dir($rootpath.'/'.$itempath)) {
+      echo '<input type="checkbox" name="'.$item.'" />';
       echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&path='.$itempath.'">'.$item.'</a><br/>'."\n";
       $hasdirs = true;
     }
@@ -49,13 +53,30 @@ if ($path != '') {
       		if ($hasdirs) echo '<br/>'."\n";
       	}
       		
+        echo '<input type="checkbox" name="'.$item.'" />';
         echo '<img src="images/filetypes/null.gif" alt="[dir]"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
       }
     }
   }
   closedir($handle);
 }
+
 ?>
+<script language="JavaScript"><!--
+
+function CheckAllBoxes() 
+{
+  for (var i=0;i<document.download.elements.length;i++)
+  { var e=document.download.elements[i];
+    if (e.type=="checkbox") { e.checked=document.download.checkAll.checked }
+  }
+}
+
+//--></script>
+
+<p><input type="checkbox" name="checkAll" onClick="CheckAllBoxes()">Select All Items</p>
+<img alt="Download ZIP" src="../images/filetypes/zip.gif" width="16" height="16" />&nbsp;<input type="submit" value="Download Selected" name="downloadSelected" /><br/>
+</form>
 
 </div></div>
 </body>

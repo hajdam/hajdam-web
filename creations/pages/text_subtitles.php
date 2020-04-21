@@ -12,7 +12,7 @@ You can download some here:<br/>
 <a href="../download/?subtitles/OMG%20Movie/Ah!%20My%20Goddess%20Movie%20-%20CD1.Czech.ssa">Ah! My Goddess Movie - CD1.Czech.ssa</a><br/>
 <a href="../download/?subtitles/OMG%20Movie/Ah!%20My%20Goddess%20Movie%20-%20CD2.Czech.ssa">Ah! My Goddess Movie - CD2.Czech.ssa</a></p>
 <p>Version for 2 CD, timing for zx.ah.my.goddess.movie videos (Thanks to <a class="urlextern" href="http://e4m.wz.cz/spec.htm"
-title="Anime stránky Matesa">Matesovi</a> for retiming)<br/>
+title="Mates's Anime Pages">Mates</a> for retiming)<br/>
 <a href="../download/?subtitles/OMG%20Movie/zx.ah.my.goddess.movie.part1.ssa">zx.ah.my.goddess.movie.part1.ssa</a><br/>
 <a href="../download/?subtitles/OMG%20Movie/zx.ah.my.goddess.movie.part2.ssa">zx.ah.my.goddess.movie.part2.ssa</a></p>
 <h3 id="angelic_layer">Angelic Layer</h3>
