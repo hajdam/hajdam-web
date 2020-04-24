@@ -2,6 +2,18 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   include 'pages/inc/download_inc.php';
   
+  foreach ($_POST as $key => $value) {
+    if (strncmp($key,'file_', 5) == 0) {
+      echo "$key=$value<br />";
+    }
+  }
+
+  foreach ($_POST as $key => $value) {
+    if (strncmp($key,'dir_', 4) == 0) {
+      echo "$key=$value<br />";
+    }
+  }
+  
   //header("Content-type: application/x-zip-compressed");
   //header("Content-disposition: filename=download.zip");
   echo 'TEST';

@@ -33,7 +33,7 @@ while (($item = readdir($handle))!==false) {
   if ($item[0] != '.') {
   	$itempath = $path.$item;
     if (is_dir($rootpath.'/'.$itempath)) {
-      echo '<input type="checkbox" name="'.$item.'" />';
+      echo '<input type="checkbox" name="dir_'.$item.'" />';
       echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&path='.$itempath.'">'.$item.'</a><br/>'."\n";
       $hasdirs = true;
     }
@@ -53,8 +53,8 @@ if ($path != '') {
       		if ($hasdirs) echo '<br/>'."\n";
       	}
       		
-        echo '<input type="checkbox" name="'.$item.'" />';
-        echo '<img src="images/filetypes/null.gif" alt="[dir]"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
+        echo '<input type="checkbox" name="file_'.$item.'" />';
+        echo '<img src="images/filetypes/null.gif" alt="[file]"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
       }
     }
   }
