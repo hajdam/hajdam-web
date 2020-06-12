@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Consonica</h1>
 
-<p>Consonica is planned to be mashup of Java apps and libraries around manipulation with music / audio.</p>
+<p>Consonica is planned to be mashup of Java apps and libraries around manipulation with music / audio data.</p>
 
 <p>Website: <a class="urlextern" href="https://consonica.exbin.org">consonica.exbin.org</a> (TODO)</p>
 

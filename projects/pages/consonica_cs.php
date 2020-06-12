@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Consonica</h1>
 
-<p>Consonica je plánovaná slátanina Java aplikací a knihoven pro manupulaci s hudebnímy a zvukovými daty.</p>
+<p>Consonica je plánovaná slátanina Java aplikací a knihoven pro manipulaci s hudebnímy a zvukovými daty.</p>
 
 <p>Stránka: <a class="urlextern" href="https://consonica.exbin.org">consonica.exbin.org</a> (TODO)</p>
 
