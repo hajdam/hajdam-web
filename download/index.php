@@ -1,4 +1,6 @@
 <?php
+include "../pages/inc/download_inc.php";
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   include 'pages/inc/download_inc.php';
   

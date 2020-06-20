@@ -5,7 +5,7 @@
 
 <div class="itemgroup">
 <h3>Textová hra Agent Wolf V.1.03</h3>
-<p>Textová hra (poškozené soubory / načítaní)</p>
+<p>Jednoduchá textová hra</p>
 <p><img src="../download/sharpmz/images/agentwolf.gif" alt="[agentwolf.gif]" vspace="4" width="320" height="200" class="center"/></p>
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení verze 1.1 BETA (2020-06-12)</td>

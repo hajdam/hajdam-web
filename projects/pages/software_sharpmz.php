@@ -1,11 +1,11 @@
 <div id="content">
 <h1>Software for Sharp MZ-800</h1>
 
-<p>List of software I created for 8-bit computer in the old days.</p> 
+<p>List of software I created for 8-bit computer in the old days (czech language only).</p> 
 
 <div class="itemgroup">
 <h3>Text game Agent Wolf</h3>
-<p>Text game</p>
+<p>Simple text game</p>
 <p><img src="../download/sharpmz/images/agentwolf.gif" alt="[agentwolf.gif]" vspace="4" width="320" height="200" class="center"/></p>
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Download version 1.1 BETA (2020-06-12)</td>

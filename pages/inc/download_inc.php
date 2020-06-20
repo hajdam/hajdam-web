@@ -32,7 +32,7 @@ function skipOne($src) {
 }
 
 function dosDate($uts) {
-  $today=getdate($uts);
+  $today = getdate($uts);
   return ($today[seconds]/2)%31 +
       $today[minutes]*32 +
       $today[hours]*2048 + 
@@ -40,7 +40,7 @@ function dosDate($uts) {
 }
 
 function checkzip($fname, $file) {
-  $fl=fopen($file,"r");
+  $fl = fopen($file,"r");
   if ($fl) {
 //    $t=fread($fl,7);
 //    if ($t=="Rar!".chr(26).chr(7).chr(0)) {
@@ -49,12 +49,12 @@ function checkzip($fname, $file) {
 // CRC control later
 //      fclose($fl);
 // Create Store Head
-      $fl=fopen($file,"r");
-      $buffer=fread($fl, filesize($file));
-      $crc=crc32($buffer);
-      $head="PK".chr(3).chr(4).chr(10).chr(0).binstr(0).binstr(dosdt(time())).binstr($crc);
-      $head.=binstr(strlen($buffer)).binstr(strlen($buffer)).substr(binstr(strlen($fname)),0,2);
-      $head.=chr(0).chr(0).$fname;
+      $fl = fopen($file,"r");
+      $buffer = fread($fl, filesize($file));
+      $crc = crc32($buffer);
+      $head = "PK".chr(3).chr(4).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr($crc);
+      $head .= binStr(strlen($buffer)).binStr(strlen($buffer)).substr(binStr(strlen($fname)),0,2);
+      $head .= chr(0).chr(0).$fname;
       return $head;
 //    } else return false;
   fclose($fl);
