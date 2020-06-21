@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   //header("Content-type: application/x-zip-compressed");
   //header("Content-disposition: filename=download.zip");
   echo 'TEST';
-  exit();
+  exit();   
 }
 
 // Store referer
