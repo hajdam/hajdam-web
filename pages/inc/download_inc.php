@@ -39,6 +39,11 @@ function dosDate($uts) {
       65536 * ($today[mday] + $today[mon] * 32 + ($today[year] - 1980) * 512);
 }
 
+function crc32_file($filename)
+{
+    return hash_file ('CRC32', $filename , FALSE);
+}
+
 function checkzip($fname, $file) {
   $fl = fopen($file,"r");
   if ($fl) {
@@ -62,48 +67,43 @@ function checkzip($fname, $file) {
 }
 
 function precompute($dir) {
-    $cdir = $dir."/.dir";
-    if (!is_dir($cdir)) {
-        mkdir($cdir);
+    precomputePath($dir, '');
+}
+
+function precomputePath($dir, $sub) {
+    $path = $dir.($sub == '' ? '' : '/'.$sub);
+    echo $path."<br/>";
+    $cpath = $path."/.download";
+    if (!is_dir($cpath)) {
+        mkdir($cpath, 0777);
     }
     
-    $fl = fopen($cdir."/.download","w");
+    $fl = fopen($cpath."/.dir","w+");
 
-    $handle = opendir($rootpath.'/'.$path);
+    $handle = opendir($path);
     while (($item = readdir($handle))!==false) {
       if ($item[0] != '.') {
-        $itempath = $path.$item;
-        if (is_dir($rootpath.'/'.$itempath)) {
-          precompute($itempath);
-//          echo '<input type="checkbox" name="dir_'.$item.'" />';
-//          echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&path='.$itempath.'">'.$item.'</a><br/>'."\n";
-//          $hasdirs = true;
+        $itempath = $path.'/'.$item;
+        if (is_dir($itempath)) {
+          precomputePath($dir, ($sub == '' ? $item : $sub.'/'.$item));
         }
       }
     }
     closedir($handle);
 
-    
-    $hasfiles = false;
-    if ($path != '') {
-      $handle = opendir($rootpath.'/'.$path);
-      while (($item = readdir($handle))!==false) {
+    $handle = opendir($path);
+    while (($item = readdir($handle))!==false) {
         if ($item[0] != '.') {
-          $itempath = $path.$item;
-          if (!is_dir($rootpath.'/'.$itempath)) {
-            if (!$hasfiles) {
-                $hasfiles = true;
-                if ($hasdirs) echo '<br/>'."\n";
-            }
-                
-            echo '<input type="checkbox" name="file_'.$item.'" />';
-            echo '<img src="images/filetypes/null.gif" alt="[file]"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
+          $itempath = $path.'/'.$item;
+          if (is_file($itempath)) {
+            fwrite($fl, $item."\n");
+            fwrite($fl, filesize($itempath)."\n");
+            fwrite($fl, crc32_file($itempath)."\n");
           }
         }
-      }
-      closedir($handle);
-      
-  fclose($fl);
-}
+    }
+    closedir($handle);
 
+    fclose($fl);
+}
 ?>
