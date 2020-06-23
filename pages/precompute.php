@@ -1,5 +1,5 @@
 <div id="content">
-<p>Download precomputing...</p>
+<p>Precomputing downloads ...</p>
 <?php
 include 'pages/inc/download_inc.php';
 

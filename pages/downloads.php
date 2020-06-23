@@ -10,9 +10,6 @@ if (!isset($path)) {
   $i = 0;
   while (@$path[$i] == '/') $i++;
   if ($i > 0) $path = substr($path, $i);
-  if ($path != '') {
-  	  if ($path[strlen($path) -1] != '/') $path .= '/';
-  }
 }
 
 if ($path != '') {
@@ -25,13 +22,13 @@ if ($path != '') {
 }
 
 echo '<form method="post" name="download" action="download/">'."\n";
-echo '<input type="hidden" value="'.$rootpath.'/">'."\n";
+echo '<input type="hidden" name="path" value="'.$path.'"/>'."\n";
 
 $hasdirs = false;
 $handle = opendir($rootpath.'/'.$path);
 while (($item = readdir($handle))!==false) {
   if ($item[0] != '.') {
-  	$itempath = $path.$item;
+  	$itempath = $path.'/'.$item;
     if (is_dir($rootpath.'/'.$itempath)) {
       echo '<input type="checkbox" name="dir_'.$item.'" />';
       echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&path='.$itempath.'">'.$item.'</a><br/>'."\n";
@@ -46,7 +43,7 @@ if ($path != '') {
   $handle = opendir($rootpath.'/'.$path);
   while (($item = readdir($handle))!==false) {
     if ($item[0] != '.') {
-  	  $itempath = $path.$item;
+  	  $itempath = $path.'/'.$item;
       if (!is_dir($rootpath.'/'.$itempath)) {
       	if (!$hasfiles) {
       		$hasfiles = true;
@@ -60,7 +57,6 @@ if ($path != '') {
   }
   closedir($handle);
 }
-
 ?>
 <script language="JavaScript"><!--
 
