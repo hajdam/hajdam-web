@@ -41,46 +41,46 @@ function dosDate($uts) {
 
 function crc32_file($filename)
 {
-    return hash_file('CRC32', $filename , FALSE);
+    return hash_file('CRC32B', $filename , FALSE);
 }
 
 function genFileHead($fname, $crc, $size) {
     $head = "PK".chr(3).chr(4).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr($crc);
     $head .= binStr($size).binStr($size).substr(binStr(strlen($fname)), 0, 2);
     $head .= chr(0).chr(0).$fname;
-    return $head;
+    return $head; // 30
 }
 
 function genDirHead($dname) {
     $head = "PK".chr(3).chr(4).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr(0);
     $head .= binStr(0).binStr(0).substr(binStr(strlen($dname)), 0, 2);
     $head .= chr(0).chr(0).$dname;
-    return $head;
+    return $head; // 30
 }
 
-function genCdFileHead($fname, $crc, $size) {
-    $head = "PK".chr(2).chr(1).chr(0x1e).chr(3).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr($crc);
+function genCdFileHead($fname, $crc, $size, $offset) {
+    $head = "PK".chr(1).chr(2).chr(0x14).chr(3).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr($crc);
     $head .= binStr($size).binStr($size).substr(binStr(strlen($fname)), 0, 2);
     $head .= chr(0).chr(0).chr(0).chr(0);
-    $head .= chr(0).chr(0).chr(0).chr(0).binStr(0).binStr(0).$fname;
-    return $head;
+    $head .= chr(0).chr(0).chr(0).chr(0).binStr(0x81b60000).binStr($offset).$fname;
+    return $head; // 46
 }
 
-function genCdDirHead($dname) {
-    $head = "PK".chr(2).chr(1).chr(0x1e).chr(3).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr(0);
+function genCdDirHead($dname, $offset) {
+    $head = "PK".chr(1).chr(2).chr(0x14).chr(3).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr(0);
     $head .= binStr(0).binStr(0).substr(binStr(strlen($dname)), 0, 2);
     $head .= chr(0).chr(0).chr(0).chr(0);
-    $head .= chr(0).chr(0).chr(0).chr(0).binStr(0).binStr(0).$dname;
-    return $head;
+    $head .= chr(0).chr(0).chr(0).chr(0).binStr(0x81b60000).binStr($offset).$dname;
+    return $head; // 46
 }
 
 function genCdEnd($cdOffset, $cdCount, $cdSize) {
     $head = "PK".chr(5).chr(6).chr(0).chr(0).chr(0).chr(0).substr(binStr($cdCount), 0, 2).substr(binStr($cdCount), 0, 2).binStr($cdSize).binStr($cdOffset);
     $head .= chr(0).chr(0);
-    return $head;
+    return $head; // 22
 }
 
-function genDirFiles($path, $sub) {
+function genDirFiles($path, $sub, $files, $offset, &$cdOffsets) {
     $size = 0;
 
     // Process files
@@ -91,6 +91,7 @@ function genDirFiles($path, $sub) {
             $fsize = getLine($fl);
             $fcrc = hexdec(strtoupper(getLine($fl)));
             
+            $cdOffsets[$sub.$fname] = $offset + $size;
             $head = genFileHead($sub.$fname, $fcrc, $fsize);
             $size += strlen($head);
             echo $head;
@@ -105,11 +106,12 @@ function genDirFiles($path, $sub) {
       if ($item[0] != '.') {
           $itempath = $path.'/'.$item;
           if (is_dir($itempath) && is_dir($itempath.'/.download')) {
-              $head = genDirHead($itempath);
+              $cdOffsets[$sub.$item.'/'] = $offset + $size;
+              $head = genDirHead($sub.$item.'/');
               $size += strlen($head);
               echo $head;
               
-              $size += genDirFiles($path.'/'.$item, $sub.'/'.$item);
+              $size += genDirFiles($path.'/'.$item, $sub.$item.'/', null, $offset + $size, $cdOffsets);
           }
       }
     }
@@ -117,7 +119,7 @@ function genDirFiles($path, $sub) {
     return $size;
 }
 
-function genDirCd($path, $sub, &$cdCount) {
+function genDirCd($path, $sub, $dirs, &$cdCount, &$cdOffsets) {
     $size = 0;
 
     // Process files
@@ -128,9 +130,10 @@ function genDirCd($path, $sub, &$cdCount) {
             $fsize = getLine($fl);
             $fcrc = hexdec(getLine($fl));
             
-            $head = genCdFileHead($sub.$fname, $fcrc, $fsize);
+            $head = genCdFileHead($sub.$fname, $fcrc, $fsize, $cdOffsets[$sub.$fname]);
             $size += strlen($head);
             echo $head;
+            $cdCount++;
         }
     } while ($fname != '');
     fclose($fl);
@@ -141,11 +144,12 @@ function genDirCd($path, $sub, &$cdCount) {
       if ($item[0] != '.') {
           $itempath = $path.'/'.$item;
           if (is_dir($itempath) && is_dir($itempath.'/.download')) {
-              $head = genCdDirHead($itempath);
+              $head = genCdDirHead($sub.$item.'/', $cdOffsets[$sub.$fname]);
               $size += strlen($head);
               echo $head;
+              $cdCount++;
               
-              $size += genDirCd($path.'/'.$item, $sub.'/'.$item);
+              $size += genDirCd($path.'/'.$item, $sub.$item.'/', null, $cdCount, $cdOffsets);
           }
       }
     }
@@ -163,12 +167,13 @@ function generateZip($path, $files, $dirs) {
     $path = '../download'.($path == '' ? '' : '/'.$path);
     // TODO
     
+    $cdOffsets = array();
     $offset = 0;
-    $offset += genDirFiles($path, '');
+    $offset += genDirFiles($path, '', $files, $offset, $cdOffsets);
 
     $cdOffset = $offset;
     $cdCount = 0;
-    $offset += genDirCd($path, '', $cdCount);
+    $offset += genDirCd($path, '', $dirs, $cdCount, $cdOffsets);
     $cdSize = $offset - $cdOffset;
 
     echo genCdEnd($cdOffset, $cdCount, $cdSize);
