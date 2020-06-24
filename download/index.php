@@ -1,24 +1,27 @@
 <?php
-include "../pages/inc/download_inc.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  include 'pages/inc/download_inc.php';
+  include '../pages/inc/download_inc.php';
   
+  $path = $_POST['path'];
+  $dirs = array();
+  $files = array();
+
   foreach ($_POST as $key => $value) {
-    if (strncmp($key,'file_', 5) == 0) {
-      echo "$key=$value<br />";
+    if (strncmp($key, 'file_', 5) == 0) {
+//      echo "$key=$value<br />";
+      array_push($files, $value);
     }
   }
 
   foreach ($_POST as $key => $value) {
-    if (strncmp($key,'dir_', 4) == 0) {
-      echo "$key=$value<br />";
+    if (strncmp($key, 'dir_', 4) == 0) {
+//      echo "$key=$value<br />";
+      array_push($dirs, $value);
     }
   }
   
-  //header("Content-type: application/x-zip-compressed");
-  //header("Content-disposition: filename=download.zip");
-  echo 'TEST';
+  generateZip($path, $files, $dirs);
   exit();   
 }
 

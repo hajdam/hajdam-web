@@ -16,7 +16,7 @@ if ($path != '') {
   $basename = basename($path);
   $parentpath = dirname($path);
   echo '<h1><img src="images/tree/folder-32x32.gif" alt="[dir]"/>&nbsp;Folder: '.($parentpath == '.' ? '' : $parentpath.'/').$basename.'</h1>'."\n";	
-  echo '<img src="images/tree/up.gif" alt="[up]"/>&nbsp;<a href="?downloads'.$langPostfix.(($parentpath == '.') ? '' : '&path='.$parentpath).'">.. (up one level)</a><br/><br/>'."\n";
+  echo '<img src="images/tree/up.gif" alt="[up]"/>&nbsp;<a href="?downloads'.$langPostfix.(($parentpath == '.') ? '' : '&amp;path='.$parentpath).'">.. (up one level)</a><br/><br/>'."\n";
 } else {
   echo '<h1>Downloads</h1>'."\n";	
 }
@@ -25,13 +25,15 @@ echo '<form method="post" name="download" action="download/">'."\n";
 echo '<input type="hidden" name="path" value="'.$path.'"/>'."\n";
 
 $hasdirs = false;
+$dirIndex = 0;
 $handle = opendir($rootpath.'/'.$path);
 while (($item = readdir($handle))!==false) {
   if ($item[0] != '.') {
   	$itempath = $path.'/'.$item;
     if (is_dir($rootpath.'/'.$itempath)) {
-      echo '<input type="checkbox" name="dir_'.$item.'" />';
-      echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&path='.$itempath.'">'.$item.'</a><br/>'."\n";
+      echo '<input type="checkbox" name="dir_'.$dirIndex.'" value="'.htmlentities($item).'" />';
+      echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&amp;path='.$itempath.'">'.$item.'</a><br/>'."\n";
+      $dirIndex++;
       $hasdirs = true;
     }
   }
@@ -39,6 +41,7 @@ while (($item = readdir($handle))!==false) {
 closedir($handle);
 
 $hasfiles = false;
+$fileIndex = 0;
 if ($path != '') {
   $handle = opendir($rootpath.'/'.$path);
   while (($item = readdir($handle))!==false) {
@@ -50,8 +53,9 @@ if ($path != '') {
       		if ($hasdirs) echo '<br/>'."\n";
       	}
       		
-        echo '<input type="checkbox" name="file_'.$item.'" />';
+        echo '<input type="checkbox" name="file_'.$fileIndex.'" value="'.htmlentities($item).'" />';
         echo '<img src="images/filetypes/null.gif" alt="[file]"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
+        $fileIndex++;
       }
     }
   }

@@ -45,8 +45,12 @@ function crc32_file($filename)
 }
 
 function genFileHead($fname, $crc, $size) {
-    $head = "PK".chr(3).chr(4).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr($crc);
-    $head .= binStr($size).binStr($size).substr(binStr(strlen($fname)), 0, 2);
+    return genCFileHead($fname, $crc, $size, $size, 0);
+}
+
+function genCFileHead($fname, $crc, $size, $extSize, $compression) {
+    $head = "PK".chr(3).chr(4).chr(10).chr(0).chr(0).chr(0).substr(binStr($compression), 0, 2).binStr(dosDate(time())).binStr($crc);
+    $head .= binStr($size).binStr($extSize).substr(binStr(strlen($fname)), 0, 2);
     $head .= chr(0).chr(0).$fname;
     return $head; // 30
 }
@@ -59,8 +63,12 @@ function genDirHead($dname) {
 }
 
 function genCdFileHead($fname, $crc, $size, $offset) {
-    $head = "PK".chr(1).chr(2).chr(0x14).chr(3).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr($crc);
-    $head .= binStr($size).binStr($size).substr(binStr(strlen($fname)), 0, 2);
+    return genCdCFileHead($fname, $crc, $size, $offset, $size, 0);
+}
+
+function genCdCFileHead($fname, $crc, $size, $offset, $extSize, $compression) {
+    $head = "PK".chr(1).chr(2).chr(0x14).chr(3).chr(10).chr(0).chr(0).chr(0).substr(binStr($compression), 0, 2).binStr(dosDate(time())).binStr($crc);
+    $head .= binStr($size).binStr($extSize).substr(binStr(strlen($fname)), 0, 2);
     $head .= chr(0).chr(0).chr(0).chr(0);
     $head .= chr(0).chr(0).chr(0).chr(0).binStr(0x81b60000).binStr($offset).$fname;
     return $head; // 46
@@ -70,7 +78,7 @@ function genCdDirHead($dname, $offset) {
     $head = "PK".chr(1).chr(2).chr(0x14).chr(3).chr(10).chr(0).binStr(0).binStr(dosDate(time())).binStr(0);
     $head .= binStr(0).binStr(0).substr(binStr(strlen($dname)), 0, 2);
     $head .= chr(0).chr(0).chr(0).chr(0);
-    $head .= chr(0).chr(0).chr(0).chr(0).binStr(0x81b60000).binStr($offset).$dname;
+    $head .= chr(0).chr(0).chr(0).chr(0).binStr(0x41ff0010).binStr($offset).$dname;
     return $head; // 46
 }
 
@@ -80,22 +88,51 @@ function genCdEnd($cdOffset, $cdCount, $cdSize) {
     return $head; // 22
 }
 
-function genDirFiles($path, $sub, $files, $offset, &$cdOffsets) {
+function genDirFiles($path, $sub, $files, $dirs, $offset, &$cdOffsets) {
     $size = 0;
 
     // Process files
     $fl = fopen($path."/.download/.files","r");
     do {
         $fname = getLine($fl);
-        if ($fname != '') {
+        if ($fname != '' && (!isset($files) || in_array($fname, $files))) {
             $fsize = getLine($fl);
             $fcrc = hexdec(strtoupper(getLine($fl)));
             
             $cdOffsets[$sub.$fname] = $offset + $size;
-            $head = genFileHead($sub.$fname, $fcrc, $fsize);
-            $size += strlen($head);
-            echo $head;
-            $size += readfile($path.'/'.$fname);
+
+            $zipFile = $path.'/.download/'.$fname.'.zip';
+            if (is_file($zipFile)) {
+              $ff = fopen($zipFile, 'r');
+              fseek($ff, 8);
+              $compression = strBin(fread($ff, 2));
+              fseek($ff, 22);
+              $extSize = strBin(fread($ff, 4));
+              $fnameLength = strBin(fread($ff, 2));
+              $extraLength = strBin(fread($ff, 2));
+              fread($ff, $fnameLength);
+              fread($ff, $extraLength);
+              
+              $head = genCFileHead($sub.$fname, $fcrc, $fsize, $extSize, $compression);
+              $size += strlen($head);
+              echo $head;
+
+              while ($fsize > 0) {
+                  $buffer = fread($ff, $fsize > 1024 ? 1024 : $fsize);
+                  $bufferSize = strlen($buffer);
+                  $size += $bufferSize;
+                  $fsize -= $bufferSize;
+                  echo $buffer;
+              }
+              
+              fclose($ff);
+            } else {
+              $head = genFileHead($sub.$fname, $fcrc, $fsize);
+              $size += strlen($head);
+              echo $head;
+
+              $size += readfile($path.'/'.$fname);
+            }
         }
     } while ($fname != '');
     fclose($fl);
@@ -103,7 +140,7 @@ function genDirFiles($path, $sub, $files, $offset, &$cdOffsets) {
     // Process subdirectories
     $handle = opendir($path);
     while (($item = readdir($handle))!==false) {
-      if ($item[0] != '.') {
+      if ($item[0] != '.' && (!isset($dirs) || in_array($item, $dirs))) {
           $itempath = $path.'/'.$item;
           if (is_dir($itempath) && is_dir($itempath.'/.download')) {
               $cdOffsets[$sub.$item.'/'] = $offset + $size;
@@ -111,7 +148,7 @@ function genDirFiles($path, $sub, $files, $offset, &$cdOffsets) {
               $size += strlen($head);
               echo $head;
               
-              $size += genDirFiles($path.'/'.$item, $sub.$item.'/', null, $offset + $size, $cdOffsets);
+              $size += genDirFiles($path.'/'.$item, $sub.$item.'/', null, null, $offset + $size, $cdOffsets);
           }
       }
     }
@@ -119,20 +156,34 @@ function genDirFiles($path, $sub, $files, $offset, &$cdOffsets) {
     return $size;
 }
 
-function genDirCd($path, $sub, $dirs, &$cdCount, &$cdOffsets) {
+function genDirCd($path, $sub, $files, $dirs, &$cdCount, &$cdOffsets) {
     $size = 0;
 
     // Process files
     $fl = fopen($path."/.download/.files","r");
     do {
         $fname = getLine($fl);
-        if ($fname != '') {
+        if ($fname != '' && (!isset($files) || in_array($fname, $files))) {
             $fsize = getLine($fl);
             $fcrc = hexdec(getLine($fl));
             
-            $head = genCdFileHead($sub.$fname, $fcrc, $fsize, $cdOffsets[$sub.$fname]);
-            $size += strlen($head);
-            echo $head;
+            $zipFile = $path.'/.download/'.$fname.'.zip';
+            if (is_file($zipFile)) {
+              $ff = fopen($zipFile, 'r');
+              fseek($ff, 8);
+              $compression = strBin(fread($ff, 2));
+              fseek($ff, 22);
+              $extSize = strBin(fread($ff, 4));
+              fclose($ff);
+
+              $head = genCdCFileHead($sub.$fname, $fcrc, $fsize, $cdOffsets[$sub.$fname], $extSize, $compression);
+              $size += strlen($head);
+              echo $head;
+            } else {
+              $head = genCdFileHead($sub.$fname, $fcrc, $fsize, $cdOffsets[$sub.$fname]);
+              $size += strlen($head);
+              echo $head;
+            }
             $cdCount++;
         }
     } while ($fname != '');
@@ -141,15 +192,15 @@ function genDirCd($path, $sub, $dirs, &$cdCount, &$cdOffsets) {
     // Process subdirectories
     $handle = opendir($path);
     while (($item = readdir($handle))!==false) {
-      if ($item[0] != '.') {
+      if ($item[0] != '.' && (!isset($dirs) || in_array($item, $dirs))) {
           $itempath = $path.'/'.$item;
           if (is_dir($itempath) && is_dir($itempath.'/.download')) {
-              $head = genCdDirHead($sub.$item.'/', $cdOffsets[$sub.$fname]);
+              $head = genCdDirHead($sub.$item.'/', $cdOffsets[$sub.$item.'/']);
               $size += strlen($head);
               echo $head;
               $cdCount++;
               
-              $size += genDirCd($path.'/'.$item, $sub.$item.'/', null, $cdCount, $cdOffsets);
+              $size += genDirCd($path.'/'.$item, $sub.$item.'/', null, null, $cdCount, $cdOffsets);
           }
       }
     }
@@ -163,20 +214,21 @@ function generateZip($path, $files, $dirs) {
     header("Content-type: application/x-zip-compressed");
     header("Content-disposition: filename=download.zip");
 
-    // Precompute size
+    // Compute size before sending data
     $path = '../download'.($path == '' ? '' : '/'.$path);
     // TODO
     
     $cdOffsets = array();
     $offset = 0;
-    $offset += genDirFiles($path, '', $files, $offset, $cdOffsets);
+    $offset += genDirFiles($path, '', $files, $dirs, $offset, $cdOffsets);
 
     $cdOffset = $offset;
     $cdCount = 0;
-    $offset += genDirCd($path, '', $dirs, $cdCount, $cdOffsets);
+    $offset += genDirCd($path, '', $files, $dirs, $cdCount, $cdOffsets);
     $cdSize = $offset - $cdOffset;
 
     echo genCdEnd($cdOffset, $cdCount, $cdSize);
+  echo $files[0];
 }
 
 function precompute($dir) {
@@ -228,9 +280,21 @@ function precomputePath($dir, $sub) {
               $itempath = $path.'/'.$item;
               if (is_file($itempath)) {
                 fwrite($fl, $item."\n");
-                $filesize = filesize($itempath);
-                fwrite($fl, $filesize."\n");
-                fwrite($fl, crc32_file($itempath)."\n");
+
+                $zipFile = $path.'/.download/'.$item.'.zip';
+                if (is_file($zipFile)) {
+                  $ff = fopen($zipFile, 'r');
+                  fseek($ff, 14);
+                  $crc = strBin(fread($ff, 4));
+                  $size = strBin(fread($ff, 4));
+                  fwrite($fl, $size."\n");
+                  fwrite($fl, dechex($crc)."\n");
+                  fclose($ff);
+                } else {
+                  $filesize = filesize($itempath);
+                  fwrite($fl, $filesize."\n");
+                  fwrite($fl, crc32_file($itempath)."\n");
+                }
                 $fCount++;
                 $fNLength += strlen($item);
                 $fSize += $filesize;
