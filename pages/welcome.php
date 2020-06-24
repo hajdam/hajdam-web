@@ -11,7 +11,6 @@ function getline($fl) {
   echo '<p><h3 style="color: red; background-color: yellow;">This website is abandoned - author of this site is either dead or very long not updating</h3></p>';
 } ?>
 <p>Welcome stray wanderer!</p>
-<p><strong>Website is under development!</strong> (From 24.3.2020)</p>
 
 <h2>Latest news:</h2>
 

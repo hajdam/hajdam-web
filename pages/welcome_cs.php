@@ -11,7 +11,6 @@ function getline($fl) {
   echo '<p><h3 style="color: red; background-color: yellow;">Tato stránka je opuštěna - autor této stránky je buď mrtev nebo velice dlouho neprovedl žádnou úpravu</h3></p>';
 } ?>
 <p>Vítej zbloudilý poutníče!</p>
-<p><strong>Stránka je ve výstavbě!</strong> (Od 24. 3. 2020)</p>
 
 <h2>Poslední novinka:</h2>
 

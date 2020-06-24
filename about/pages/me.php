@@ -22,11 +22,11 @@
 <p>Some photos from Hovězí:</p>
 
 <p>
-<a href="images/education/zs%20hovezi/h5a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h5a.jpg" height="200" alt="[Hovězí 5.A]" hspace="5" border="0"/></a>
-<a href="images/education/zs%20hovezi/h6a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h6a.jpg" height="200" alt="[Hovězí 6.A]" hspace="5" border="0"/></a>
-<a href="images/education/zs%20hovezi/h7a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h7a.jpg" height="200" alt="[Hovězí 7.A]" hspace="5" border="0"/></a>
-<a href="images/education/zs%20hovezi/h8a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h8a.jpg" height="200" alt="[Hovězí 8.A]" hspace="5" border="0"/></a>
-<a href="images/education/zs%20hovezi/h9a.jpg" target="_blank"><img src="images/education/zs%20hovezi/.preview/_h9a.jpg" height="200" alt="[Hovězí 9.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/zs%20hovezi/hovezi_5a.jpg" target="_blank"><img src="../download/gallery/education/zs%20hovezi/.preview/hovezi_5a.jpg" height="200" alt="[Hovězí 5.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/zs%20hovezi/hovezi_6a.jpg" target="_blank"><img src="../download/gallery/education/zs%20hovezi/.preview/hovezi_6a.jpg" height="200" alt="[Hovězí 6.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/zs%20hovezi/hovezi_7a.jpg" target="_blank"><img src="../download/gallery/education/zs%20hovezi/.preview/hovezi_7a.jpg" height="200" alt="[Hovězí 7.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/zs%20hovezi/hovezi_8a.jpg" target="_blank"><img src="../download/gallery/education/zs%20hovezi/.preview/hovezi_8a.jpg" height="200" alt="[Hovězí 8.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/zs%20hovezi/hovezi_9a.jpg" target="_blank"><img src="../download/gallery/education/zs%20hovezi/.preview/hovezi_9a.jpg" height="200" alt="[Hovězí 9.A]" hspace="5" border="0"/></a>
 </p>
 
 <p>After that I studied grammar school <a class="urlextern" href="http://mgvsetin.cz">Masarykovo gymnázium</a> in <a class="urlextern" href="http://vsetin.cz">Vsetín</a>.</p>
@@ -34,18 +34,18 @@
 <p>Few photos of classes, although I look terrible there...</p>
 
 <p>
-<a href="images/education/mg%20vsetin/g1a.jpg" target="_blank"><img src="images/education/mg%20vsetin/.preview/_g1a.jpg" height="200" alt="[Gymnázium 1.A]" hspace="5" border="0"/></a>
-<a href="images/education/mg%20vsetin/g2a.jpg" target="_blank"><img src="images/education/mg%20vsetin/.preview/_g2a.jpg" height="200" alt="[Gymnázium 2.A]" hspace="5" border="0"/></a>
-<a href="images/education/mg%20vsetin/g3a.jpg" target="_blank"><img src="images/education/mg%20vsetin/.preview/_g3a.jpg" height="200" alt="[Gymnázium 3.A]" hspace="5" border="0"/></a>
-<a href="images/education/mg%20vsetin/g4a.jpg" target="_blank"><img src="images/education/mg%20vsetin/.preview/_g4a.jpg" height="200" alt="[Gymnázium 4.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/mg%20vsetin/gymnazium_1a.jpg" target="_blank"><img src="../download/gallery/education/mg%20vsetin/.preview/gymnazium_1a.jpg" height="200" alt="[Gymnázium 1.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/mg%20vsetin/gymnazium_2a.jpg" target="_blank"><img src="../download/gallery/education/mg%20vsetin/.preview/gymnazium_2a.jpg" height="200" alt="[Gymnázium 2.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/mg%20vsetin/gymnazium_3a.jpg" target="_blank"><img src="../download/gallery/education/mg%20vsetin/.preview/gymnazium_3a.jpg" height="200" alt="[Gymnázium 3.A]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/mg%20vsetin/gymnazium_4a.jpg" target="_blank"><img src="../download/gallery/education/mg%20vsetin/.preview/gymnazium_4a.jpg" height="200" alt="[Gymnázium 4.A]" hspace="5" border="0"/></a>
 </p>
 
 <p>Then I went to university for 5,5 years, studied on <a class="urlextern" href="http://fi.muni.cz">faculty of informatics</a> of <a class="urlextern" href="http://www.muni.cz">Masaryk Univerzity</a> in <a class="urlextern" href="http://brno.cz">Brno</a>.</p>
 
 <p>Photos of rectorate and faculty buildings:</p>
 <p>
-<a href="images/education/muni%20brno/muni1.jpg" target="_blank"><img src="images/education/muni%20brno/.preview/_muni1.jpg" height="200" alt="[Rektorát]" hspace="5" border="0"/></a>
-<a href="images/education/muni%20brno/muni2.jpg" target="_blank"><img src="images/education/muni%20brno/.preview/_muni2.jpg" height="200" alt="[Fakulta]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/muni%20brno/muni1.jpg" target="_blank"><img src="../download/gallery/education/muni%20brno/.preview/muni1.jpg" height="200" alt="[Rektorát]" hspace="5" border="0"/></a>
+<a href="../download/gallery/education/muni%20brno/muni2.jpg" target="_blank"><img src="../download/gallery/education/muni%20brno/.preview/muni2.jpg" height="200" alt="[Fakulta]" hspace="5" border="0"/></a>
 </p>
 
 <h2>Work Experience</h2>
@@ -82,7 +82,7 @@
 
 <p><a href="?resume<?php echo $langPostfix; ?>">My resume/cv</a></p>
 <p><a href="?pets<?php echo $langPostfix; ?>">Our home pets</a></p>
-<p><a href="?computers<?php echo $langPostfix; ?>">How my computer changed over time</a></p>
+<p><a href="?computers<?php echo $langPostfix; ?>">How my home computer changed over time</a></p>
 
 </div>
 </body>

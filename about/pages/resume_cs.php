@@ -26,11 +26,7 @@
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Adresa</b></td>
-	    <td align="left" valign="top" class="textBody">Zděchov 208, Vsetín 75607, Zlínský kraj, Česká Republika</td>
-	  </tr>
-	  <tr>
-	    <td align="left" valign="top" class="textBody"><b>Telefonní číslo</b></td>
-	    <td align="left" valign="top" class="textBody">(605) 346387</td>
+	    <td align="left" valign="top" class="textBody">Zděchov, Vsetín 75607, Zlínský kraj, Česká Republika</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>E-mail</b></td>
