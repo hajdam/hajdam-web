@@ -253,7 +253,7 @@ function precomputePath($dir, $sub) {
         if (is_dir($itempath)) {
           precomputePath($dir, ($sub == '' ? $item : $sub.'/'.$item));
 
-          $itemSubLength = strlen($item + 1);
+          $itemSubLength = strlen($item) + 1;
           $fNLength += $itemSubLength;
           $fl = fopen($itempath."/.download/.dir","r");
           $subFCount = getLine($fl);
@@ -286,8 +286,8 @@ function precomputePath($dir, $sub) {
                   $ff = fopen($zipFile, 'r');
                   fseek($ff, 14);
                   $crc = strBin(fread($ff, 4));
-                  $size = strBin(fread($ff, 4));
-                  fwrite($fl, $size."\n");
+                  $filesize = strBin(fread($ff, 4));
+                  fwrite($fl, $filesize."\n");
                   fwrite($fl, dechex($crc)."\n");
                   fclose($ff);
                 } else {

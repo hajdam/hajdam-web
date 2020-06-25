@@ -1,6 +1,7 @@
 <div id="content">
 <div id="dirlisting">
 <?php
+
 $rootpath = 'download';
 $path = @$_GET['path'];
 if (!isset($path)) {
@@ -52,9 +53,33 @@ if ($path != '') {
       		$hasfiles = true;
       		if ($hasdirs) echo '<br/>'."\n";
       	}
-      		
+      	
+      	$filetype = 'null.gif';
+      	$filetypealt = 'file';
+      	
+      	$ext = substr($item, strlen($item)-4);
+      	switch ($ext) {
+      	     case '.mzf':
+      	     case '.zip':
+      	     case '.ani':
+      	     case '.ico':
+      	     case '.rar':
+      	     case '.txt':
+      	     case '.mod':
+               $filetype = substr($ext,1).'.gif';
+      	       $filetypealt = substr($ext,1);
+      	       break;
+      	     case '.png':
+      	     case '.gif':
+      	     case '.jpg':
+               $filetype = 'image.png';
+      	       $filetypealt = 'image';
+      	       break;
+      	         
+      	}
+
         echo '<input type="checkbox" name="file_'.$fileIndex.'" value="'.htmlentities($item).'" />';
-        echo '<img src="images/filetypes/null.gif" alt="[file]"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
+        echo '<img src="images/filetypes/'.$filetype.'" alt="['.$filetypealt.']"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
         $fileIndex++;
       }
     }
