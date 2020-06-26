@@ -58,6 +58,30 @@
 </tr></table>
 </div>
 
+<div class="itemgroup">
+<h3>Ecuador Sample Test</h3>
+<p>Test of cassette sampling, assembler routine in basic</p>
+<p><img src="../download/sharpmz/images/ecuador.gif" alt="[ecuador.gif]" vspace="4" width="320" height="200" class="center"/></p>
+<table border="0" width="100%" bgcolor="#C0C0C0"><tr>
+  <td>Download</td>
+  <td width="100" align="right">
+    <a href="../download/?sharpmz/ecuador.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+  </td>
+</tr></table>
+</div>
+
+<div class="itemgroup">
+<h3>Fiat Paper Model</h3>
+<p>Simple vector paper model of Fiat Tipo car for plotter</p>
+<p><img src="../download/sharpmz/images/fiat_papermodel.gif" alt="[fiat_papermodel.gif]" vspace="4" width="320" height="200" class="center"/></p>
+<table border="0" width="100%" bgcolor="#C0C0C0"><tr>
+  <td>Download</td>
+  <td width="100" align="right">
+    <a href="../download/?sharpmz/fiat_papermodel.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+  </td>
+</tr></table>
+</div>
+
 </div>
 </body>
 </html>
