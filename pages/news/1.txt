@@ -1,0 +1,5 @@
+1593167987
+Stránka zaktualizována
+Po více než 10 letech jsem se rozhodl trochu aktualizovat svou webovou stránku.
+Hodně dlouho už jsem se nedostal k tomu, že bych upravil svoje stránky, tak jsem si řekl, že je konečně čas s tím něco udělat - alespoň trochu.
+Stránky teď asi vypadají hůř, ale alespoň uvnitř se trochu zjednodušily a přibyla podpora pro stahování s možností výběru souborů. 

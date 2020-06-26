@@ -6,7 +6,7 @@ function getline($fl) {
 }
 ?>
 <h1>Miroslav Hajda - Personal Homepage</h1>
-<img src="about/images/photos/fotka5.jpg" alt="[photo]" style="float: right;" />
+<img src="about/images/photos/fotka7.jpg" alt="[photo]" style="float: right;" />
 <?php if (time() > filectime('author-alive.dat') + (60 * 60 * 24 * 90)) {
   echo '<p><h3 style="color: red; background-color: yellow;">This website is abandoned - author of this site is either dead or very long not updating</h3></p>';
 } ?>

@@ -6,7 +6,7 @@ function getline($fl) {
 }
 ?>
 <h1>Miroslav Hajda - Osobní stránky</h1>
-<img src="about/images/photos/fotka5.jpg" alt="[fotka]" style="float: right" />
+<img src="about/images/photos/fotka7.jpg" alt="[fotka]" style="float: right" />
 <?php if (time() > filectime('author-alive.dat') + (60 * 60 * 24 * 90)) {
   echo '<p><h3 style="color: red; background-color: yellow;">Tato stránka je opuštěna - autor této stránky je buď mrtev nebo velice dlouho neprovedl žádnou úpravu</h3></p>';
 } ?>

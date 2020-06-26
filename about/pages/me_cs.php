@@ -13,6 +13,8 @@
 <img src="images/photos/fotka3.jpg" height="200" alt="[fotka 3]" hspace="5"/>
 <img src="images/photos/fotka4.jpg" height="200" alt="[fotka 4]" hspace="5"/>
 <img src="images/photos/fotka5.jpg" height="200" alt="[fotka 5]" hspace="5"/>
+<img src="images/photos/fotka6.jpg" height="200" alt="[fotka 6]" hspace="5"/>
+<img src="images/photos/fotka7.jpg" height="200" alt="[fotka 7]" hspace="5"/>
 </p>
 
 <h2>Vzdělání</h2>

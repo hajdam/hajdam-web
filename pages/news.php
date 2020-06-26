@@ -1,6 +1,7 @@
 <div id="content">
 <h1>News</h1>
 <?php
+// echo time();
 
 function getline($fl) {
   $fp = @fgets($fl, 65536);
