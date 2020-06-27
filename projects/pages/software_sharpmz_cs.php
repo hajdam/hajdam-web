@@ -82,6 +82,18 @@
 </tr></table>
 </div>
 
+<div class="itemgroup">
+<h3>Přetahovaná</h3>
+<p>První slabý pokus o vytvoření hry v basicu</p>
+<p><img src="../download/sharpmz/images/pretahovana.gif" alt="[pretahovana.gif]" vspace="4" width="320" height="200" class="center"/></p>
+<table border="0" width="100%" bgcolor="#C0C0C0"><tr>
+  <td>Stažení</td>
+  <td width="100" align="right">
+    <a href="../download/?sharpmz/pretahovana.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+  </td>
+</tr></table>
+</div>
+
 </div>
 </body>
 </html>
