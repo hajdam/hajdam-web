@@ -49,13 +49,21 @@ if (($query == 'sites') || (strncmp($query, "site/", 5) === 0)) {
 <ul><li><a href="?exbin'.$langPostfix.'">ExBin Project</a></li>
 <li><a href="?bined'.$langPostfix.'">BinEd Editor</a></li>
 <li><a href="?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li>
-<li><a href="?consonica'.$langPostfix.'">Consonica</a></li></ul>';
+<li><a href="?consonica'.$langPostfix.'">Consonica</a></li>
+<li><a href="?software/java'.$langPostfix.'">More (Java)</a></li>
+<li><a href="?software/delphi'.$langPostfix.'">Old (Delphi)</a></li>
+<li><a href="?software/pascal'.$langPostfix.'">Old (Pascal)</a></li>
+<li><a href="?software/sharpmz'.$langPostfix.'">Old (Sharp MZ)</a></li></ul>';
   } else {
     $submenu_software = '
 <ul><li><a href="?exbin'.$langPostfix.'">ExBin Project</a></li>
 <li><a href="?bined'.$langPostfix.'">BinEd Editor</a></li>
 <li><a href="?mzemu'.$langPostfix.'">Sharp MZ Emulator</a></li>
-<li><a href="?consonica'.$langPostfix.'">Consonica</a></li></ul>';
+<li><a href="?consonica'.$langPostfix.'">Consonica</a></li>
+<li><a href="?software/java'.$langPostfix.'">Další (Java)</a></li>
+<li><a href="?software/delphi'.$langPostfix.'">Staré (Delphi)</a></li>
+<li><a href="?software/pascal'.$langPostfix.'">Staré (Pascal)</a></li>
+<li><a href="?software/sharpmz'.$langPostfix.'">Staré (Sharp MZ)</a></li></ul>';
   }
 }
 

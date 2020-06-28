@@ -84,12 +84,36 @@
 
 <div class="itemgroup">
 <h3>Pretahovana</h3>
-<p>First weak attempt for game in basic</p>
+<p>First weak attempt to make a game in basic</p>
 <p><img src="../download/sharpmz/images/pretahovana.gif" alt="[pretahovana.gif]" vspace="4" width="320" height="200" class="center"/></p>
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Download</td>
   <td width="100" align="right">
     <a href="../download/?sharpmz/pretahovana.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+  </td>
+</tr></table>
+</div>
+
+<div class="itemgroup">
+<h3>Mono Drawing</h3>
+<p>Simple drawing program for monochromatic pictures in basic</p>
+<p><img src="../download/sharpmz/images/monodrawing.gif" alt="[monodrawing.gif]" vspace="4" width="320" height="200" class="center"/></p>
+<table border="0" width="100%" bgcolor="#C0C0C0"><tr>
+  <td>Download</td>
+  <td width="100" align="right">
+    <a href="../download/?sharpmz/monodrawing.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+  </td>
+</tr></table>
+</div>
+
+<div class="itemgroup">
+<h3>Color Drawing</h3>
+<p>Simple drawing program for 4-color pictures in basic</p>
+<p><img src="../download/sharpmz/images/colordrawing.gif" alt="[colordrawing.gif]" vspace="4" width="320" height="200" class="center"/></p>
+<table border="0" width="100%" bgcolor="#C0C0C0"><tr>
+  <td>Download</td>
+  <td width="100" align="right">
+    <a href="../download/?sharpmz/colordrawing.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
