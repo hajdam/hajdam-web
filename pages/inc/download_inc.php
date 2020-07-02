@@ -116,6 +116,8 @@ function genDirFiles($path, $sub, $files, $dirs, $offset, &$cdOffsets) {
               $head = genCFileHead($sub.$fname, $fcrc, $fsize, $extSize, $compression);
               $size += strlen($head);
               echo $head;
+              flush();
+              ob_flush();
 
               while ($fsize > 0) {
                   $buffer = fread($ff, $fsize > 1024 ? 1024 : $fsize);
@@ -130,9 +132,13 @@ function genDirFiles($path, $sub, $files, $dirs, $offset, &$cdOffsets) {
               $head = genFileHead($sub.$fname, $fcrc, $fsize);
               $size += strlen($head);
               echo $head;
+              flush();
+              ob_flush();
 
               $size += readfile($path.'/'.$fname);
             }
+            flush();
+            ob_flush();
         }
     } while ($fname != '');
     fclose($fl);
