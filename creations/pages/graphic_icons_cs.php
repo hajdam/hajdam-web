@@ -76,10 +76,6 @@
   <td><a href="../download?icons/win9x/slozky/links.png"><img border="0" src="../images/filetypes/image-32x32.png" width="32" height="32"></a>&nbsp;<a href="../download?icons/win9x/slozky/links.ico"><img border="0" src="../images/filetypes/ico-32x32.gif" width="32" height="32"></a></td>
 </tr>
 <tr>
-  <td><img border="0" src="../download/icons/win9x/slozky/modra.png" alt="[modra]" hspace="2" width="32" height="32" style="vertical-align: middle;" />&nbsp;modra</td>
-  <td><a href="../download?icons/win9x/slozky/modra.png"><img border="0" src="../images/filetypes/image-32x32.png" width="32" height="32"></a>&nbsp;<a href="../download?icons/win9x/slozky/modra.ico"><img border="0" src="../images/filetypes/ico-32x32.gif" width="32" height="32"></a></td>
-</tr>
-<tr>
   <td><img border="0" src="../download/icons/win9x/slozky/mzf.png" alt="[mzf]" hspace="2" width="32" height="32" style="vertical-align: middle;" />&nbsp;mzf</td>
   <td><a href="../download?icons/win9x/slozky/mzf.png"><img border="0" src="../images/filetypes/image-32x32.png" width="32" height="32"></a>&nbsp;<a href="../download?icons/win9x/slozky/mzf.ico"><img border="0" src="../images/filetypes/ico-32x32.gif" width="32" height="32"></a></td>
 </tr>
@@ -94,6 +90,18 @@
 <tr>
   <td><img border="0" src="../download/icons/win9x/slozky/zvuk.png" alt="[zvuk]" hspace="2" width="32" height="32" style="vertical-align: middle;" />&nbsp;zvuk</td>
   <td><a href="../download?icons/win9x/slozky/zvuk.png"><img border="0" src="../images/filetypes/image-32x32.png" width="32" height="32"></a>&nbsp;<a href="../download?icons/win9x/slozky/zvuk.ico"><img border="0" src="../images/filetypes/ico-32x32.gif" width="32" height="32"></a></td>
+</tr>
+<tr>
+  <td><img border="0" src="../download/icons/win9x/slozky/modra.png" alt="[modra]" hspace="2" width="32" height="32" style="vertical-align: middle;" />&nbsp;modra</td>
+  <td><a href="../download?icons/win9x/slozky/modra.png"><img border="0" src="../images/filetypes/image-32x32.png" width="32" height="32"></a>&nbsp;<a href="../download?icons/win9x/slozky/modra.ico"><img border="0" src="../images/filetypes/ico-32x32.gif" width="32" height="32"></a></td>
+</tr>
+<tr>
+  <td><img border="0" src="../download/icons/win9x/slozky/cervena.png" alt="[cervena]" hspace="2" width="32" height="32" style="vertical-align: middle;" />&nbsp;cervena</td>
+  <td><a href="../download?icons/win9x/slozky/cervena.png"><img border="0" src="../images/filetypes/image-32x32.png" width="32" height="32"></a>&nbsp;<a href="../download?icons/win9x/slozky/cervena.ico"><img border="0" src="../images/filetypes/ico-32x32.gif" width="32" height="32"></a></td>
+</tr>
+<tr>
+  <td><img border="0" src="../download/icons/win9x/slozky/zelena.png" alt="[zelena]" hspace="2" width="32" height="32" style="vertical-align: middle;" />&nbsp;zelena</td>
+  <td><a href="../download?icons/win9x/slozky/zelena.png"><img border="0" src="../images/filetypes/image-32x32.png" width="32" height="32"></a>&nbsp;<a href="../download?icons/win9x/slozky/zelena.ico"><img border="0" src="../images/filetypes/ico-32x32.gif" width="32" height="32"></a></td>
 </tr>
 <tr>
   <td>dir</td>
