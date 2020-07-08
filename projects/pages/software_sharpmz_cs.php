@@ -96,7 +96,7 @@
 
 <div class="itemgroup">
 <h3>Mono Drawing</h3>
-<p>Simple drawing program for monochromatic pictures in basic</p>
+<p>Jednoduchý program pro kreslení monochromatických obrázků v basicu</p>
 <p><img src="../download/sharpmz/images/monodrawing.gif" alt="[monodrawing.gif]" vspace="4" width="320" height="200" class="center"/></p>
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
@@ -108,7 +108,7 @@
 
 <div class="itemgroup">
 <h3>Color Drawing</h3>
-<p>Simple drawing program for 4-color pictures in basic</p>
+<p>Jednoduchý program pro kreslení 4-barevných obrázků v basicu</p>
 <p><img src="../download/sharpmz/images/colordrawing.gif" alt="[colordrawing.gif]" vspace="4" width="320" height="200" class="center"/></p>
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
