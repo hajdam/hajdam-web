@@ -8,7 +8,7 @@
 <p>Simple text game</p>
 <p><img src="../download/sharpmz/images/agentwolf.gif" alt="[agentwolf.gif]" vspace="4" width="320" height="200" class="center"/></p>
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
-  <td>Download version 1.1 (2020-07-02)</td>
+  <td>Download version 1.1 (2020-07-09)</td>
   <td width="100" align="right">
     <a href="../download/?sharpmz/agentwolf-1.1.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
