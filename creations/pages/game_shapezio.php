@@ -12,6 +12,14 @@
 <p>There are likely more efficient models, thou.</p>
 <p>Cannot import it to standalone as there seems to be some kind of error right now...</p>
 
+<h2>Second run</h2>
+
+<p>Second run on game version 1.2.0 (Wires update) - currently in freeplay mode...</p>
+
+<p>Video for possible strategy for later game levels:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KFBKyqThVQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2>Game Saves</h2>
 
 <p><a href="../download/?games/shapez.io/savegame-demo-20201004.bin">savegame-demo-20201004.bin</a></p>

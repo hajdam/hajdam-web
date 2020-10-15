@@ -12,6 +12,14 @@
 <p>Nejspíše ale existují mnohem efektivnější modely.</p>
 <p>Nejde mi importovat soubor do plné verze hry, protože to aktuálně vrací nějakou chybu...</p>
 
+<h2>Druhá hra</h2>
+
+<p>Druhá hra ve verzi 1.2.0 (aktualizace s vodiči) - aktuálně v módu volné hry...</p>
+
+<p>Video o strategii pro pozdější úrovně hry:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KFBKyqThVQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2>Uložené hry</h2>
 
 <p><a href="../download/?games/shapez.io/savegame-demo-20201004.bin">savegame-demo-20201004.bin</a></p>
