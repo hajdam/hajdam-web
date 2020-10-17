@@ -16,6 +16,11 @@
 
 <p>Druhá hra ve verzi 1.2.0 (aktualizace s vodiči) - aktuálně v módu volné hry...</p>
 
+<p>Některé použité koncepty:</p>
+
+<p>Časovač s přesípacích hodin [<a href="images/shapezio/shapezio_hourglass-wires.jpg">vodiče</a>]:<br/><img src="images/shapezio/shapezio_hourglass.gif" alt="[shapezio_hourglass]" class="center"/></p>
+<p>4 znakový 16-segmentový scrolující displej [<a href="images/shapezio/shapezio_scrolltext.png">vodiče</a>]:<br/><img src="images/shapezio/shapezio_scrolltext.gif" alt="[shapezio_scrolltext]" class="center"/></p>
+
 <p>Video o strategii pro pozdější úrovně hry:</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KFBKyqThVQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

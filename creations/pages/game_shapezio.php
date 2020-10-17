@@ -16,6 +16,11 @@
 
 <p>Second run on game version 1.2.0 (Wires update) - currently in freeplay mode...</p>
 
+<p>Some concepts I was using:</p>
+
+<p>Hourglass timer [<a href="images/shapezio/shapezio_hourglass-wires.jpg">wiring</a>]:<br/><img src="images/shapezio/shapezio_hourglass.gif" alt="[shapezio_hourglass]" class="center"/></p>
+<p>4 characters 16-segment scrolling display [<a href="images/shapezio/shapezio_scrolltext.png">wiring</a>]:<br/><img src="images/shapezio/shapezio_scrolltext.gif" alt="[shapezio_scrolltext]" class="center"/></p>
+
 <p>Video for possible strategy for later game levels:</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KFBKyqThVQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
