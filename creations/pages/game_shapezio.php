@@ -20,6 +20,7 @@
 
 <p>Hourglass timer [<a href="images/shapezio/shapezio_hourglass-wires.jpg">wiring</a>]:<br/><img src="images/shapezio/shapezio_hourglass.gif" alt="[shapezio_hourglass]" class="center"/></p>
 <p>4 characters 16-segment scrolling display [<a href="images/shapezio/shapezio_scrolltext.png">wiring</a>]:<br/><img src="images/shapezio/shapezio_scrolltext.gif" alt="[shapezio_scrolltext]" class="center"/></p>
+<p>Cross-grid 8-pixels wide color scrolling display [<a href="images/shapezio/shapezio_color_scrolling_wires.png">wiring</a>] [<a href="images/shapezio/shapezio_color_scrolling_data.png">data</a>]:<br/><img src="images/shapezio/shapezio_color_scrolling.gif" alt="[shapezio_color_scrolling]" class="center"/></p>
 
 <p>Video for possible strategy for later game levels:</p>
 
