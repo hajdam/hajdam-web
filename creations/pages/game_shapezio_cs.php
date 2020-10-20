@@ -28,7 +28,12 @@
 
 <h2>Uložené hry</h2>
 
-<p><a href="../download/?games/shapez.io/savegame-demo-20201004.bin">savegame-demo-20201004.bin</a></p>
+<p>
+<a href="../download/?games/shapez.io/savegame-demo-20201004.bin">savegame-demo-20201004.bin</a><br/>
+<a href="../download/?games/shapez.io/Run2_level1024.bin">Run2_level1024.bin</a><br/>
+<a href="../download/?games/shapez.io/Text Scrolling.bin">Text Scrolling.bin</a><br/>
+<a href="../download/?games/shapez.io/Color Scrolling.bin">Color Scrolling.bin</a><br/>
+</p>
 
 </div>
 </body>
