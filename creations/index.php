@@ -62,10 +62,12 @@ if (($query == 'texts') || (strncmp($query, "text/", 5) === 0)) {
 } else if (($query == 'games') || (strncmp($query, "game/", 5) === 0)) {
   if ($lang != 'cs') {
     $submenu_game = '
-<ul><li><a href="?game/minecraft'.$langPostfix.'">Minecraft</a></li></ul>';
+<ul><li><a href="?game/minecraft'.$langPostfix.'">Minecraft</a></li>
+<li><a href="?game/shapezio'.$langPostfix.'">shapez.io</a></li></ul>';
   } else {
     $submenu_game = '
-<ul><li><a href="?game/minecraft'.$langPostfix.'">Minecraft</a></li></ul>';
+<ul><li><a href="?game/minecraft'.$langPostfix.'">Minecraft</a></li>
+<li><a href="?game/shapezio'.$langPostfix.'">shapez.io</a></li></ul>';
   }
 }
 

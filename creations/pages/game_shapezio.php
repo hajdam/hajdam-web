@@ -14,7 +14,7 @@
 
 <h2>Second run</h2>
 
-<p>Second run on game version 1.2.0 (Wires update) - currently in freeplay mode...</p>
+<p>Second run on game version 1.2.0 (Wires update)</p>
 
 <p>Some concepts I was using:</p>
 

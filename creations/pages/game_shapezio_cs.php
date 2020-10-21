@@ -14,7 +14,7 @@
 
 <h2>Druhá hra</h2>
 
-<p>Druhá hra ve verzi 1.2.0 (aktualizace s vodiči) - aktuálně v módu volné hry...</p>
+<p>Druhá hra ve verzi 1.2.0 (aktualizace s vodiči)</p>
 
 <p>Některé použité koncepty:</p>
 
