@@ -28,6 +28,8 @@
 
 <h2>Game Saves</h2>
 
+<p>Game saves are maybe limited to player id and it might be necessary to use editor to make it work.</p>
+
 <p>
 <a href="../download/?games/shapez.io/savegame-demo-20201004.bin">savegame-demo-20201004.bin</a><br/>
 <a href="../download/?games/shapez.io/Run2_level1024.bin">Run2_level1024.bin</a><br/>

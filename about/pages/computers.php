@@ -23,7 +23,7 @@
 </tr><tr>
 <td>S</td><td>28.1.2008</td><td>Gigabyte MA790X-DS4</td><td>AMD Athlon 64 X2 6400+ 3,2 GHz</td><td>ASUS EAH3850 ATI 256 MB &rarr; Sapphire AMD Radeon HD 5450 512 MB</td><td>4 GB</td><td>1 TB + 750 GB + 500 GB + 300 GB &rarr; + 80 GB SSD Intel</td><td>LG GSA-4160B DVD-RAM 4,6 GB &rarr; LG GGW-H20L Blu-ray 50 GB</td>
 </tr><tr>
-<td>S</td><td>3.9.2009</td><td>FUJITSU-SIEMENS Amilo Sa 3650</td><td>AMD Turion X2 Ultra ZM-82 2,2 GHz</td><td>ATI Radeon HD 3200 64 MB</td><td>3 GB</td><td>250 GB</td><td>OptiArc DVD-RW AD-7640S 9,2 GB</td>
+<td>D</td><td>3.9.2009</td><td>FUJITSU-SIEMENS Amilo Sa 3650</td><td>AMD Turion X2 Ultra ZM-82 2,2 GHz</td><td>ATI Radeon HD 3200 64 MB</td><td>3 GB</td><td>250 GB</td><td>OptiArc DVD-RW AD-7640S 9,2 GB</td>
 </tr><tr>
 <td>A</td><td>14.4.2010</td><td>HTC Desire</td><td>Qualcomm Snapdragon 1 GHz</td><td>AMD Z430</td><td>576 MB</td><td>512 MB FLASH</td><td>4 GB micro SD</td>
 </tr><tr>
@@ -31,7 +31,7 @@
 </tr><tr>
 <td>A</td><td>11.5.2017</td><td>Gigabyte GA-AB350</td><td>AMD Ryzen 7 1700, 8 Cores (16 threads) 3,0 GHz</td><td>Sapphire Radeon RX 480 8GB</td><td>32 GB</td><td>512 GB SSD Crucial M550 + > 3 TB HDD</td><td>LG GGW-H20L Blu-ray 50 GB</td>
 </tr><tr>
-<td>A</td><td>7.12.2017</td><td>Lenovo Yoga 510-14AST</td><td>AMD A6-9210, 2 Cores 2,4 GHz</td><td>AMD Radeon R4</td><td>4 GB</td><td>128 GB SSD</td><td>SD card</td>
+<td>S</td><td>7.12.2017</td><td>Lenovo Yoga 510-14AST</td><td>AMD A6-9210, 2 Cores 2,4 GHz</td><td>AMD Radeon R4</td><td>4 GB</td><td>128 GB SSD</td><td>SD card</td>
 </tr><tr>
 <td>A</td><td>27.3.2018</td><td>GSM Nokia 8</td><td>Snapdragon 835, 4 x 2,45 GHz + 4 x 1,9 GHz</td><td>Adreno 540</td><td>4 GB</td><td>64 GB Flash</td><td>micro SD</td>
 </tr></table>
