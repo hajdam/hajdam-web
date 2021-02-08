@@ -1,7 +1,7 @@
 <div id="content">
 <h1>O mě</h1>
 
-<p>Ahoj, jmenuji se Miroslav Hajda a pocházím z obce <a class="urlextern" href="http://zdechov.cz">Zděchov</a>. Je mi 38 let, měřím 187 cm a vážím kolem 107 kg.</p>
+<p>Ahoj, jmenuji se Miroslav Hajda a pocházím z obce <a class="urlextern" href="http://zdechov.cz">Zděchov</a>. Je mi 38 let, měřím 187 cm a vážím kolem 115 kg.</p>
 
 <p>Povoláním jsem programátor, umím trochu česky a anglicky, oblíbenou barvu mám modrou a oblíbené jídlo brambory.</p>
 

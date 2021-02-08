@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Resume</h1>
 
-<p>Curriculum Vitae as <a href="cvs/cv_miroslav_hajda_en_20200225.html">single file</a>.</p> 
+<p>Curriculum Vitae as <a href="cvs/cv_miroslav_hajda_en_20210208.html">single file</a>.</p> 
 
 <hr align="left" width="600">
 <table width="600" border="0" cellpadding="5" cellspacing="0">
@@ -22,7 +22,7 @@
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Age</b></td>
-	    <td align="left" valign="top" class="textBody">38</td>
+	    <td align="left" valign="top" class="textBody">39</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Address</b></td>
@@ -49,22 +49,22 @@
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>03/2017 - 12/2019</nobr></td>
 	    <td  align="left" valign="top" class="textBody">
-NetSuite/Oracle (Brno, Czech Republic)<br>Backed Java Developer for omnichannel commerce software</td>
+<strong>NetSuite/Oracle</strong> (Brno, Czech Republic)<br/>Backed Java Developer for omnichannel commerce software</td>
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>02/2015 - 05/2016</nobr></td>
 	    <td  align="left" valign="top" class="textBody">
-JavliNet s.r.o (Brno, Czech Republic)<br>Java Developer for Eclipse Platform / SWT based ETL product</td>
+<strong>JavliNet s.r.o</strong> (Brno, Czech Republic)<br/>Java Developer for Eclipse Platform / SWT based ETL product</td>
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>02/2013 - 01/2014</nobr></td>
 	    <td  align="left" valign="top" class="textBody">
-IBM Delivery Center (Brno, Czech Republic)<br>Java developer in Tools and Infrastructure team, Java, Java Server Faces, PrimeFaces, RichFaces, Hibernate, Spring, DB2, WebSphere</td>
+<strong>IBM Delivery Center</strong> (Brno, Czech Republic)<br/>Java developer in Tools and Infrastructure team, Java, Java Server Faces, PrimeFaces, RichFaces, Hibernate, Spring, DB2, WebSphere</td>
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>10/2007 - 01/2013</nobr></td>
 	    <td  align="left" valign="top" class="textBody">
-Magion system, a.s. (Vsetín, Czech Republic)<br>Software Developer / Programmer for Sybase Power Builder, C#, MSSQL, Oracle and Sybase databases, assistant network administrator</td>
+<strong>Magion system, a.s.</strong> (Vsetín, Czech Republic)<br/>Software Developer / Programmer for Sybase Power Builder, C#, MSSQL, Oracle and Sybase databases, assistant network administrator</td>
 	  </tr>
 	  <tr>
 	    <td class="textSmall">&nbsp;</td>
@@ -75,7 +75,7 @@ Magion system, a.s. (Vsetín, Czech Republic)<br>Software Developer / Programmer
 	  <tr>
 	      <td  align="left" valign="top" class="textBody"><nobr>2001 - 2007</nobr></td>
 	      <td  align="left" valign="top" class="textBody">
-Masaryk University (Brno, Czech Republic)<Br>Informatics, Master's degree</td>
+Masaryk University (Brno, Czech Republic)<br/>Informatics, Master's degree</td>
 	  </tr>
 	  <tr>
 	      <td  align="left" valign="top" class="textBody"><nobr>1996 - 2001</nobr></td>
@@ -142,8 +142,10 @@ Masarykovo gymnasium Vsetin (Vsetín, Czech Republic)</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Example projects:</b></td>
-	    <td align="left" valign="top" class="textBody"><p>Unified general binary data format/protocol (Java, continuation of diploma thesis)<br/><a href="http://xbup.exbin.org">http://xbup.exbin.org</a></p>
-	    <p>Hexadecimal editor written in Java/Swing<br/><a href="http://bined.exbin.org">http://bined.exbin.org</a></td>
+	    <td align="left" valign="top" class="textBody">
+	      <p>Unified general binary data format/protocol (Java, continuation of diploma thesis)<br/><a href="http://xbup.exbin.org">http://xbup.exbin.org</a></p>
+	      <p>Hexadecimal editor written in Java/Swing<br/><a href="http://bined.exbin.org">http://bined.exbin.org</a></p>
+	    </td>
 	  </tr>
 	  <tr>
 	    <td class="textSmall">&nbsp;</td>

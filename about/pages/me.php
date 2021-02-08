@@ -1,7 +1,7 @@
 <div id="content">
 <h1>About Me</h1>
 
-<p>Hi, my name is Miroslav Hajda and I'm from village <a class="urlextern" href="http://zdechov.cz">Zděchov</a>, Czech Republic. I'm 38 years old, about 187 cm tall and my weight is about 107 kg.</p>
+<p>Hi, my name is Miroslav Hajda and I'm from village <a class="urlextern" href="http://zdechov.cz">Zděchov</a>, Czech Republic. I'm 38 years old, about 187 cm tall and my weight is about 115 kg.</p>
 
 <p>I'm programmer by profession, my native language is Czech, but I speak a bit English. My favourite color is blue and favourite food are potatoes.</p>
 
