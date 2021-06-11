@@ -28,37 +28,42 @@ echo '<input type="hidden" name="path" value="'.$path.'"/>'."\n";
 $hasdirs = false;
 $dirIndex = 0;
 $handle = opendir($rootpath.'/'.$path);
-while (($item = readdir($handle))!==false) {
-  if ($item[0] != '.') {
-  	$itempath = $path.'/'.$item;
-    if (is_dir($rootpath.'/'.$itempath)) {
-      echo '<input type="checkbox" name="dir_'.$dirIndex.'" value="'.htmlentities($item).'" />';
-      echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&amp;path='.$itempath.'">'.$item.'</a><br/>'."\n";
-      $dirIndex++;
-      $hasdirs = true;
+if ($handle !== false) {
+  while (($item = readdir($handle))!==false) {
+    if ($item[0] != '.') {
+      $itempath = $path.'/'.$item;
+      if (is_dir($rootpath.'/'.$itempath)) {
+        echo '<input type="checkbox" name="dir_'.$dirIndex.'" value="'.htmlentities($item).'" />';
+        echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&amp;path='.$itempath.'">'.$item.'</a><br/>'."\n";
+        $dirIndex++;
+        $hasdirs = true;
+      }
     }
   }
+  closedir($handle);
+} else {
+	echo '<p>Error: invalid path</p>';
 }
-closedir($handle);
 
 $hasfiles = false;
 $fileIndex = 0;
 if ($path != '') {
   $handle = opendir($rootpath.'/'.$path);
-  while (($item = readdir($handle))!==false) {
-    if ($item[0] != '.') {
-  	  $itempath = $path.'/'.$item;
-      if (!is_dir($rootpath.'/'.$itempath)) {
-      	if (!$hasfiles) {
-      		$hasfiles = true;
-      		if ($hasdirs) echo '<br/>'."\n";
-      	}
+  if ($handle !== false) {
+    while (($item = readdir($handle))!==false) {
+      if ($item[0] != '.') {
+  	    $itempath = $path.'/'.$item;
+        if (!is_dir($rootpath.'/'.$itempath)) {
+      	  if (!$hasfiles) {
+      		  $hasfiles = true;
+      		  if ($hasdirs) echo '<br/>'."\n";
+      	  }
       	
-      	$filetype = 'null.gif';
-      	$filetypealt = 'file';
+      	  $filetype = 'null.gif';
+      	  $filetypealt = 'file';
       	
-      	$ext = substr($item, strlen($item)-4);
-      	switch ($ext) {
+      	  $ext = substr($item, strlen($item)-4);
+      	  switch ($ext) {
       	     case '.mzf':
       	     case '.zip':
       	     case '.ani':
@@ -76,15 +81,18 @@ if ($path != '') {
       	       $filetypealt = 'image';
       	       break;
       	         
-      	}
+      	  }
 
-        echo '<input type="checkbox" name="file_'.$fileIndex.'" value="'.htmlentities($item).'" />';
-        echo '<img src="images/filetypes/'.$filetype.'" alt="['.$filetypealt.']"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
-        $fileIndex++;
+          echo '<input type="checkbox" name="file_'.$fileIndex.'" value="'.htmlentities($item).'" />';
+          echo '<img src="images/filetypes/'.$filetype.'" alt="['.$filetypealt.']"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
+          $fileIndex++;
+        }
       }
     }
-  }
-  closedir($handle);
+    closedir($handle);
+  } else {
+	echo '<p>Error: invalid path</p>';
+  }   
 }
 ?>
 <script language="JavaScript"><!--

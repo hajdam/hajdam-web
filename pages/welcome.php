@@ -60,7 +60,7 @@ if ($comment_count > 0) {
 
 <p>See <a href="?comments<?php echo $langPostfix; ?>">all comments</a> or add <a href="?add-comment<?php echo $langPostfix; ?>">new comment</a>.</p>
 
-<p><small>&copy; Miroslav Hajda 2020 | Version 4.2 | Hosted on <a class="urlextern" href="https://www.zdechov.net">zdechov.net</a> | <a class="urlextern" href="https://github.com/hajdam/hajdam-web">Source</a></small></p>
+<p><small>&copy; Miroslav Hajda 2021 | Version 4.2 | Hosted on <a class="urlextern" href="https://www.zdechov.net">zdechov.net</a> | <a class="urlextern" href="https://github.com/hajdam/hajdam-web">Source</a></small></p>
 </div>
 </body>
 </html>

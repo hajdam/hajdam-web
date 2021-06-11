@@ -65,6 +65,17 @@
 <a href="images/minecraft/craftuj.cz/displej/displej-uvnitr.jpg"><img src="images/minecraft/craftuj.cz/displej/.preview/displej-uvnitr.jpg" alt="[displej-uvnitr]"/></a>
 </p>
 
+<h2>RailwayCraft (03/2021-06/2021)</h2>
+
+<p>
+<a href="images/minecraft/railwaycraft/house.jpg"><img src="images/minecraft/railwaycraft/.preview/house.jpg" alt="[house]"/></a>
+<a href="images/minecraft/railwaycraft/inside.jpg"><img src="images/minecraft/railwaycraft/.preview/inside.jpg" alt="[inside]"/></a>
+<a href="images/minecraft/railwaycraft/workshop.jpg"><img src="images/minecraft/railwaycraft/.preview/workshop.jpg" alt="[workshop]"/></a>
+<a href="images/minecraft/railwaycraft/reactor.jpg"><img src="images/minecraft/railwaycraft/.preview/reactor.jpg" alt="[reactor]"/></a>
+<a href="images/minecraft/railwaycraft/reactor2.jpg"><img src="images/minecraft/railwaycraft/.preview/reactor2.jpg" alt="[reactor2]"/></a>
+<a href="images/minecraft/railwaycraft/semaphore.jpg"><img src="images/minecraft/railwaycraft/.preview/semaphore.jpg" alt="[semaphore]"/></a>
+</p>
+
 <h2>Minor experience with modding</h2>
 
 <p>At some point I also experimented with modification of the railcraft mod, to add some more signs...</p>

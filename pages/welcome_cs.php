@@ -60,7 +60,7 @@ if ($comment_count > 0) {
 
 <p>Můžete <a href="?comments<?php echo $langPostfix; ?>">zobrazit všechny komentáře</a> nebo <a href="?add-comment<?php echo $langPostfix; ?>">přidat nový</a>.</p>
 
-<p><small>&copy; Miroslav Hajda 2020 | Verze 4.2 | Hostováno u <a class="urlextern" href="https://www.zdechov.net">zdechov.net</a> | <a class="urlextern" href="https://github.com/hajdam/hajdam-web">Zdroj stránky</a></small></p>
+<p><small>&copy; Miroslav Hajda 2021 | Verze 4.2 | Hostováno u <a class="urlextern" href="https://www.zdechov.net">zdechov.net</a> | <a class="urlextern" href="https://github.com/hajdam/hajdam-web">Zdroj stránky</a></small></p>
 </div>
 </body>
 </html>
