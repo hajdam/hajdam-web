@@ -13,7 +13,7 @@
   <a href="https://sharpmz.zdechov.net/?jmzemu" class="urlextern">sharpmz.zdechov.net/?jmzemu</a>
 </p>
 
-<p><a href="?consonica<?php echo $langPostfix; ?>"><strong>Consonica</strong></a> - Audio DAW / editor</p>
+<p><a href="?comusika<?php echo $langPostfix; ?>"><strong>Comusika</strong></a> - Audio studio / editor</p>
 
 <h2>Java Projects</h2>
 
