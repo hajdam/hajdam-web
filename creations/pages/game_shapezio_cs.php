@@ -18,7 +18,7 @@
 
 <p>Některé použité koncepty:</p>
 
-<p>Časovač s přesípacích hodin [<a href="images/shapezio/shapezio_hourglass-wires.jpg">vodiče</a>]:<br/><img src="images/shapezio/shapezio_hourglass.gif" alt="[shapezio_hourglass]" class="center"/></p>
+<p>Časovač ve formě přesýpacích hodin [<a href="images/shapezio/shapezio_hourglass-wires.jpg">vodiče</a>]:<br/><img src="images/shapezio/shapezio_hourglass.gif" alt="[shapezio_hourglass]" class="center"/></p>
 <p>4 znakový 16-segmentový scrolující displej [<a href="images/shapezio/shapezio_scrolltext.png">vodiče</a>]:<br/><img src="images/shapezio/shapezio_scrolltext.gif" alt="[shapezio_scrolltext]" class="center"/></p>
 <p>Barevný displej 8-pixelů široký s křížovou mřížkou [<a href="images/shapezio/shapezio_color_scrolling_wires.png">vodiče</a>] [<a href="images/shapezio/shapezio_color_scrolling_data.png">data</a>]:<br/><img src="images/shapezio/shapezio_color_scrolling.gif" alt="[shapezio_color_scrolling]" class="center"/></p>
 

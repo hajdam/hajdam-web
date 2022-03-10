@@ -27,13 +27,17 @@
 </tr><tr>
 <td>A</td><td>14.4.2010</td><td>HTC Desire</td><td>Qualcomm Snapdragon 1 GHz</td><td>AMD Z430</td><td>576 MB</td><td>512 MB FLASH</td><td>4 GB micro SD</td>
 </tr><tr>
-<td>A</td><td>9.11.2012</td><td>Gigabyte 990FXA-UD3</td><td>AMD FX-8350 8 Core 4,0 GHz</td><td>Sapphire AMD Radeon HD 7750 1GB</td><td>16 GB</td><td>128 GB SSD Vertex 4 + > 3 TB HDD</td><td>LG GGW-H20L Blu-ray 50 GB</td>
+<td>A</td><td>9.11.2012</td><td>Gigabyte 990FXA-UD3</td><td>AMD FX-8350 8 jader 4,0 GHz</td><td>Sapphire AMD Radeon HD 7750 1GB</td><td>16 GB</td><td>128 GB SSD Vertex 4 + > 3 TB HDD</td><td>LG GGW-H20L Blu-ray 50 GB</td>
 </tr><tr>
-<td>A</td><td>11.5.2017</td><td>Gigabyte GA-AB350</td><td>AMD Ryzen 7 1700, 8 Cores (16 vláken) 3,0 GHz</td><td>Sapphire Radeon RX 480 8GB</td><td>32 GB</td><td>512 GB SSD Crucial M550 + > 3 TB HDD</td><td>LG GGW-H20L Blu-ray 50 GB</td>
+<td>A</td><td>11.5.2017</td><td>Gigabyte GA-AB350</td><td>AMD Ryzen 7 1700, 8 jader (16 vláken) 3,0 GHz</td><td>Sapphire Radeon RX 480 8GB</td><td>32 GB</td><td>512 GB SSD Crucial M550 + > 3 TB HDD</td><td>LG GGW-H20L Blu-ray 50 GB</td>
 </tr><tr>
-<td>S</td><td>7.12.2017</td><td>Lenovo Yoga 510-14AST</td><td>AMD A6-9210, 2 Cores 2,4 GHz</td><td>AMD Radeon R4</td><td>4 GB</td><td>128 GB SSD</td><td>SD card</td>
+<td>S</td><td>7.12.2017</td><td>Lenovo Yoga 510-14AST</td><td>AMD A6-9210, 2 jádra 2,4 GHz</td><td>AMD Radeon R4</td><td>4 GB</td><td>128 GB SSD</td><td>SD card</td>
 </tr><tr>
-<td>A</td><td>27.3.2018</td><td>GSM Nokia 8</td><td>Snapdragon 835, 4 x 2,45 GHz + 4 x 1,9 GHz</td><td>Adreno 540</td><td>4 GB</td><td>64 GB Flash</td><td>micro SD</td>
+<td>D</td><td>27.3.2018</td><td>GSM Nokia 8</td><td>Snapdragon 835, 4 x 2,45 GHz + 4 x 1,9 GHz</td><td>Adreno 540</td><td>4 GB</td><td>64 GB Flash</td><td>micro SD</td>
+</tr><tr>
+<td>A</td><td>9.3.2022</td><td>Fairphone 4</td><td>Snapdragon 570G, 2 x 2,2 GHz + 6 x 1,8 GHz</td><td>Adreno 619</td><td>8 GB</td><td>256 GB Flash</td><td>micro SD</td>
+</tr><tr>
+<td>A</td><td>10.3.2022</td><td>HP Envy x360 13&quot;</td><td>AMD Ryzen 7 5800U, 8 jader (16 vláken) 1,9 GHz</td><td>Radeon Vega 8</td><td>16 GB</td><td>1 TB SSD</td><td>SD card</td>
 </tr></table>
 
 <p><em>D - skonal<br/>S - prodán<br/>A - funkční</em></p>

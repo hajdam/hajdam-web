@@ -81,6 +81,11 @@
 
 <p><img src="images/minecraft/railcraft-signs_mod.jpg" alt="[minecraft_railcraft-signs_mod]" class="center"/></p>
 
+<p>Výsledkem je pár addonů to modu railcraft:</p>
+
+<p><a href="https://github.com/hajdam/railcraft-endersignals-addon">railcraft-endersignals-addon</a></p>
+<p><a href="https://github.com/hajdam/railcraft-customemblems-addon">railcraft-customemblems-addon</a></p>
+
 </div>
 </body>
 </html>

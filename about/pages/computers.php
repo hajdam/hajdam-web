@@ -33,7 +33,11 @@
 </tr><tr>
 <td>S</td><td>7.12.2017</td><td>Lenovo Yoga 510-14AST</td><td>AMD A6-9210, 2 Cores 2,4 GHz</td><td>AMD Radeon R4</td><td>4 GB</td><td>128 GB SSD</td><td>SD card</td>
 </tr><tr>
-<td>A</td><td>27.3.2018</td><td>GSM Nokia 8</td><td>Snapdragon 835, 4 x 2,45 GHz + 4 x 1,9 GHz</td><td>Adreno 540</td><td>4 GB</td><td>64 GB Flash</td><td>micro SD</td>
+<td>D</td><td>27.3.2018</td><td>GSM Nokia 8</td><td>Snapdragon 835, 4 x 2,45 GHz + 4 x 1,9 GHz</td><td>Adreno 540</td><td>4 GB</td><td>64 GB Flash</td><td>micro SD</td>
+</tr><tr>
+<td>A</td><td>9.3.2022</td><td>Fairphone 4</td><td>Snapdragon 570G, 2 x 2,2 GHz + 6 x 1,8 GHz</td><td>Adreno 619</td><td>8 GB</td><td>256 GB Flash</td><td>micro SD</td>
+</tr><tr>
+<td>A</td><td>10.3.2022</td><td>HP Envy x360 13&quot;</td><td>AMD Ryzen 7 5800U, 8 Cores (16 threads) 1,9 GHz</td><td>Radeon Vega 8</td><td>16 GB</td><td>1 TB SSD</td><td>SD card</td>
 </tr></table>
 
 <p><em>D - dead<br/>S - sold<br/>A - active</em></p>

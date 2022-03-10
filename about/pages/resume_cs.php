@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Životopis</h1>
 
-<p>Životopis jako <a href="cvs/cv_miroslav_hajda_cs_20210208.html">samostatný soubor</a>.</p> 
+<p>Životopis jako samostatný soubor <a href="cvs/cv_miroslav_hajda_cs_20220301.html">[HTML]</a> <a href="cvs/cv_miroslav_hajda_cs_20220301.pdf">[PDF]</a>.</p> 
 
 <hr align="left" width="600">
 <table width="600" border="0" cellpadding="5" cellspacing="0">
@@ -22,7 +22,7 @@
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Věk</b></td>
-	    <td align="left" valign="top" class="textBody">39</td>
+	    <td align="left" valign="top" class="textBody">40</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Adresa</b></td>
@@ -34,7 +34,7 @@
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Linked-in profil</b></td>
-	    <td align="left" valign="top" class="textBody"><a href="http://cz.linkedin.com/pub/miroslav-hajda/24/390/445">Linked-in profile</a></td>
+	    <td align="left" valign="top" class="textBody"><a href="https://cz.linkedin.com/pub/miroslav-hajda/24/390/445">Linked-in profile</a></td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Rodinný stav</b></td>
@@ -95,8 +95,6 @@ Masarykovo gymnázium Vsetín (Vsetín)</td>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody">angličtina</td>
 	    <td  align="left" valign="top" class="textBody">pokročilý<tr>
-	    <td  align="left" valign="top" class="textBody">němčina</td>
-	    <td  align="left" valign="top" class="textBody">základní</tr>
 	  <tr>
 	    <td class="textSmall">&nbsp;</td>
 	  </tr>
@@ -135,8 +133,8 @@ Masarykovo gymnázium Vsetín (Vsetín)</td>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Ukázkové projekty:</b></td>
 	    <td align="left" valign="top" class="textBody">
-	      <p>Unifikovaný obecný binární datový formát/protokol (Java, rozšíření diplomové práce)<br/><a href="http://xbup.exbin.org">http://xbup.exbin.org</a></p>
-	      <p>Hexadecimalní editor napsaný v jazyce Java/Swing<br/><a href="http://bined.exbin.org">http://bined.exbin.org</a></p>
+	      <p>Unifikovaný obecný binární datový formát/protokol (Java, rozšíření diplomové práce)<br/><a href="https://xbup.exbin.org">https://xbup.exbin.org</a></p>
+	      <p>Hexadecimalní editor napsaný v jazyce Java/Swing<br/><a href="https://bined.exbin.org">https://bined.exbin.org</a></p>
 	    </td>
 	  </tr>
 	  <tr>
@@ -150,8 +148,8 @@ Masarykovo gymnázium Vsetín (Vsetín)</td>
 	    <td align="left" valign="top" class="textBody">Programátor Java</td>
 	  </tr>
 	  <tr>
-	    <td align="left" valign="top" class="textBody">Preferované poloha:</td>
-	    <td align="left" valign="top" class="textBody">Brno nebo Zlínský kraj, možnost přestěhování</td>
+	    <td align="left" valign="top" class="textBody">Preferovaná lokalita:</td>
+	    <td align="left" valign="top" class="textBody">Brno nebo Zlínský kraj, možnost přestěhování či práce na dálku</td>
 	  </tr>
 	</table>
     </td>

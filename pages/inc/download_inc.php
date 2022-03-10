@@ -145,20 +145,22 @@ function genDirFiles($path, $sub, $files, $dirs, $offset, &$cdOffsets) {
 
     // Process subdirectories
     $handle = opendir($path);
-    while (($item = readdir($handle))!==false) {
-      if ($item[0] != '.' && (!isset($dirs) || in_array($item, $dirs))) {
-          $itempath = $path.'/'.$item;
-          if (is_dir($itempath) && is_dir($itempath.'/.download')) {
-              $cdOffsets[$sub.$item.'/'] = $offset + $size;
-              $head = genDirHead($sub.$item.'/');
-              $size += strlen($head);
-              echo $head;
-              
-              $size += genDirFiles($path.'/'.$item, $sub.$item.'/', null, null, $offset + $size, $cdOffsets);
-          }
-      }
-    }
-    closedir($handle);
+    if ($handle != null) {
+		while (($item = readdir($handle))!==false) {
+		  if ($item[0] != '.' && (!isset($dirs) || in_array($item, $dirs))) {
+			  $itempath = $path.'/'.$item;
+			  if (is_dir($itempath) && is_dir($itempath.'/.download')) {
+				  $cdOffsets[$sub.$item.'/'] = $offset + $size;
+				  $head = genDirHead($sub.$item.'/');
+				  $size += strlen($head);
+				  echo $head;
+				  
+				  $size += genDirFiles($path.'/'.$item, $sub.$item.'/', null, null, $offset + $size, $cdOffsets);
+			  }
+		  }
+		}
+		closedir($handle);
+	}
     return $size;
 }
 

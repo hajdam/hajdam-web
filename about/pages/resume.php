@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Resume</h1>
 
-<p>Curriculum Vitae as <a href="cvs/cv_miroslav_hajda_en_20210208.html">single file</a>.</p> 
+<p>Curriculum Vitae as single file <a href="cvs/cv_miroslav_hajda_en_20220301.html">[HTML]</a> <a href="cvs/cv_miroslav_hajda_en_20220301.pdf">[PDF]</a>.</p> 
 
 <hr align="left" width="600">
 <table width="600" border="0" cellpadding="5" cellspacing="0">
@@ -22,7 +22,7 @@
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Age</b></td>
-	    <td align="left" valign="top" class="textBody">39</td>
+	    <td align="left" valign="top" class="textBody">40</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Address</b></td>
@@ -34,7 +34,7 @@
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Linked-in</b></td>
-	    <td align="left" valign="top" class="textBody"><a href="http://cz.linkedin.com/pub/miroslav-hajda/24/390/445">Linked-in profile</a></td>
+	    <td align="left" valign="top" class="textBody"><a href="https://cz.linkedin.com/pub/miroslav-hajda/24/390/445">Linked-in profile</a></td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Marital status</b></td>
@@ -49,12 +49,12 @@
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>03/2017 - 12/2019</nobr></td>
 	    <td  align="left" valign="top" class="textBody">
-<strong>NetSuite/Oracle</strong> (Brno, Czech Republic)<br/>Backed Java Developer for omnichannel commerce software</td>
+<strong>NetSuite/Oracle</strong> (Brno, Czech Republic)<br/>Backend Java Developer for omnichannel commerce software</td>
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>02/2015 - 05/2016</nobr></td>
 	    <td  align="left" valign="top" class="textBody">
-<strong>JavliNet s.r.o</strong> (Brno, Czech Republic)<br/>Java Developer for Eclipse Platform / SWT based ETL product</td>
+<strong>JavliNet s.r.o.</strong> (Brno, Czech Republic)<br/>Java Developer for Eclipse Platform / SWT based ETL product</td>
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>02/2013 - 01/2014</nobr></td>
@@ -94,9 +94,7 @@ Masarykovo gymnasium Vsetin (Vsetín, Czech Republic)</td>
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody">English</td>
-	    <td  align="left" valign="top" class="textBody">Professional working proficiency<tr>
-	    <td  align="left" valign="top" class="textBody">German</td>
-	    <td  align="left" valign="top" class="textBody">Elementary proficiency</tr>
+	    <td  align="left" valign="top" class="textBody">Professional working proficiency</td>
 	  <tr>
 	    <td class="textSmall">&nbsp;</td>
 	  </tr>
@@ -130,21 +128,13 @@ Masarykovo gymnasium Vsetin (Vsetín, Czech Republic)</td>
 	    <td align="left" valign="top" class="textBody">Unemployed</td>
 	  </tr>
 	  <tr>
-	    <td align="left" valign="top" class="textBody">Availability for business trips</td>
-	    <td align="left" valign="top" class="textBody">Yes</td>
-	  </tr>
-	  <tr>
-	    <td align="left" valign="top" class="textBody">Interest in voluntary jobs</td>
-	    <td align="left" valign="top" class="textBody">Yes</td>
-	  </tr>
-	  <tr>
 	    <td class="textSmall">&nbsp;</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Example projects:</b></td>
 	    <td align="left" valign="top" class="textBody">
-	      <p>Unified general binary data format/protocol (Java, continuation of diploma thesis)<br/><a href="http://xbup.exbin.org">http://xbup.exbin.org</a></p>
-	      <p>Hexadecimal editor written in Java/Swing<br/><a href="http://bined.exbin.org">http://bined.exbin.org</a></p>
+	      <p>Unified general binary data format/protocol (Java, continuation of diploma thesis)<br/><a href="https://xbup.exbin.org">https://xbup.exbin.org</a></p>
+	      <p>Hexadecimal editor written in Java/Swing<br/><a href="https://bined.exbin.org">https://bined.exbin.org</a></p>
 	    </td>
 	  </tr>
 	  <tr>
@@ -159,7 +149,7 @@ Masarykovo gymnasium Vsetin (Vsetín, Czech Republic)</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody">Preferred location</td>
-	    <td align="left" valign="top" class="textBody">Brno, Czech Republic or Zlínský kraj, relocation possible</td>
+	    <td align="left" valign="top" class="textBody">Remote, Czech Republic or Zlínský kraj, remote work or relocation possible</td>
 	  </tr>
 	</table>
     </td>
