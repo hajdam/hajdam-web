@@ -22,19 +22,30 @@ $langPostfix = ($requestedLang != '') ? '&amp;lang='.$requestedLang : '';
 
 global $prefix;
 $prefix = '';
-$query = getenv('QUERY_STRING');
+$query = @$_GET['p'];
+if (empty($query)) {
+  $query = @getenv('QUERY_STRING');
+  $paramEndPos = strpos($query, '&');
+  $valuePos = strpos($query, '=');
+  if (!empty($query) && ($paramEndPos == null || ($paramEndPos > 0 && ($valuePos == null || $valuePos > $paramEndPos)))) {
+    header('Location: ?p='.$query);
+    exit();
+  }
+  $query = "";
+}
+
 if (empty($query)) {
   include('header.php');
   $include = 'pages/welcome'.$filePostfix.'.php';
 } else {
   // Previous version redirections
   if (strncmp($query, "download/", 9) === 0) {
-    header('Location: '.'download/?'.substr($query, 9));
+    header('Location: '.'download/?f='.substr($query, 9));
     exit();
   }
   
   if ($query == 'lang=cs' || $query == 'lang=en') {
-    header('Location: '.'?welcome&'.$query);
+    header('Location: '.'?p=welcome&'.$query);
     exit();
   }
 	

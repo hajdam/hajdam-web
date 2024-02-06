@@ -3,9 +3,9 @@
 
 <p>V dětství jsem vytvořil pár hloupých komixů.</p>
 
-<p><a href="?graphic/comic1<?php echo $langPostfix; ?>">Příběh pinčlů</a></p>
+<p><a href="?p=graphic/comic1<?php echo $langPostfix; ?>">Příběh pinčlů</a></p>
 
-<p><a href="?graphic/comic2<?php echo $langPostfix; ?>">Komix fighter</a></p>
+<p><a href="?p=graphic/comic2<?php echo $langPostfix; ?>">Komix fighter</a></p>
 
 </div>
 </body>

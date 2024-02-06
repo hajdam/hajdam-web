@@ -26,7 +26,7 @@ if ($blog_count > 0) {
   echo '</p>There is no post yet.</p>';
 } ?>
 
-<p>Show <a href="?news<?php echo $langPostfix; ?>">all news</a>.</p>
+<p>Show <a href="?p=news<?php echo $langPostfix; ?>">all news</a>.</p>
 
 <h2>Latest blog post:</h2>
 
@@ -42,7 +42,7 @@ if ($blog_count > 0) {
   echo '</p>There are no blog posts yet.</p>';
 } ?>
 
-<p>See <a href="?blog<?php echo $langPostfix; ?>">all blog posts</a>.</p>
+<p>See <a href="?p=blog<?php echo $langPostfix; ?>">all blog posts</a>.</p>
 
 <h2>Latest visitor's comment:</h2>
 
@@ -58,7 +58,7 @@ if ($comment_count > 0) {
   echo '</p>There are user comments yet.</p>';
 } ?>
 
-<p>See <a href="?comments<?php echo $langPostfix; ?>">all comments</a> or add <a href="?add-comment<?php echo $langPostfix; ?>">new comment</a>.</p>
+<p>See <a href="?p=comments<?php echo $langPostfix; ?>">all comments</a> or add <a href="?p=add-comment<?php echo $langPostfix; ?>">new comment</a>.</p>
 
 <p><small>&copy; Miroslav Hajda 2021 | Version 4.2 | Hosted on <a class="urlextern" href="https://www.zdechov.net">zdechov.net</a> | <a class="urlextern" href="https://github.com/hajdam/hajdam-web">Source</a></small></p>
 </div>

@@ -31,10 +31,10 @@
 <p>Soubory jsou pravděpodobně uzamčené pro specifické ID hráče a je potřeba je upravit editorem.</p>
 
 <p>
-<a href="../download/?games/shapez.io/savegame-demo-20201004.bin">savegame-demo-20201004.bin</a><br/>
-<a href="../download/?games/shapez.io/Run2_level1024.bin">Run2_level1024.bin</a><br/>
-<a href="../download/?games/shapez.io/Text Scrolling.bin">Text Scrolling.bin</a><br/>
-<a href="../download/?games/shapez.io/Color Scrolling.bin">Color Scrolling.bin</a><br/>
+<a href="../download/?f=games/shapez.io/savegame-demo-20201004.bin">savegame-demo-20201004.bin</a><br/>
+<a href="../download/?f=games/shapez.io/Run2_level1024.bin">Run2_level1024.bin</a><br/>
+<a href="../download/?f=games/shapez.io/Text Scrolling.bin">Text Scrolling.bin</a><br/>
+<a href="../download/?f=games/shapez.io/Color Scrolling.bin">Color Scrolling.bin</a><br/>
 </p>
 
 </div>

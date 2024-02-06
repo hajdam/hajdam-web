@@ -19,21 +19,29 @@ $langPostfix = ($requestedLang != '') ? '&amp;lang='.$requestedLang : '';
 global $prefix, $submenu_about;
 
 $prefix = '..';
-$query = getenv('QUERY_STRING');
-$paramPos = strpos($query, '&');
-if ($paramPos !== false) $query = substr($query, 0, $paramPos);
+$query = @$_GET['p'];
+if (empty($query)) {
+  $query = @getenv('QUERY_STRING');
+  $paramEndPos = strpos($query, '&');
+  $valuePos = strpos($query, '=');
+  if (!empty($query) && ($paramEndPos == null || ($paramEndPos > 0 && ($valuePos == null || $valuePos > $paramEndPos)))) {
+    header('Location: ?p='.$query);
+    exit();
+  }
+  $query = "";
+}
 
 if ($lang != 'cs') {
   $submenu_about = '
-<ul><li><a href="?resume'.$langPostfix.'">Resume</a></li>
-<li><a href="?pets'.$langPostfix.'">Pets</a></li>
-<li><a href="?computers'.$langPostfix.'">Computers</a></li>
+<ul><li><a href="?p=resume'.$langPostfix.'">Resume</a></li>
+<li><a href="?p=pets'.$langPostfix.'">Pets</a></li>
+<li><a href="?p=computers'.$langPostfix.'">Computers</a></li>
 </ul>';
 } else {
   $submenu_about = '
-<ul><li><a href="?resume'.$langPostfix.'">Životopis</a></li>
-<li><a href="?pets'.$langPostfix.'">Mazlíčci</a></li>
-<li><a href="?computers'.$langPostfix.'">Počítače</a></li></ul>';
+<ul><li><a href="?p=resume'.$langPostfix.'">Životopis</a></li>
+<li><a href="?p=pets'.$langPostfix.'">Mazlíčci</a></li>
+<li><a href="?p=computers'.$langPostfix.'">Počítače</a></li></ul>';
 }
 
 $childIndex = 'about';

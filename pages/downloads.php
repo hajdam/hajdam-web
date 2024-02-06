@@ -17,7 +17,7 @@ if ($path != '') {
   $basename = basename($path);
   $parentpath = dirname($path);
   echo '<h1><img src="images/tree/folder-32x32.gif" alt="[dir]"/>&nbsp;Folder: '.($parentpath == '.' ? '' : $parentpath.'/').$basename.'</h1>'."\n";	
-  echo '<img src="images/tree/up.gif" alt="[up]"/>&nbsp;<a href="?downloads'.$langPostfix.(($parentpath == '.') ? '' : '&amp;path='.$parentpath).'">.. (up one level)</a><br/><br/>'."\n";
+  echo '<img src="images/tree/up.gif" alt="[up]"/>&nbsp;<a href="?p=downloads'.$langPostfix.(($parentpath == '.') ? '' : '&amp;path='.$parentpath).'">.. (up one level)</a><br/><br/>'."\n";
 } else {
   echo '<h1>Downloads</h1>'."\n";	
 }
@@ -34,7 +34,7 @@ if ($handle !== false) {
       $itempath = $path.'/'.$item;
       if (is_dir($rootpath.'/'.$itempath)) {
         echo '<input type="checkbox" name="dir_'.$dirIndex.'" value="'.htmlentities($item).'" />';
-        echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?downloads'.$langPostfix.'&amp;path='.$itempath.'">'.$item.'</a><br/>'."\n";
+        echo '<img src="images/tree/folder.gif" alt="[dir]"/>&nbsp;<a href="?p=downloads'.$langPostfix.'&amp;path='.$itempath.'">'.$item.'</a><br/>'."\n";
         $dirIndex++;
         $hasdirs = true;
       }
@@ -84,7 +84,7 @@ if ($path != '') {
       	  }
 
           echo '<input type="checkbox" name="file_'.$fileIndex.'" value="'.htmlentities($item).'" />';
-          echo '<img src="images/filetypes/'.$filetype.'" alt="['.$filetypealt.']"/>&nbsp;<a href="download/?'.$itempath.'">'.$item.'</a><br/>'."\n";
+          echo '<img src="images/filetypes/'.$filetype.'" alt="['.$filetypealt.']"/>&nbsp;<a href="download/?f='.$itempath.'">'.$item.'</a><br/>'."\n";
           $fileIndex++;
         }
       }

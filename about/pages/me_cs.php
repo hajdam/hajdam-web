@@ -82,9 +82,9 @@
 
 <p>Případně se můžete kouknout na:</p>
 
-<p><a href="?resume<?php echo $langPostfix; ?>">Můj životopis</a></p>
-<p><a href="?pets<?php echo $langPostfix; ?>">Naše domácí mazlíčky</a></p>
-<p><a href="?computers<?php echo $langPostfix; ?>">Jak se měnil můj domácí počítač v čase</a></p>
+<p><a href="?p=resume<?php echo $langPostfix; ?>">Můj životopis</a></p>
+<p><a href="?p=pets<?php echo $langPostfix; ?>">Naše domácí mazlíčky</a></p>
+<p><a href="?p=computers<?php echo $langPostfix; ?>">Jak se měnil můj domácí počítač v čase</a></p>
 
 </div>
 </body>

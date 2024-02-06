@@ -42,10 +42,10 @@ if (isset($_GET['item'])) {
     echo '<p>'.$content."\n</p>";
 
 	if ($item > 1) {
-	  echo '<a href="?text/literary&item='.($item-1).$langPostfix.'">&lt;&lt;&nbsp;Previous item</a>&nbsp;&nbsp;';
+	  echo '<a href="?p=text/literary&item='.($item-1).$langPostfix.'">&lt;&lt;&nbsp;Previous item</a>&nbsp;&nbsp;';
 	}
 	if ($item < $count) {
-	  echo '<a href="?text/literary&item='.($item+1).$langPostfix.'">Next item&nbsp;&gt;&gt;</a>';
+	  echo '<a href="?p=text/literary&item='.($item+1).$langPostfix.'">Next item&nbsp;&gt;&gt;</a>';
     }
 } else if ($count == 0) {
 	echo '<p>There are no items yet.</p>';
@@ -69,7 +69,7 @@ if (isset($_GET['item'])) {
       fclose($file);
 
       echo '<li>';
-      echo '<p><strong><a href="?text/literary&item='.$i.$langPostfix.'">'.$title.'</a></strong>'.$notice.'<br/>Created on '.date('l jS \of F Y h:i:s A', $time).'<br/>'.$shorttext.'</p>';
+      echo '<p><strong><a href="?p=text/literary&item='.$i.$langPostfix.'">'.$title.'</a></strong>'.$notice.'<br/>Created on '.date('l jS \of F Y h:i:s A', $time).'<br/>'.$shorttext.'</p>';
       echo "</li>\n";
 	}
     echo '</ul>';
@@ -78,11 +78,11 @@ if (isset($_GET['item'])) {
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="?text/literary&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Previous page</a>&nbsp;&nbsp;';
+		echo '<a href="?p=text/literary&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Previous page</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?text/literary&pos='.($pos+1).$langPostfix.'">Next page&nbsp;&gt;&gt;</a>';
+		echo '<a href="?p=text/literary&pos='.($pos+1).$langPostfix.'">Next page&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>

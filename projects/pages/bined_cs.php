@@ -1,7 +1,7 @@
 <div id="content">
-<h1>BinEd Binární/Hexadecimalní Editor</h1>
+<h1>BinEd Binární/Hex Editor</h1>
 
-<p>BinEd je hobby projekt pro vytvoření prohlížeče/editoru pro binární data (hexadecimální editor) v Javě.</p>
+<p>BinEd je hobby projekt pro vytvoření prohlížeče/editoru pro binární data (hex editor) v Javě.</p>
 
 <p>Stránka: <a class="urlextern" href="https://bined.exbin.org">bined.exbin.org</a></p>
 

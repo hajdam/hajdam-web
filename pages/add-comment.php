@@ -1,7 +1,7 @@
 <div id="content">
-<p>Back to <a href="?comments">list of comments</a>.</p>
+<p>Back to <a href="?p=comments">list of comments</a>.</p>
 <p>Add your comment about this project:</p>
-<div style="border-style: solid; border-color: gray; padding: 10px 10px 10px 10px; background-color: #efefef;"><form method="post" action="?comments">
+<div style="border-style: solid; border-color: gray; padding: 10px 10px 10px 10px; background-color: #efefef;"><form method="post" action="?p=comments">
   Antispam: Enter word <strong>COMME<span style="text-transform: uppercase;">nt</span></strong> in uppercase
   <p><input type="text" name="antispam" /></p>
   <p>Enter your name / nick:</p>

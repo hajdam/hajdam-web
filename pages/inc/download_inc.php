@@ -199,6 +199,7 @@ function genDirCd($path, $sub, $files, $dirs, &$cdCount, &$cdOffsets) {
 
     // Process subdirectories
     $handle = opendir($path);
+    if (is_null(@$handle)) return 0;
     while (($item = readdir($handle))!==false) {
       if ($item[0] != '.' && (!isset($dirs) || in_array($item, $dirs))) {
           $itempath = $path.'/'.$item;

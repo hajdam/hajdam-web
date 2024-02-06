@@ -82,9 +82,9 @@
 
 <p>Or you can take a look on:</p>
 
-<p><a href="?resume<?php echo $langPostfix; ?>">My resume/cv</a></p>
-<p><a href="?pets<?php echo $langPostfix; ?>">Our home pets</a></p>
-<p><a href="?computers<?php echo $langPostfix; ?>">How my home computer changed over time</a></p>
+<p><a href="?p=resume<?php echo $langPostfix; ?>">My resume/cv</a></p>
+<p><a href="?p=pets<?php echo $langPostfix; ?>">Our home pets</a></p>
+<p><a href="?p=computers<?php echo $langPostfix; ?>">How my home computer changed over time</a></p>
 
 </div>
 </body>

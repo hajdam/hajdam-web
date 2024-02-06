@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Životopis</h1>
 
-<p>Životopis jako samostatný soubor <a href="cvs/cv_miroslav_hajda_cs_20220301.html">[HTML]</a> <a href="cvs/cv_miroslav_hajda_cs_20220301.pdf">[PDF]</a>.</p> 
+<p>Životopis jako samostatný soubor <a href="cvs/cv_miroslav_hajda_cs_20230413.html">[HTML]</a> <a href="cvs/cv_miroslav_hajda_cs_20230413.pdf">[PDF]</a>.</p> 
 
 <hr align="left" width="600">
 <table width="600" border="0" cellpadding="5" cellspacing="0">
@@ -22,7 +22,7 @@
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Věk</b></td>
-	    <td align="left" valign="top" class="textBody">40</td>
+	    <td align="left" valign="top" class="textBody">41</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Adresa</b></td>
@@ -45,6 +45,11 @@
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody" colspan="2"><b>Předchozí zaměstnání</b></td>
+	  </tr>
+	  <tr>
+	    <td  align="left" valign="top" class="textBody"><nobr>03/2022 - 08/2022</nobr></td>
+	    <td  align="left" valign="top" class="textBody">
+<strong>DevCors/OMIO</strong> (Brno)<br/>Vývojář Java, platforma pro rezervaci cestování</td>
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>03/2017 - 12/2019</nobr></td>

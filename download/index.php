@@ -34,12 +34,23 @@ function startsWith($text, $match) {
     return substr($text, 0, strlen($match)) === $match;
 }
 
-$query = str_replace('..','',@$_SERVER['QUERY_STRING']);
+$query = @$_GET['f'];
+if (empty($query)) {
+  $query = @getenv('QUERY_STRING');
+  $paramEndPos = strpos($query, '&');
+  $valuePos = strpos($query, '=');
+  if (!empty($query) && ($paramEndPos == null || ($paramEndPos > 0 && ($valuePos == null || $valuePos > $paramEndPos)))) {
+    header('Location: ?f='.$query);
+    exit();
+  }
+}
+
+$query = str_replace('..','',$query);
 $query = str_replace('%20',' ',$query);
 $component = ':' . $query;
 
 if (empty($query)) {
-  $query = '../?downloads';
+  $query = '../?p=downloads';
 } else {
   file_put_contents("/var/www/html/hajdam/download/referer.html", date("Y-m-d H:i:s").' '.$_SERVER['REMOTE_ADDR']." ".$component." : ".$referer."<br/>\n", FILE_APPEND);
 }

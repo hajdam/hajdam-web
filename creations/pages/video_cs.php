@@ -7,7 +7,7 @@
 
 <h2>Ostatní</h2>
 
-<p><a href="?video/old<?php echo $langPostfix; ?>">Pár starých video věcí</a></p>
+<p><a href="?p=video/old<?php echo $langPostfix; ?>">Pár starých video věcí</a></p>
 
 </div>
 </body>

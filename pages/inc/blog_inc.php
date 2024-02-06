@@ -16,9 +16,9 @@ function showBlog($i) {
   fclose($file);
 
   if ($lang == 'cs') {
-    echo '<p><strong><a href="?blog&post='.$i.$langPostfix.'">'.$title.'</a></strong><br/>Článek vložen '.date('d. m. Y H:m:s', $time).'<br/>'.$shorttext.'</p>';
+    echo '<p><strong><a href="?p=blog&post='.$i.$langPostfix.'">'.$title.'</a></strong><br/>Článek vložen '.date('d. m. Y H:m:s', $time).'<br/>'.$shorttext.'</p>';
   } else {
-    echo '<p><strong><a href="?blog&post='.$i.$langPostfix.'">'.$title.'</a></strong><br/>Posted on '.date('l jS \of F Y h:i:s A', $time).'<br/>'.$shorttext.'</p>';
+    echo '<p><strong><a href="?p=blog&post='.$i.$langPostfix.'">'.$title.'</a></strong><br/>Posted on '.date('l jS \of F Y h:i:s A', $time).'<br/>'.$shorttext.'</p>';
   }
 }
 ?>

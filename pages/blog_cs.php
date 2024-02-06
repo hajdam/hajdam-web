@@ -41,10 +41,10 @@ if (isset($_GET['post'])) {
     echo '<p>'.$content."\n</p>";
 
 	if ($post > 1) {
-	  echo '<a href="?blog&post='.($post-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí článek</a>&nbsp;&nbsp;';
+	  echo '<a href="?p=blog&post='.($post-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí článek</a>&nbsp;&nbsp;';
 	}
 	if ($post < $count) {
-	  echo '<a href="?blog&post='.($post+1).$langPostfix.'">Následující článek&nbsp;&gt;&gt;</a>';
+	  echo '<a href="?p=blog&post='.($post+1).$langPostfix.'">Následující článek&nbsp;&gt;&gt;</a>';
     }
 } else if ($count == 0) {
 	echo '<p>Zatím žádné články.</p>';
@@ -65,11 +65,11 @@ if (isset($_GET['post'])) {
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="blog&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
+		echo '<a href="?p=blog&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?blog&pos='.($pos+1).$langPostfix.'">Následující stránka&nbsp;&gt;&gt;</a>';
+		echo '<a href="?p=blog&pos='.($pos+1).$langPostfix.'">Následující stránka&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>

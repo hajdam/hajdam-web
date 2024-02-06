@@ -26,7 +26,7 @@ if ($blog_count > 0) {
   echo '</p>Zatím nejsou žádné novinky.</p>';
 } ?>
 
-<p>Zobrazit <a href="?news<?php echo $langPostfix; ?>">všechny novinky</a>.</p>
+<p>Zobrazit <a href="?p=news<?php echo $langPostfix; ?>">všechny novinky</a>.</p>
 
 <h2>Poslední článek na blogu:</h2>
 
@@ -42,7 +42,7 @@ if ($blog_count > 0) {
   echo '</p>Zatím nejsou na blogu žádné články.</p>';
 } ?>
 
-<p>Zobrazit <a href="?blog<?php echo $langPostfix; ?>">všechny články blogu</a>.</p>
+<p>Zobrazit <a href="?p=blog<?php echo $langPostfix; ?>">všechny články blogu</a>.</p>
 
 <h2>Poslední komentář návštěvníka:</h2>
 
@@ -58,7 +58,7 @@ if ($comment_count > 0) {
   echo '</p>Zatím nejsou žádné komentáře návštěvníků.</p>';
 } ?>
 
-<p>Můžete <a href="?comments<?php echo $langPostfix; ?>">zobrazit všechny komentáře</a> nebo <a href="?add-comment<?php echo $langPostfix; ?>">přidat nový</a>.</p>
+<p>Můžete <a href="?p=comments<?php echo $langPostfix; ?>">zobrazit všechny komentáře</a> nebo <a href="?p=add-comment<?php echo $langPostfix; ?>">přidat nový</a>.</p>
 
 <p><small>&copy; Miroslav Hajda 2021 | Verze 4.2 | Hostováno u <a class="urlextern" href="https://www.zdechov.net">zdechov.net</a> | <a class="urlextern" href="https://github.com/hajdam/hajdam-web">Zdroj stránky</a></small></p>
 </div>

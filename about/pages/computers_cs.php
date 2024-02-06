@@ -27,7 +27,7 @@
 </tr><tr>
 <td>A</td><td>14.4.2010</td><td>HTC Desire</td><td>Qualcomm Snapdragon 1 GHz</td><td>AMD Z430</td><td>576 MB</td><td>512 MB FLASH</td><td>4 GB micro SD</td>
 </tr><tr>
-<td>A</td><td>9.11.2012</td><td>Gigabyte 990FXA-UD3</td><td>AMD FX-8350 8 jader 4,0 GHz</td><td>Sapphire AMD Radeon HD 7750 1GB</td><td>16 GB</td><td>128 GB SSD Vertex 4 + > 3 TB HDD</td><td>LG GGW-H20L Blu-ray 50 GB</td>
+<td>S</td><td>9.11.2012</td><td>Gigabyte 990FXA-UD3</td><td>AMD FX-8350 8 jader 4,0 GHz</td><td>Sapphire AMD Radeon HD 7750 1GB</td><td>16 GB</td><td>128 GB SSD Vertex 4 + > 3 TB HDD</td><td>LG GGW-H20L Blu-ray 50 GB</td>
 </tr><tr>
 <td>A</td><td>11.5.2017</td><td>Gigabyte GA-AB350</td><td>AMD Ryzen 7 1700, 8 jader (16 vláken) 3,0 GHz</td><td>Sapphire Radeon RX 480 8GB</td><td>32 GB</td><td>512 GB SSD Crucial M550 + > 3 TB HDD</td><td>LG GGW-H20L Blu-ray 50 GB</td>
 </tr><tr>

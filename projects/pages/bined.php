@@ -1,7 +1,7 @@
 <div id="content">
-<h1>BinEd Binary/Hexadecimal Editor</h1>
+<h1>BinEd Binary/Hex Editor</h1>
 
-<p>BinEd is a hobby project to create viewer/editor for binary data (hexadecimal editor) in Java.</p>
+<p>BinEd is a hobby project to create viewer/editor for binary data (hex editor) in Java.</p>
 
 <p>Website: <a class="urlextern" href="https://bined.exbin.org">bined.exbin.org</a></p>
 

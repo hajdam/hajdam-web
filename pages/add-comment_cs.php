@@ -1,7 +1,7 @@
 <div id="content">
-<p>Zpět na <a href="?comments">seznam komentářů</a>.</p>
+<p>Zpět na <a href="?p=comments">seznam komentářů</a>.</p>
 <p>Přidejte svůj komentář o této stránce:</p>
-<div style="border-style: solid; border-color: gray; padding: 10px 10px 10px 10px; background-color: #efefef;"><form method="post" action="?comments">
+<div style="border-style: solid; border-color: gray; padding: 10px 10px 10px 10px; background-color: #efefef;"><form method="post" action="?p=comments">
   Antispam: Zadejte slovo <strong>COMME<span style="text-transform: uppercase;">nt</span></strong> napsané velkými znaky
   <p><input type="text" name="antispam" /></p>
   <p>Zadejte své jméno / přezdívku:</p>

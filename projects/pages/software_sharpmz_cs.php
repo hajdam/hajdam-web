@@ -10,14 +10,14 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení verze 1.1 (2020-07-09)</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/agentwolf-1.1.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/agentwolf-1.1.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 <br/>
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení verze 1.03 (starší)</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/agentwolf-1.03.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/agentwolf-1.03.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
@@ -29,7 +29,7 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/basicmusic.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/basicmusic.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
@@ -41,7 +41,7 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/sdefinice.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/sdefinice.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
@@ -53,7 +53,7 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/ted21.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/ted21.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
@@ -65,7 +65,7 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/ecuador.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/ecuador.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
@@ -77,7 +77,7 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/fiat_papermodel.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/fiat_papermodel.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
@@ -89,7 +89,7 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/pretahovana.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/pretahovana.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
@@ -101,7 +101,7 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/monodrawing.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/monodrawing.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>
@@ -113,7 +113,7 @@
 <table border="0" width="100%" bgcolor="#C0C0C0"><tr>
   <td>Stažení</td>
   <td width="100" align="right">
-    <a href="../download/?sharpmz/colordrawing.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
+    <a href="../download/?f=sharpmz/colordrawing.zip"><img border="0" src="../images/filetypes/zip-32x32.gif" width="32" height="32"></a>
   </td>
 </tr></table>
 </div>

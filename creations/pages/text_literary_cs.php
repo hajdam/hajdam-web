@@ -41,10 +41,10 @@ if (isset($_GET['item'])) {
     echo '<p>'.$content."\n</p>";
 
 	if ($item > 1) {
-	  echo '<a href="?text/literary&item='.($item-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí položka</a>&nbsp;&nbsp;';
+	  echo '<a href="?p=text/literary&item='.($item-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí položka</a>&nbsp;&nbsp;';
 	}
 	if ($item < $count) {
-	  echo '<a href="?text/literary&item='.($item+1).$langPostfix.'">Následující položka&nbsp;&gt;&gt;</a>';
+	  echo '<a href="?p=text/literary&item='.($item+1).$langPostfix.'">Následující položka&nbsp;&gt;&gt;</a>';
     }
 } else if ($count == 0) {
 	echo '<p>Ještě tu nejsou žádné položky.</p>';
@@ -68,7 +68,7 @@ if (isset($_GET['item'])) {
       fclose($file);
 
       echo '<li>';
-      echo '<p><strong><a href="?text/literary&item='.$i.$langPostfix.'">'.$title.'</a></strong>'.$notice.'<br/>Vytvořeno '.date('d. m. Y H:m:s', $time).'<br/>'.$shorttext.'</p>';
+      echo '<p><strong><a href="?p=text/literary&item='.$i.$langPostfix.'">'.$title.'</a></strong>'.$notice.'<br/>Vytvořeno '.date('d. m. Y H:m:s', $time).'<br/>'.$shorttext.'</p>';
       echo "</li>\n";
 	}
     echo '</ul>';
@@ -77,11 +77,11 @@ if (isset($_GET['item'])) {
 	if ($count > $perpage) {
 	  echo '<p>';
 	  if ($pos > 0) {
-		echo '<a href="?text/literary&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
+		echo '<a href="?p=text/literary&pos='.($pos-1).$langPostfix.'">&lt;&lt;&nbsp;Předchozí stránka</a>&nbsp;&nbsp;';
 	  }
 	  $maxpos = intdiv($count + $perpage - 1, $perpage) - 1; 
 	  if ($pos < $maxpos) {
-		echo '<a href="?text/literary&pos='.($pos+1).$langPostfix.'">Následující stránka&nbsp;&gt;&gt;</a>';
+		echo '<a href="?p=text/literary&pos='.($pos+1).$langPostfix.'">Následující stránka&nbsp;&gt;&gt;</a>';
 	  }
 	}
 } ?>

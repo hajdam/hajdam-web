@@ -1,7 +1,7 @@
 <div id="content">
 <h1>Resume</h1>
 
-<p>Curriculum Vitae as single file <a href="cvs/cv_miroslav_hajda_en_20220301.html">[HTML]</a> <a href="cvs/cv_miroslav_hajda_en_20220301.pdf">[PDF]</a>.</p> 
+<p>Curriculum Vitae as single file <a href="cvs/cv_miroslav_hajda_en_20230413.html">[HTML]</a> <a href="cvs/cv_miroslav_hajda_en_20230413.pdf">[PDF]</a>.</p> 
 
 <hr align="left" width="600">
 <table width="600" border="0" cellpadding="5" cellspacing="0">
@@ -22,7 +22,7 @@
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Age</b></td>
-	    <td align="left" valign="top" class="textBody">40</td>
+	    <td align="left" valign="top" class="textBody">41</td>
 	  </tr>
 	  <tr>
 	    <td align="left" valign="top" class="textBody"><b>Address</b></td>
@@ -45,6 +45,11 @@
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody" colspan="2"><b>Work experience</b></td>
+	  </tr>
+	  <tr>
+	    <td  align="left" valign="top" class="textBody"><nobr>03/2022 - 08/2022</nobr></td>
+	    <td  align="left" valign="top" class="textBody">
+<strong>DevCors/OMIO</strong> (Brno, Czech Republic)<br/>Backend Java Developer for travel booking platform</td>
 	  </tr>
 	  <tr>
 	    <td  align="left" valign="top" class="textBody"><nobr>03/2017 - 12/2019</nobr></td>

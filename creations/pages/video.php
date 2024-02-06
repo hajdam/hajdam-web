@@ -7,7 +7,7 @@
 
 <h2>Other</h2>
 
-<p><a href="?video/old<?php echo $langPostfix; ?>">Some more old stuff</a></p>
+<p><a href="?p=video/old<?php echo $langPostfix; ?>">Some more old stuff</a></p>
 
 </div>
 </body>
